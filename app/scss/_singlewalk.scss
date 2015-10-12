@@ -1,0 +1,23 @@
+
+.singlewalk__icons {
+  background-color: $white;
+  border-bottom: 1px solid $gainsboro;
+  color:$primary-color;
+  padding-top:.25rem;
+  padding-bottom: .25rem;
+
+  a {
+    color:inherit;
+
+  }
+}
+
+.singlewalk__content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}

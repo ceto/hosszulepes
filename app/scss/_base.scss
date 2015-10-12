@@ -1,5 +1,8 @@
 html, body {
   font-size: 100%;
+  @media #{$medium} {
+    font-size: 87.5%;
+  }
   @media #{$xlarge} {
     font-size: 87.5%;
   }

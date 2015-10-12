@@ -6016,7 +6016,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -6030,16 +6030,16 @@ h1 {
   font-size: 2.125rem; }
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 0.8125rem; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 0.8125rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 0.6875rem; }
 
 h5 {
-  font-size: 1.125rem; }
+  font-size: 0.875rem; }
 
 h6 {
   font-size: 1rem; }
@@ -6206,13 +6206,13 @@ blockquote p {
   h1 {
     font-size: 2.75rem; }
   h2 {
-    font-size: 2.3125rem; }
-  h3 {
-    font-size: 1.6875rem; }
-  h4 {
     font-size: 1.4375rem; }
-  h5 {
+  h3 {
     font-size: 1.125rem; }
+  h4 {
+    font-size: 1rem; }
+  h5 {
+    font-size: 0.875rem; }
   h6 {
     font-size: 1rem; } }
 
@@ -6299,7 +6299,7 @@ blockquote p {
     line-height: 2.8125rem;
     margin: 0; }
   .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
-    font-size: 1.125rem; }
+    font-size: 0.875rem; }
 
 .left-small {
   height: 2.8125rem;
@@ -7201,6 +7201,9 @@ th.hide-for-touch {
 /* all app scss styles here */
 html, body {
   font-size: 100%; }
+  @media only screen and (min-width: 40em) {
+    html, body {
+      font-size: 87.5%; } }
   @media only screen and (min-width: 64em) {
     html, body {
       font-size: 87.5%; } }
@@ -7352,3 +7355,24 @@ html, body {
   @media only screen and (min-width: 64em) {
     .hero__details {
       width: 75%; } }
+
+.photostrip {
+  background-color: #111;
+  color: #fafafa;
+  min-height: 33vh; }
+
+.singlewalk__icons {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9d6d6;
+  color: #00b3bb;
+  padding-top: .25rem;
+  padding-bottom: .25rem; }
+  .singlewalk__icons a {
+    color: inherit; }
+
+.singlewalk__content {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .singlewalk__content h2 {
+    font-size: 1rem;
+    text-transform: uppercase; }
