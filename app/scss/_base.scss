@@ -1,0 +1,9 @@
+html, body {
+  font-size: 100%;
+  @media #{$xlarge} {
+    font-size: 87.5%;
+  }
+  @media #{$xxlarge} {
+    font-size: 100%;
+  }
+}

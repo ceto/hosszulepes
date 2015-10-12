@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  background-color: $black;
+  color:$ghost;
+  background-size: cover;
+  background-image: url('http://placehold.it/2100x700/111111/1a1a1a?text=Aspect+ratio:+3:1');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow:hidden;
+  max-height:15rem;
+  @media #{$medium} {
+    max-height:25rem;
+  }
+  @media #{$large} {
+    max-height: 40rem;
+  }
+  &:after {
+    content:'';
+    display: block;
+    padding-bottom: 66.666%;
+    @media #{$medium} {
+      padding-bottom:45%;
+    }
+    @media #{$large} {
+      padding-bottom: 33.333%;
+    }
+  }
+}
+
+
+.hero__content {
+  position: absolute;
+  height:100%;
+  width:100%;
+  //background-color: rgba($primary-color,.125);
+}
+
+.hero__block {
+  display:table;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__text {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.hero__title {
+  color:inherit;
+  font-weight: 300;
+  @media #{$xlarge} {
+    font-size: 3.75rem;
+  }
+}
+.hero__details {
+  font-size: 1.125rem;
+  @media #{$xlarge} {
+    width:75%;
+  }
+}
