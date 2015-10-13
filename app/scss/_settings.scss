@@ -156,6 +156,7 @@ $medium-breakpoint: em-calc(767);
 $large-breakpoint:  em-calc(1023);
 $xlarge-breakpoint: em-calc(1279);
 
+
 // $small-range:   (0, $small-breakpoint);
 // $medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
 // $large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
@@ -198,6 +199,8 @@ $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
 $xlarge: $xlarge-up;
 $xxlarge: $xxlarge-up;
 
+$kurvanagy: "#{$screen} and (min-width: 100em)";
+
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 // $cursor-crosshair-value: crosshair;
 // $cursor-default-value: default;
@@ -217,8 +220,8 @@ $header-font-weight: $font-weight-bold;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.2;
-// $header-top-margin: .2rem;
-// $header-bottom-margin: .5rem;
+$header-top-margin: 2.5rem;
+$header-bottom-margin: .875rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
@@ -253,7 +256,7 @@ $h5-font-size: rem-calc(14);
 // $paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: rem-calc(20);
+$paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -442,10 +445,10 @@ $accordion-navigation-font-color: $white;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
-// $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
-// $button-lrg: rem-calc(18);
+$button-tny: rem-calc(8);
+$button-sml: rem-calc(10);
+$button-med: rem-calc(14);
+$button-lrg: rem-calc(16);
 
 // We use this to control the display property.
 // $button-display: inline-block;
@@ -459,7 +462,7 @@ $accordion-navigation-font-color: $white;
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: $font-weight-bold;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -651,11 +654,11 @@ $accordion-navigation-font-color: $white;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-placeholder-font-color: #cccccc;
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
+$input-placeholder-font-color: #cccccc;
+$input-bg-color: $ghost;
+$input-focus-bg-color: scale-color($ghost, $lightness: -2%);
 // $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-focus-border-color: $primary-color;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-border-radius: $global-radius;
@@ -1001,7 +1004,7 @@ $panel-bg: $white;
 
 // We use these to set default inner padding and bottom margin
 // $panel-margin-bottom: rem-calc(20);
-// $panel-padding: rem-calc(20);
+$panel-padding: rem-calc(16);
 
 // We use these to set default font colors
 // $panel-font-color: $oil;

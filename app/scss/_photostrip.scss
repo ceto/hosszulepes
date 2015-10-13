@@ -1,5 +1,47 @@
 .photostrip {
+  position: relative;
   background-color: #111;
   color:$ghost;
   min-height: 33vh;
+}
+
+
+#owl-photostrip {
+
+  .item{
+
+    margin: 0;
+
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.owl-theme .owl-controls {
+   margin:0;
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   left:0;
+   width:100%;
+   padding:1rem;
+  .owl-buttons div {
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: $primary-color;
+    border-radius:0;
+    //padding:1rem;
+    width:3rem;
+    height:3rem;
+    &.owl-prev {
+      float:left;
+    }
+    &.owl-next {
+      float:right;
+    }
+  }
 }

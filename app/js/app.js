@@ -22,3 +22,18 @@ var app = (function(document, $) {
 (function() {
 	app.init();
 })();
+
+
+
+
+$(document).ready(function() {
+
+  $("#owl-photostrip").owlCarousel({
+    items : 4,
+    lazyLoad : true,
+    navigation : false,
+    navigationText:  ["<",">"],
+    pagination: false
+  });
+
+});

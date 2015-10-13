@@ -1,6 +1,17 @@
 {
   "name": "hosszulepes",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "owl-carousel": "~1.3.2"
+  },
+  "overrides": {
+    "owl-carousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.theme.css",
+        "./owl-carousel/owl.transitions.css",
+        "./owl-carousel/owl.carousel.js"
+      ]
+    }
   }
 }

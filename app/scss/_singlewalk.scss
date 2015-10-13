@@ -13,11 +13,124 @@
 }
 
 .singlewalk__content {
-  padding-top: 2em;
-  padding-bottom: 2em;
 
   h2 {
     font-size: 1rem;
     text-transform: uppercase;
+  }
+}
+
+.namecard {
+  @include clearfix();
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+.namecard__photo {
+  margin:0 .75rem 0 0;
+  max-width: 25%;
+  float:left;
+  @media #{$xlarge} {
+    margin:0 .75rem 0 0;
+    max-width: 22%;
+  }
+}
+
+.namecard__name {
+  margin:0.125rem 0 .5rem;
+  line-height: 1;
+}
+.namecard__title {
+  margin:0 0 .75rem;
+  line-height: 1;
+  font-style: italic;
+  font-size: .875rem;
+}
+
+.namecard__descr {
+  font-size: .875rem;
+  line-height: 1.4;
+  margin: .75rem 0;
+}
+
+.namecard__morelink {
+  font-size: .875rem;
+  line-height: 1;
+  font-style: italic;
+  margin:0;
+  display: block;
+}
+
+.ticketselect {
+  @include clearfix();
+  background-color: $primary-color;
+  color:$white;
+  line-height: 1.2;
+  padding:1rem .75rem;
+  position: relative;
+  margin-bottom: $paragraph-margin-bottom/2;
+  &:hover {
+    background-color: $jumbo;
+  }
+}
+
+.ticketselect__head {
+  padding-right: 6.75rem;
+}
+
+.ticketselect__date {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .333rem;
+  .daytext {
+    font-weight: 300;
+  }
+}
+.ticketselect__details {
+  font-size: .875rem;
+  .lastchance {
+    font-style: italic;
+    color:$ghost;
+    &:before {
+      content: '|';
+      font-style: normal;
+      display: inline-block;
+      padding:0 .125rem;
+    }
+  }
+
+}
+
+a.ticketselect__buynow {
+  color:$white;
+  line-height: 1;
+  font-size: .75rem;
+  //padding:.875rem .666rem;
+  //border:1px solid $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  position: absolute;
+  right:1.125rem;
+  top:50%;
+  transform:translateY(-50%);
+  text-align: center;
+  &:hover, &:focus {
+    // color:$primary-color;
+    // border-color: $ghost;
+    // background-color: $ghost;
+    text-decoration: underline;
+  }
+}
+
+.singlewalk__sidebar {
+  .panel {
+    p {
+      font-size: .875rem;
+    }
+    .button {
+      font-size: .875rem;
+      margin-bottom: 0;
+    }
   }
 }
