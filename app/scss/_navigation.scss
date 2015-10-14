@@ -1,22 +1,123 @@
-.row.row--fullwidth {
-  max-width: none;
+.pageheader {
+  position: relative;
+  border-top:.125rem solid $primary-color;
+  @media #{$xlarge} {
+    border-top:none;
+
+  }
 }
+
+
+
+
+
+/****** Nav Toggle on Small Scren *****/
+label.navtoggle-label {
+  float:right;
+  margin-top:.666em;
+  display: inline-block;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  color:$body-font-color;
+
+  &:hover {
+    color:$primary-color;
+  }
+
+
+  @media #{$medium} {
+    font-size: 1.333rem;
+  }
+
+  @media #{$xlarge} {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  i {
+    .js-menus-are-open &:before {
+      //content: "X";
+    }
+  }
+
+
+
+
+}
+
+input[type="checkbox"]#navtoggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  & + .prinav {
+    height: 0;
+    visibility: hidden;
+    opacity:0;
+    @media #{$xlarge} {
+      height: 100%;
+      visibility:visible;
+      opacity:1;
+    }
+
+  }
+
+  &:checked + .prinav {
+    height: 100%;
+    visibility:visible;
+    opacity:1;
+  }
+
+
+}
+
+
+
+/******* Secondary (Inverse) Menu *******/
 .pageheader__inverse {
   background-color: $primary-color;
   color:$black;
   padding:.25rem 0;
+
+  position: absolute;
+  bottom:-2.125rem;
+  left:0;
+  width:100%;
+  .js-menus-are-open & {
+    bottom:0;
+  }
+
+  @media #{$xlarge} {
+    position:static;
+
+  }
 }
-
-
-/******* Secondary (Inverse) Menu *******/
 
 .secnav__menu {
   list-style-type: none;
   margin:0;
   padding:0;
+  text-align: center;
+  @media #{$medium} {
+    text-align:right;
+  }
+  @media #{$xlarge} {
+    text-align:left;
+  }
   li {
     display: inline-block;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1;
     &:not(:first-child):before {
       content: '|';
@@ -24,6 +125,10 @@
       padding-right:.25em;
       padding-left: .25em;
     }
+    @media #{$xlarge} {
+      font-size: .875rem;
+    }
+
     > a {
         color:inherit;
         &:hover, &:focus {
@@ -38,8 +143,13 @@
 .pageheader__main {
   @include clearfix();
   background-color: $white;
-  padding:2rem 0;
+  padding:.5rem 0;
+
+  @media #{$medium} {
+    padding:1.125rem 0;
+  }
   @media #{$xlarge} {
+    padding:2rem 0;
   }
 }
 
@@ -50,11 +160,16 @@
   background-position: left center;
   background-size: 100% auto;
   display: block;
-  width:13rem;
-  height:3.4666rem;
+  width:10rem;
+  height:2.75rem;
+  float:left;
+  //background-color: red;
+
   @media #{$medium} {
-    float:left;
+    width:13rem;
+    height:3.4666rem;
   }
+
   @media #{$xxlarge} {
     width:15rem;
     height:4rem;
@@ -63,34 +178,44 @@
 
 
 
+
 /******* Main Menu *******/
 .prinav {
-  margin: 1rem 0;
-  @media #{$medium} {
-    float:right;
-    margin: .5rem 0;
-  }
+  clear:both;
+
 
   @media #{$xlarge} {
+    float:right;
+    clear: none;
     margin: .875rem 0 0;
   }
   @media #{$xxlarge} {
     margin: 1.125rem 0 0;
   }
+
 }
 
 .prinav__menu {
   list-style-type: none;
   margin:0 0;
-  padding:0;
+  padding:3rem 0 5rem;
+  text-align: center;
+  font-size: 1.25rem;
   @media #{$medium} {
-    margin-top: 0;
+    padding:.5rem 0 3rem;
+    text-align:right;
+  }
+
+  @media #{$xlarge} {
+    padding: 0;
+    font-size: 1rem;
     text-align: right;
   }
   li {
-
+    margin-bottom:.333em;
     @media #{$xlarge} {
       display: inline-block;
+      margin-bottom: 0;
       padding-left: .5rem;
     }
     @media #{$xxlarge} {
@@ -99,7 +224,7 @@
 
     > a {
         text-transform: uppercase;
-        color:$black;
+        color:$body-font-color;
         &:hover, &:focus {
           color:$primary-color;
         }

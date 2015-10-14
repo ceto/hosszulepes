@@ -12,7 +12,7 @@
   }
 }
 
-.singlewalk__content {
+.singlewalk__content, .singlewalk__sidebar {
 
   h2 {
     font-size: 1rem;
@@ -58,6 +58,20 @@
   font-style: italic;
   margin:0;
   display: block;
+}
+
+.owl-carousel.owl-namecards {
+  .owl-controls {
+    position: absolute;
+    right:-.333rem;
+    top:-2.125rem;
+    margin-top:0;
+    .owl-page span {
+      background-color: $jumbo;
+      margin:.333rem .333rem;
+      border-radius: 0;
+    }
+  }
 }
 
 .ticketselect {

@@ -7214,6 +7214,10 @@ html, body {
     html, body {
       font-size: 112.5%; } }
 
+@media only screen and (min-width: 64em) {
+  .row.row--fullwidth {
+    max-width: none; } }
+
 button, .button {
   text-transform: uppercase; }
 
@@ -7224,45 +7228,117 @@ dl {
     font-weight: normal;
     line-height: 1;
     margin: 0;
-    padding: 0.75rem 0 1.25rem 0;
+    padding: 1.25rem 0 1.25rem 0.75rem;
     position: absolute; }
     dl dt .icon {
       color: #00b3bb;
-      width: 3rem;
+      width: 1.5rem;
       display: inline-block;
       text-align: center;
       font-style: normal;
       font-weight: 700; }
   dl dd {
     line-height: 1;
-    padding: 0.75rem 0 1.25rem 10rem;
-    text-align: right; }
+    padding: 1.25rem 0.75rem 1.25rem 10rem;
+    text-align: right;
+    margin: 0; }
     dl dd:not(:last-child) {
-      border-bottom: 1px solid #d9d6d6;
-      margin: 0 0 0.5rem; }
+      border-bottom: 1px solid #d9d6d6; }
+    dl dd:hover {
+      background-color: #ffffff; }
 
-.row.row--fullwidth {
-  max-width: none; }
+.pageheader {
+  position: relative;
+  border-top: 0.125rem solid #00b3bb; }
+  @media only screen and (min-width: 64em) {
+    .pageheader {
+      border-top: none; } }
 
+/****** Nav Toggle on Small Scren *****/
+label.navtoggle-label {
+  float: right;
+  margin-top: .666em;
+  display: inline-block;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #333333; }
+  label.navtoggle-label:hover {
+    color: #00b3bb; }
+  @media only screen and (min-width: 40em) {
+    label.navtoggle-label {
+      font-size: 1.333rem; } }
+  @media only screen and (min-width: 64em) {
+    label.navtoggle-label {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      display: none;
+      visibility: hidden;
+      opacity: 0; } }
+
+input[type="checkbox"]#navtoggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  display: none;
+  visibility: hidden;
+  opacity: 0; }
+  input[type="checkbox"]#navtoggle + .prinav {
+    height: 0;
+    visibility: hidden;
+    opacity: 0; }
+    @media only screen and (min-width: 64em) {
+      input[type="checkbox"]#navtoggle + .prinav {
+        height: 100%;
+        visibility: visible;
+        opacity: 1; } }
+  input[type="checkbox"]#navtoggle:checked + .prinav {
+    height: 100%;
+    visibility: visible;
+    opacity: 1; }
+
+/******* Secondary (Inverse) Menu *******/
 .pageheader__inverse {
   background-color: #00b3bb;
   color: #000000;
-  padding: .25rem 0; }
+  padding: .25rem 0;
+  position: absolute;
+  bottom: -2.125rem;
+  left: 0;
+  width: 100%; }
+  .js-menus-are-open .pageheader__inverse {
+    bottom: 0; }
+  @media only screen and (min-width: 64em) {
+    .pageheader__inverse {
+      position: static; } }
 
-/******* Secondary (Inverse) Menu *******/
 .secnav__menu {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
+  @media only screen and (min-width: 40em) {
+    .secnav__menu {
+      text-align: right; } }
+  @media only screen and (min-width: 64em) {
+    .secnav__menu {
+      text-align: left; } }
   .secnav__menu li {
     display: inline-block;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1; }
     .secnav__menu li:not(:first-child):before {
       content: '|';
       display: inline-block;
       padding-right: .25em;
       padding-left: .25em; }
+    @media only screen and (min-width: 64em) {
+      .secnav__menu li {
+        font-size: .875rem; } }
     .secnav__menu li > a {
       color: inherit; }
       .secnav__menu li > a:hover, .secnav__menu li > a:focus {
@@ -7270,13 +7346,19 @@ dl {
 
 .pageheader__main {
   background-color: #ffffff;
-  padding: 2rem 0; }
+  padding: .5rem 0; }
   .pageheader__main:before,
   .pageheader__main:after {
     content: " ";
     display: table; }
   .pageheader__main:after {
     clear: both; }
+  @media only screen and (min-width: 40em) {
+    .pageheader__main {
+      padding: 1.125rem 0; } }
+  @media only screen and (min-width: 64em) {
+    .pageheader__main {
+      padding: 2rem 0; } }
 
 .sitelogo {
   text-indent: 100%;
@@ -7287,11 +7369,13 @@ dl {
   background-position: left center;
   background-size: 100% auto;
   display: block;
-  width: 13rem;
-  height: 3.4666rem; }
+  width: 10rem;
+  height: 2.75rem;
+  float: left; }
   @media only screen and (min-width: 40em) {
     .sitelogo {
-      float: left; } }
+      width: 13rem;
+      height: 3.4666rem; } }
   @media only screen and (min-width: 80em) {
     .sitelogo {
       width: 15rem;
@@ -7299,13 +7383,11 @@ dl {
 
 /******* Main Menu *******/
 .prinav {
-  margin: 1rem 0; }
-  @media only screen and (min-width: 40em) {
-    .prinav {
-      float: right;
-      margin: .5rem 0; } }
+  clear: both; }
   @media only screen and (min-width: 64em) {
     .prinav {
+      float: right;
+      clear: none;
       margin: .875rem 0 0; } }
   @media only screen and (min-width: 80em) {
     .prinav {
@@ -7314,23 +7396,33 @@ dl {
 .prinav__menu {
   list-style-type: none;
   margin: 0 0;
-  padding: 0; }
+  padding: 3rem 0 5rem;
+  text-align: center;
+  font-size: 1.25rem; }
   @media only screen and (min-width: 40em) {
     .prinav__menu {
-      margin-top: 0;
+      padding: 0.5rem 0 3rem;
       text-align: right; } }
   @media only screen and (min-width: 64em) {
-    .prinav__menu li {
-      display: inline-block;
-      padding-left: .5rem; } }
-  @media only screen and (min-width: 80em) {
-    .prinav__menu li {
-      padding-left: .666rem; } }
-  .prinav__menu li > a {
-    text-transform: uppercase;
-    color: #000000; }
-    .prinav__menu li > a:hover, .prinav__menu li > a:focus {
-      color: #00b3bb; }
+    .prinav__menu {
+      padding: 0;
+      font-size: 1rem;
+      text-align: right; } }
+  .prinav__menu li {
+    margin-bottom: .333em; }
+    @media only screen and (min-width: 64em) {
+      .prinav__menu li {
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: .5rem; } }
+    @media only screen and (min-width: 80em) {
+      .prinav__menu li {
+        padding-left: .666rem; } }
+    .prinav__menu li > a {
+      text-transform: uppercase;
+      color: #333333; }
+      .prinav__menu li > a:hover, .prinav__menu li > a:focus {
+        color: #00b3bb; }
 
 .hero {
   position: relative;
@@ -7341,21 +7433,30 @@ dl {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
-  max-height: 15rem; }
+  max-height: 20rem; }
   @media only screen and (min-width: 40em) {
     .hero {
       max-height: 25rem; } }
   @media only screen and (min-width: 48em) {
     .hero {
       max-height: 40rem; } }
+  @media only screen and (min-width: 64em) {
+    .hero {
+      max-height: 45rem; } }
+  @media only screen and (min-width: 100em) {
+    .hero {
+      max-height: 35rem; } }
   .hero:after {
     content: '';
     display: block;
-    padding-bottom: 66.666%; }
+    padding-bottom: 75%; }
     @media only screen and (min-width: 40em) {
       .hero:after {
         padding-bottom: 45%; } }
     @media only screen and (min-width: 48em) {
+      .hero:after {
+        padding-bottom: 40%; } }
+    @media only screen and (min-width: 64em) {
       .hero:after {
         padding-bottom: 33.333%; } }
 
@@ -7380,11 +7481,13 @@ dl {
     .hero__title {
       font-size: 3.75rem; } }
 
-.hero__details {
-  font-size: 1.125rem; }
-  @media only screen and (min-width: 64em) {
-    .hero__details {
-      width: 75%; } }
+@media only screen and (min-width: 40em) {
+  .hero__details {
+    font-size: 1.125rem; } }
+
+@media only screen and (min-width: 48em) {
+  .hero__details {
+    width: 75%; } }
 
 .photostrip {
   position: relative;
@@ -7399,7 +7502,7 @@ dl {
     width: 100%;
     height: auto; }
 
-.owl-theme .owl-controls {
+.owl-photostrip .owl-controls {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -7408,16 +7511,16 @@ dl {
   left: 0;
   width: 100%;
   padding: 1rem; }
-  .owl-theme .owl-controls .owl-buttons div {
+  .owl-photostrip .owl-controls .owl-buttons div {
     font-size: 2rem;
     line-height: 1.5;
     background-color: #00b3bb;
     border-radius: 0;
     width: 3rem;
     height: 3rem; }
-    .owl-theme .owl-controls .owl-buttons div.owl-prev {
+    .owl-photostrip .owl-controls .owl-buttons div.owl-prev {
       float: left; }
-    .owl-theme .owl-controls .owl-buttons div.owl-next {
+    .owl-photostrip .owl-controls .owl-buttons div.owl-next {
       float: right; }
 
 .singlewalk__icons {
@@ -7429,7 +7532,7 @@ dl {
   .singlewalk__icons a {
     color: inherit; }
 
-.singlewalk__content h2 {
+.singlewalk__content h2, .singlewalk__sidebar h2 {
   font-size: 1rem;
   text-transform: uppercase; }
 
@@ -7472,6 +7575,16 @@ dl {
   font-style: italic;
   margin: 0;
   display: block; }
+
+.owl-carousel.owl-namecards .owl-controls {
+  position: absolute;
+  right: -.333rem;
+  top: -2.125rem;
+  margin-top: 0; }
+  .owl-carousel.owl-namecards .owl-controls .owl-page span {
+    background-color: #828282;
+    margin: 0.333rem 0.333rem;
+    border-radius: 0; }
 
 .ticketselect {
   background-color: #00b3bb;

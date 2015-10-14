@@ -28,12 +28,32 @@ var app = (function(document, $) {
 
 $(document).ready(function() {
 
-  $("#owl-photostrip").owlCarousel({
+  $( '#navtoggle' ).change(function() {
+    $('.pageheader').toggleClass('js-menus-are-open');
+  });
+
+  $('#owl-photostrip').owlCarousel({
     items : 4,
     lazyLoad : true,
     navigation : false,
-    navigationText:  ["<",">"],
+    navigationText:  ['<','>'],
     pagination: false
+  });
+
+  $('#owl-namecards').owlCarousel({
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      navigation:false,
+      //transitionStyle : 'fade'
+
+      // 'singleItem:true' is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
   });
 
 });

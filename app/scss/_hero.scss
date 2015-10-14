@@ -7,21 +7,30 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow:hidden;
-  max-height:15rem;
+  max-height:20rem;
   @media #{$medium} {
     max-height:25rem;
   }
   @media #{$large} {
     max-height: 40rem;
   }
+  @media #{$xlarge} {
+    max-height: 45rem;
+  }
+  @media #{$kurvanagy} {
+    max-height: 35rem;
+  }
   &:after {
     content:'';
     display: block;
-    padding-bottom: 66.666%;
+    padding-bottom: 75%;
     @media #{$medium} {
       padding-bottom:45%;
     }
     @media #{$large} {
+      padding-bottom: 40%;
+    }
+    @media #{$xlarge} {
       padding-bottom: 33.333%;
     }
   }
@@ -55,8 +64,10 @@
   }
 }
 .hero__details {
-  font-size: 1.125rem;
-  @media #{$xlarge} {
+  @media #{$medium} {
+    font-size: 1.125rem;
+  }
+  @media #{$large} {
     width:75%;
   }
 }

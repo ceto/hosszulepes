@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <section class="pagegeader">
+    <section class="pageheader">
       <div class="pageheader__inverse">
         <div class="row row--fullwidth">
           <div class="columns">
@@ -37,8 +37,10 @@
       </div>
       <div class="pageheader__main">
         <div class="row">
-          <div class="columns large-10 large-centered">
+          <div class="columns xlarge-10 xlarge-centered">
             <a href="#" class="sitelogo">hoszúlépés - járunk?</a>
+            <label class="navtoggle-label" for="navtoggle">Menü</label>
+            <input type="checkbox" id="navtoggle">
             <nav class="prinav">
               <ul class="prinav__menu">
                 <li><a href="#">Séta neked</a></li>
@@ -58,7 +60,7 @@
         <div class="hero__block">
           <div class="hero__text">
             <div class="row">
-              <div class="columns large-10 large-centered">
+              <div class="columns xlarge-10 xlarge-centered">
                 <h1 class="hero__title">Budapest kóser arca</h1>
                 <p class="hero__details">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ut repellat perspiciatis. Molestiae voluptatibus, sequi eligendi aperiam.
@@ -72,16 +74,18 @@
       </div>
     </header>
     <main role="main" class="singlewalk">
-      <div class="row singlewalk__icons">
-        <div class="columns large-10 large-centered">
-          ikonok
+      <div class="singlewalk__icons">
+        <div class="row">
+          <div class="columns xlarge-10 xlarge-centered">
+            ikonok
+          </div>
         </div>
       </div>
       <div class="row singlewalk__content">
-        <div class="columns large-10 large-centered">
+        <div class="columns xlarge-10 xlarge-centered">
           <div class="row">
-            <div class="columns medium-7 xlarge-8 singlewalk__maincontent">
-              <h2>Leírás</h2>
+            <div class="columns medium-7 xxlarge-8 singlewalk__maincontent">
+              <h2>Séta leírása</h2>
               <p>Nem érsz rá utazni 8000 kilométert, hogy megpillantsd a mesés Kínát, de megfordult már a fejedben? Akkor ez a séta neked szól. A helyi kínai kolónia a rendszerváltást követően az egykori Ganz művek környékén telepedett le, ahol a hírhedt kínai piac standjai mellett éttermeket, fűszerboltokat, utazási irodákat is fenntartanak, hogy otthon érezzék magukat az itt lakó ázsiaiak.</p>
               <a href="#dayselect" class="button hide-for-medium-up">Válassz időpontot</a>
               <h2>Hol és mikor?</h2>
@@ -96,37 +100,40 @@
                 <dd>3 500,- Ft (bruttó)</dd>
               </dl>
               <h2>Kivel járunk?</h2>
-              <div class="namecard panel">
-                <figure class="namecard__photo">
-                  <img src="../images/nora.jpg" alt="Balkányi Nóra">
-                </figure>
-                <h3 class="namecard__name"><a href="#">Balkányi Nóra</a></h3>
-                <p class="namecard__title">Újságíró</p>
-                <p class="namecard__descr">Semmire nem cserélném le ezt a várost. 26 év alatt távolról sem jártam be, de rajta vagyok a feladaton. Kötődöm egy padhoz a Király utcában, egy parkolóhoz a Dohány utcában, egy játszótérhez a Vérhalom téren.</p>
-                <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
-              </div>
-              <div class="namecard panel">
-                <figure class="namecard__photo">
-                  <img src="../images/peter.jpg" alt="Balkányi Nóra">
-                </figure>
-                <h3 class="namecard__name"><a href="#">Csunderlik Péter</a></h3>
-                <p class="namecard__title">Történész</p>
-                <p class="namecard__descr">Nem álmodni szeretném a jövőt hanem építeni fokról fokra derék kőműves szeretnék lenni, mérőónnal és acélkanállal.</p>
-                <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
-              </div>
-              <div class="namecard panel">
-                <figure class="namecard__photo">
-                  <img src="http://placehold.it/480x480/111111/1a1a1a?text=1:1" alt="Balkányi Nóra">
-                </figure>
-                <h3 class="namecard__name"><a href="#">Üveges Bence</a></h3>
-                <p class="namecard__title">Történelem tanár</p>
-                <p class="namecard__descr">Mert a város rengeteg történetet rejt. Számtalan generáció rótta az utcáit előttünk, és mind otthagytak magukból egy darabka történetet. Titkok és banalitások, tragédiák és vicces sztorik ott hevernek a lábunk előtt.</p>
-                <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
+
+              <div id="owl-namecards" class="owl-carousel owl-namecards">
+                <div class="namecard panel item">
+                  <figure class="namecard__photo">
+                    <img src="../images/nora.jpg" alt="Balkányi Nóra">
+                  </figure>
+                  <h3 class="namecard__name"><a href="#">Balkányi Nóra</a></h3>
+                  <p class="namecard__title">Újságíró</p>
+                  <p class="namecard__descr">Semmire nem cserélném le ezt a várost. 26 év alatt távolról sem jártam be, de rajta vagyok a feladaton. Kötődöm egy padhoz a Király utcában, egy parkolóhoz a Dohány utcában, egy játszótérhez a Vérhalom téren.</p>
+                  <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
+                </div>
+                <div class="namecard panel item">
+                  <figure class="namecard__photo">
+                    <img src="../images/peter.jpg" alt="Balkányi Nóra">
+                  </figure>
+                  <h3 class="namecard__name"><a href="#">Csunderlik Péter</a></h3>
+                  <p class="namecard__title">Történész</p>
+                  <p class="namecard__descr">Nem álmodni szeretném a jövőt hanem építeni fokról fokra derék kőműves szeretnék lenni, mérőónnal és acélkanállal.</p>
+                  <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
+                </div>
+                <div class="namecard panel item">
+                  <figure class="namecard__photo">
+                    <img src="http://placehold.it/480x480/111111/1a1a1a?text=1:1" alt="Balkányi Nóra">
+                  </figure>
+                  <h3 class="namecard__name"><a href="#">Üveges Bence</a></h3>
+                  <p class="namecard__title">Történelem tanár</p>
+                  <p class="namecard__descr">Mert a város rengeteg történetet rejt. Számtalan generáció rótta az utcáit előttünk, és mind otthagytak magukból egy darabka történetet. Titkok és banalitások, tragédiák és vicces sztorik ott hevernek a lábunk előtt.</p>
+                  <a href="#" class="namecard__morelink">bővebben a sétaveztőről</a>
+                </div>
               </div>
 
 
             </div><!-- /.singlewalk__maincontent -->
-            <div id="#dayselect" class="columns medium-5 xlarge-4 singlewalk__sidebar">
+            <div id="#dayselect" class="columns medium-5 xxlarge-4 singlewalk__sidebar">
               <h2>Le ne maradj! Válassz időpontot!</h2>
               <div class="ticketselect">
                 <div class="ticketselect__head">
@@ -173,15 +180,19 @@
           </div><!-- /.singlewalk__sidebar -->
         </div>
       </div>
-      <div class="row">
-        <div class="columns large-10 large-centered">
-          <h2>Galéria</h2>
+
+      <div class="singlewalk__maincontent">
+        <div class="row">
+          <div class="columns xlarge-10 xlarge-centered">
+            <h2>Galéria</h2>
+          </div>
         </div>
       </div>
+
       <section class="photostrip">
         <div class="row row--fullwidth collapse">
           <div class="columns">
-            <div id="owl-photostrip" class="owl-carousel">
+            <div id="owl-photostrip" class="owl-carousel owl-photostrip">
               <div class="item">
                 <img class="lazyOwl" data-src="http://lorempixel.com/640/480/sports/" alt="Lazy Owl Image">
               </div>
