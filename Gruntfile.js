@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 
         sass: {
             options: {
-                includePaths: ['<%= app %>/bower_components/foundation/scss']
+                includePaths: ['<%= app %>/bower_components/foundation/scss'],
+                sourceMap: true
             },
             dist: {
                 options: {
@@ -28,7 +29,11 @@ module.exports = function(grunt) {
             options: {
                 processors: [
                     require('autoprefixer')({browsers: 'last 2 versions'})
-                ]
+                ],
+                map: {
+                    inline: false, // save all sourcemaps as separate files...
+                    //annotation: 'dist/css/maps/' // ...to the specified directory
+                },
             },
             dist: {
                 src: '<%= app %>/css/app.css'
