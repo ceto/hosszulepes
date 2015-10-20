@@ -1,0 +1,22 @@
+.setagrid {
+  margin-bottom: 2rem;
+}
+
+.listofwalk__header {
+
+  padding:2em 0;
+  h2 {
+    margin:0;
+    padding:0;
+    font-size: rem-calc(16);
+    //line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.listofwalk__header__filter {
+  @media #{$medium} {
+    float:right;
+    text-align: right;
+  }
+}

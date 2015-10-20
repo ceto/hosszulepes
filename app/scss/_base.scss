@@ -14,6 +14,14 @@ html, body {
   }
 }
 
+.row.container {
+   @media #{$xlarge} {
+    padding:0 5%;
+  }
+  @media #{$xxlarge} {
+    padding:0 7%;
+  }
+}
 .row.row--fullwidth {
   @media #{$xlarge} {
     max-width: none;

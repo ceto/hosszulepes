@@ -92,7 +92,7 @@ $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
+$font-weight-normal: normal;
 $font-weight-bold: bold;
 
 $white: #ffffff;
@@ -395,7 +395,7 @@ $accordion-navigation-font-color: $white;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-block-grid-classes: $include-html-classes;
-// $include-xl-html-block-grid-classes: false;
+$include-xl-html-block-grid-classes: true;
 
 // We use this to control the maximum number of block grid elements per row
 // $block-grid-elements: 12;
@@ -462,7 +462,7 @@ $button-lrg: rem-calc(16);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-$button-font-weight: $font-weight-bold;
+$button-font-weight: $font-weight-normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -1345,13 +1345,13 @@ $panel-padding: rem-calc(16);
 
 // $include-html-tabs-classes: $include-html-classes;
 
-// $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: $silver;
-// $tabs-navigation-active-bg-color: $white;
+$tabs-navigation-padding: rem-calc(12);
+$tabs-navigation-bg-color: $primary-color;
+$tabs-navigation-active-bg-color: $white;
 // $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-// $tabs-navigation-font-color: $jet;
-// $tabs-navigation-active-font-color: $tabs-navigation-font-color;
-// $tabs-navigation-font-size: rem-calc(16);
+$tabs-navigation-font-color: $white;
+$tabs-navigation-active-font-color: $primary-color;
+$tabs-navigation-font-size: rem-calc(12);
 // $tabs-navigation-font-family: $body-font-family;
 
 // $tabs-content-margin-bottom: rem-calc(24);

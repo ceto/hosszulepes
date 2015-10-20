@@ -234,3 +234,18 @@ input[type="checkbox"]#navtoggle {
 
 }
 
+.inner__nav {
+  float:right;
+  margin-top: rem-calc(-44);
+  .tab-title {
+    margin-left: .125rem;
+    > a {
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.innernav__menu {
+
+}
