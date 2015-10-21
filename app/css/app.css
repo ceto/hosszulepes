@@ -3322,7 +3322,7 @@ button::-moz-focus-inner {
     margin: 0; }
     .f-dropdown li:hover,
     .f-dropdown li:focus {
-      background: #EEEEEE; }
+      background: #e4e3e3; }
     .f-dropdown li a {
       display: block;
       padding: 0.5rem;
@@ -4220,7 +4220,7 @@ label.error {
   right: 12px; }
   .joyride-close-tip:hover,
   .joyride-close-tip:focus {
-    color: #EEEEEE !important; }
+    color: #e4e3e3 !important; }
 
 .joyride-modal-bg {
   background: rgba(0, 0, 0, 0.5);
@@ -4679,7 +4679,7 @@ button:focus {
     line-height: 1; }
   .pricing-table .title {
     background-color: #333333;
-    color: #EEEEEE;
+    color: #e4e3e3;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -8070,7 +8070,8 @@ a.ticketselect__buynow {
   margin-bottom: 0; }
 
 .squarewalk__footer {
-  margin: 0 -1rem; }
+  margin: 0 -1rem;
+  background-color: #e4e3e3; }
   .squarewalk__footer:before,
   .squarewalk__footer:after {
     content: " ";
@@ -8163,7 +8164,10 @@ a.ticketselect__buynow {
   font-size: .875rem; }
 
 .squareevent__fig {
-  position: relative;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  width: 30.333%;
   margin: 0 0;
   padding: 0 0;
   display: none;
@@ -8174,15 +8178,14 @@ a.ticketselect__buynow {
   @media only screen and (min-width: 40em) {
     .squareevent__fig {
       display: block;
-      float: left;
-      width: 30.333%;
-      height: 9rem; } }
+      left: 10%;
+      bottom: 2.666rem; } }
   @media only screen and (min-width: 48em) {
     .squareevent__fig {
-      height: 8rem; } }
+      left: 8%; } }
   @media only screen and (min-width: 64em) {
     .squareevent__fig {
-      height: 10rem; } }
+      bottom: -1px; } }
   .squareevent__fig a {
     display: block;
     background-repeat: no-repeat;
@@ -8264,7 +8267,7 @@ a.ticketselect__buynow {
 
 .squareevent__footer {
   position: relative;
-  background-color: #fafafa;
+  background-color: #e4e3e3;
   width: 100%;
   float: left;
   clear: both; }

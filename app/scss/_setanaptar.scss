@@ -76,7 +76,10 @@
   font-size: .875rem;
 }
 .squareevent__fig {
-  position: relative;
+  position: absolute;
+  top:-1px;
+  bottom:-1px;
+  width: 30.333%;
   margin:0 0;
   padding:0 0;
   display:none;
@@ -86,16 +89,16 @@
 
   @media #{$medium} {
     display:block;
-    float:left;
-    width: 30.333%;
-    height: 9rem;
+    left:10%;
+    bottom:2.666rem;
   }
 
   @media #{$large} {
-    height: 8rem;
+    left:8%;
+
   }
   @media #{$xlarge} {
-    height: 10rem;
+    bottom:-1px;
   }
 
   a {
@@ -199,7 +202,7 @@
 .squareevent__footer{
   @include clearfix();
   position:relative;
-  background-color: $ghost;
+  background-color: $smoke;
   width:100%;
   float:left;
   clear:both;
