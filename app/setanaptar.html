@@ -70,7 +70,7 @@
         </div>
       </div>
     </header>
-    <main role="main" class="walkcalendark">
+    <main role="main" class="walkcalendar">
       <div class="row container">
         <div class="columns">
           <nav class="inner__nav">
@@ -81,17 +81,29 @@
           </nav>
         </div>
       </div>
-      <div class="row container">
+      <div class="row container walkcalendar__filterrow">
         <div class="columns">
           <header class="walkcalendar__header">
             <div class="row">
               <div class="columns medium-6"><h2>Válassz sétáink közül</h2></div>
-              <div class="columns medium-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </div>
+                <div class="columns medium-6">
+                  <div class="row">
+                    <div class="columns small-6">
+                    <input type="date" placeholder="Szűrés dátumra" value="12/15/2015">
+                  </div>
+                  <div class="columns small-6">
+                    <select name="x" id="#">
+                      <option value="x">Szűrés témára</option>
+                    </select>
+                  </div>
+                  </div>
+                </div>
             </div>
           </header>
-
+        </div>
+      </div>
+      <div class="row container">
+        <div class="columns">
           <section class="event__list">
 
             <p class="event__list__datedivider">

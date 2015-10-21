@@ -4626,7 +4626,7 @@ button:focus {
 .panel {
   border-style: solid;
   border-width: 1px;
-  border-color: #e3e3e3;
+  border-color: #d9d6d6;
   margin-bottom: 1.25rem;
   padding: 1rem;
   background: #ffffff;
@@ -4645,7 +4645,7 @@ button:focus {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #e3e3e3;
+    border-color: #d9d6d6;
     margin-bottom: 1.25rem;
     padding: 1rem;
     background: #ecfeff;
@@ -8070,8 +8070,7 @@ a.ticketselect__buynow {
   margin-bottom: 0; }
 
 .squarewalk__footer {
-  margin: 0 -1rem;
-  background-color: #e4e3e3; }
+  margin: 0 -1rem; }
   .squarewalk__footer:before,
   .squarewalk__footer:after {
     content: " ";
@@ -8090,15 +8089,15 @@ a.ticketselect__buynow {
   color: #fafafa;
   font-size: .875rem;
   line-height: 1;
-  padding: 0.875rem 0.75rem; }
+  padding: 0.875rem 1rem; }
   .squarewalk__more:hover, .squarewalk__more:focus, .squareevent__more:hover, .squareevent__more:focus {
     color: #ffffff;
     background-color: #008f96; }
 
 .walkcalendar__header {
-  padding: 2em 0; }
+  padding: 2rem 0 0rem; }
   .walkcalendar__header h2 {
-    margin: 0;
+    margin: 0 0 1rem;
     padding: 0;
     font-size: 1rem;
     text-transform: uppercase; }
@@ -8108,17 +8107,17 @@ a.ticketselect__buynow {
 
 .event__list__datedivider {
   text-transform: uppercase;
-  font-size: .875rem;
+  font-size: 1rem;
   line-height: 1;
   font-weight: 700;
-  margin: 2rem 0 0.75rem 0.125rem; }
+  margin: 2.5rem 0 0.75rem 0.125rem; }
   .event__list__datedivider span {
     font-weight: 300; }
 
 .squareevent {
   position: relative;
   padding: 0;
-  margin-bottom: .875rem; }
+  margin-bottom: 1.25rem; }
   .squareevent:before,
   .squareevent:after {
     content: " ";
@@ -8132,10 +8131,11 @@ a.ticketselect__buynow {
 
 .squareevent__datetime {
   float: left;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   width: 20%; }
   @media only screen and (min-width: 40em) {
     .squareevent__datetime {
+      padding: 1rem;
       display: block;
       float: left;
       width: 10%; } }
@@ -8160,14 +8160,13 @@ a.ticketselect__buynow {
 
 .squareevent__time {
   margin: 0;
-  font-weight: 700;
+  font-weight: normal;
   font-size: .875rem; }
 
 .squareevent__fig {
   position: absolute;
   top: -1px;
   bottom: -1px;
-  width: 30.333%;
   margin: 0 0;
   padding: 0 0;
   display: none;
@@ -8179,13 +8178,11 @@ a.ticketselect__buynow {
     .squareevent__fig {
       display: block;
       left: 10%;
-      bottom: 2.666rem; } }
+      width: 30%; } }
   @media only screen and (min-width: 48em) {
     .squareevent__fig {
-      left: 8%; } }
-  @media only screen and (min-width: 64em) {
-    .squareevent__fig {
-      bottom: -1px; } }
+      left: 8%;
+      width: 32%; } }
   .squareevent__fig a {
     display: block;
     background-repeat: no-repeat;
@@ -8210,28 +8207,21 @@ a.ticketselect__buynow {
   overflow: hidden; }
   @media only screen and (min-width: 40em) {
     .squareevent__header {
-      width: 59.666%;
-      height: 9rem;
-      padding-bottom: 0; } }
+      width: 60%;
+      padding-bottom: 3.5rem; } }
   @media only screen and (min-width: 48em) {
     .squareevent__header {
-      width: 61.666%;
-      height: 8rem;
+      width: 60%;
+      height: 10rem;
       padding-right: 6.25rem; }
       .squareevent__header:after {
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0;
-        height: 4rem;
+        bottom: 2.5rem;
+        height: 2rem;
         width: 100%;
-        background-image: linear-gradient(to top, #ffffff 0rem, rgba(255, 255, 255, 0) 100%); } }
-  @media only screen and (min-width: 64em) {
-    .squareevent__header {
-      height: 10rem;
-      width: 61.666%; }
-      .squareevent__header:after {
-        background-image: linear-gradient(to top, #ffffff 3rem, rgba(255, 255, 255, 0) 100%); } }
+        background-image: linear-gradient(to top, #ffffff 1rem, rgba(255, 255, 255, 0) 100%); } }
 
 .panel .squareevent__title {
   margin-top: 0;
@@ -8249,27 +8239,25 @@ a.ticketselect__buynow {
 
 .squareevent__price {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: .75rem;
   font-size: 1rem;
+  font-weight: 300;
   line-height: 1; }
   @media only screen and (min-width: 48em) {
     .squareevent__price {
       position: absolute;
       right: 0;
       z-index: 1;
-      bottom: .75rem;
-      width: 6.25rem;
-      text-align: center;
-      padding: 0 1rem; } }
-  @media only screen and (min-width: 64em) {
-    .squareevent__price {
-      bottom: 3.75rem; } }
+      margin-top: 0;
+      top: .5rem;
+      width: 6.75rem;
+      text-align: right;
+      padding: 0.5rem 1rem; } }
 
 .squareevent__footer {
   position: relative;
   background-color: #e4e3e3;
   width: 100%;
-  float: left;
   clear: both; }
   .squareevent__footer:before,
   .squareevent__footer:after {
@@ -8279,26 +8267,21 @@ a.ticketselect__buynow {
     clear: both; }
   @media only screen and (min-width: 40em) {
     .squareevent__footer {
-      float: right;
-      clear: right;
-      width: 90%; } }
-  @media only screen and (min-width: 48em) {
-    .squareevent__footer {
-      width: 92%; } }
-  @media only screen and (min-width: 64em) {
-    .squareevent__footer {
-      float: none;
       clear: none;
       position: absolute;
+      width: auto;
+      left: 40%;
       right: 0;
-      bottom: 0;
-      width: 61.666%; } }
+      bottom: 0; } }
+  @media only screen and (min-width: 48em) {
+    .squareevent__footer {
+      left: 40%; } }
 
 .squareevent__leftsomeplace {
   float: right;
   font-size: .75rem;
   line-height: 1;
   font-style: italic;
-  padding: 0.875rem 0.75rem;
+  padding: 1rem 0.75rem 0;
   color: #00b3bb; }
 /*# sourceMappingURL=app.css.map */

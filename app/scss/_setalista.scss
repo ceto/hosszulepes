@@ -109,7 +109,7 @@
 .squarewalk__footer {
   @include clearfix();
   margin:0 -1rem;
-  background-color: $smoke;
+  //background-color: $smoke;
 }
 
 
@@ -126,7 +126,7 @@
   color: $ghost;
   font-size: .875rem;
   line-height: 1;
-  padding:.875rem .75rem;
+  padding:.875rem 1rem;
   &:hover, &:focus {
     color:$button-font-color;
     background-color: scale-color($button-bg-color, $lightness: $button-function-factor);
