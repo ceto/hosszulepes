@@ -122,8 +122,8 @@ input[type="checkbox"]#navtoggle {
     &:not(:first-child):before {
       content: '|';
       display: inline-block;
-      padding-right:.25em;
-      padding-left: .25em;
+      padding-right:.333em;
+      padding-left: 0em;
     }
     @media #{$xlarge} {
       font-size: .875rem;
@@ -234,6 +234,74 @@ input[type="checkbox"]#navtoggle {
 
 }
 
+
+/****** Footer Nav ****/
+.sitefooter {
+  margin-top: 3rem;
+  @include clearfix();
+  background-color: $gainsboro;
+  position: relative;
+}
+.footernav__menu {
+  list-style-type: none;
+  margin:0;
+  padding:.75rem 0;
+  text-align: center;
+  @media #{$medium} {
+    text-align:left;
+  }
+  @media #{$xlarge} {
+    text-align:left;
+  }
+  li {
+    display: inline-block;
+    font-size: .75rem;
+    line-height: 1;
+    padding:0;
+    margin:0;
+    text-transform: uppercase;
+    &:not(:first-child):before {
+      content: '|';
+      display: inline-block;
+      padding-right:.333em;
+      padding-left: 0;
+    }
+    > a {
+        color:inherit;
+
+        &:hover, &:focus {
+          color:$primary-color;
+        }
+
+      }
+  }
+}
+
+.tothetop {
+  display: block;
+  width:3rem;
+  height:3rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: $primary-color;
+  color:$ghost;
+  margin:1rem auto 2rem;
+  &:hover, &:focus {
+    background-color:$button-bg-hover;
+    color:$white;
+  }
+  @media #{$medium} {
+    margin:0;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    height:auto;
+  }
+}
+
+
+/***** Tabbed Navigation at the bottom of hero ***/
 .inner__nav {
   float:right;
   margin-top: rem-calc(-44);

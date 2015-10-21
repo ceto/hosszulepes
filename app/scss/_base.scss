@@ -14,6 +14,9 @@ html, body {
   }
 }
 
+main {
+  position:relative;
+}
 .row.container {
    @media #{$xlarge} {
     padding:0 5%;
@@ -61,5 +64,28 @@ dl {
     &:hover {
       background-color: $white;
     }
+  }
+}
+
+.pagesection {
+  position: relative;
+}
+
+.pagesection--with-pulledup-header {
+  margin-top:5rem;
+}
+
+.pagesection__header {
+  h2,h3 {
+    margin:1rem 0;
+    line-height: 1;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .pagesection--with-pulledup-header & {
+    //background-color: red;
+    position: absolute;
+    top:-3rem;
   }
 }

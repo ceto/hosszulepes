@@ -1,0 +1,240 @@
+.walkcalendar__header {
+
+  padding:2em 0;
+  h2 {
+    margin:0;
+    padding:0;
+    font-size: rem-calc(16);
+    //line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.event__list {
+  margin:2rem 0 4rem;
+}
+.event__list__datedivider {
+  text-transform: uppercase;
+  font-size: .875rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 2rem 0 .75rem .125rem;
+
+  span {
+    font-weight: 300;
+  }
+}
+.squareevent {
+  @include clearfix();
+  position: relative;
+  padding:0;
+  margin-bottom: .875rem;
+
+  &:hover, &:focus {
+    .squareevent__fig a {
+      opacity: 1;
+      transform:scale(1.125);
+    }
+  }
+}
+
+.squareevent__datetime {
+  float:left;
+  padding: 1rem;
+  width:20%;
+  @media #{$medium} {
+    display:block;
+    float:left;
+    width: 10%;
+  }
+  @media #{$large} {
+    width: 8%;
+  }
+}
+
+.squareevent__date {
+  margin:0 0 .25rem;
+  display: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1.4;
+  font-weight: 700;
+  span {
+    display: block;
+    font-weight: 300;
+    font-size:.666rem;
+    color:$black;
+  }
+  .date-is-visible & {
+    display: block;
+  }
+
+}
+.squareevent__time {
+  margin:0;
+  font-weight: 700;
+  font-size: .875rem;
+}
+.squareevent__fig {
+  position: relative;
+  margin:0 0;
+  padding:0 0;
+  display:none;
+  background-color: $black;
+  overflow:hidden;
+  backface-visibility:hidden;
+
+  @media #{$medium} {
+    display:block;
+    float:left;
+    width: 30.333%;
+    height: 9rem;
+  }
+
+  @media #{$large} {
+    height: 8rem;
+  }
+  @media #{$xlarge} {
+    height: 10rem;
+  }
+
+  a {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('http://placehold.it/768x300/1a1a1a?text=Aspect+ratio:+3:1');
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    opacity:.666;
+    transition: all .4s ease;
+    img {
+      display: none;
+    }
+  }
+
+
+}
+
+.squareevent__header {
+  position: relative;
+  float:right;
+  width:80%;
+  padding: 1rem;
+  overflow: hidden;
+  @media #{$medium} {
+    width:59.666%;
+    height: 9rem;
+    padding-bottom: 0;
+  }
+
+  @media #{$large} {
+    width:61.666%;
+    height: 8rem;
+    &:after {
+      content:'';
+      position: absolute;
+      left:0;
+      bottom:0;
+      height:4rem;
+      width:100%;
+      //background-color: red;
+      background-image: linear-gradient(to top, $white 0rem, rgba($white,0) 100%);
+    }
+    padding-right: 6.25rem;
+
+  }
+
+  @media #{$xlarge} {
+    height:10rem;
+    width:61.666%;
+    &:after {
+      background-image: linear-gradient(to top, $white 3rem, rgba($white,0) 100%);
+    }
+
+  }
+}
+
+.panel .squareevent__title {
+  margin-top: 0;
+  margin-bottom: .875rem;
+  line-height: 1.2;
+  a {
+    color: inherit;
+    &:hover, &:focus {
+      color:$primary-color;
+    }
+  }
+}
+
+.squareevent__descr {
+  font-size: .875rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.squareevent__price {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1;
+
+  @media #{$large} {
+   position: absolute;
+   right:0;
+   z-index: 1;
+   bottom:.75rem;
+   width:6.25rem;
+   text-align: center;
+   padding:0 1rem;
+  }
+  @media #{$xlarge} {
+   bottom:3.75rem;
+  }
+}
+
+.squareevent__footer{
+  @include clearfix();
+  position:relative;
+  background-color: $ghost;
+  width:100%;
+  float:left;
+  clear:both;
+
+  @media #{$medium} {
+    float:right;
+    clear:right;
+    width:90%;
+  }
+
+  @media #{$large} {
+    width:92%;
+  }
+  @media #{$xlarge} {
+    float:none;
+    clear:none;
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:61.666%;
+  }
+}
+
+.squareevent__iconlist {
+
+}
+
+.squareevent__more {
+}
+
+.squareevent__leftsomeplace {
+  float:right;
+  font-size: .75rem;
+  line-height: 1;
+  font-style: italic;
+  padding:.875rem .75rem;
+  color:$primary-color;
+}

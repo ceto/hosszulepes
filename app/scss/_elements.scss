@@ -14,116 +14,6 @@
   }
 }
 
-.squarewalk {
-  position: relative;
-  margin:0 0;
-  padding-top: 0;
-  padding-bottom: 0;
-
-  //border:none;
-
-  a img {
-    display: block;
-    opacity:.666;
-    // filter:grayscale(1);
-    transition: all .4s ease;
-  }
-  &:hover, &:focus {
-    a img {
-      opacity: 1;
-      transform:scale(1.125);
-      // filter:grayscale(0);
-    }
-  }
-}
-
-.squarewalk__fig {
-  margin: 0 -1rem 1rem;
-  height:33.333%;
-  padding:0;
-  background-color: $black;
-  overflow: hidden;
-        backface-visibility:hidden;
-  a {
-
-    display: block;
-
-  }
-}
-
-
-.squarewalk__header {
-  position: relative;
-  overflow:hidden;
-  padding-bottom: 1rem;
-  // background-color: red;
-
-  @media #{$medium} {
-    height:8rem;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom:0;
-      left:0;
-      width:100%;
-      height:4.5rem;
-      background-image: linear-gradient(to top, $white 0, rgba($white,0) 4.5rem);
-    }
-  }
-
-  @media #{$xxlarge} {
-    height:9rem;
-  }
-
-
-}
-
-
-.squarewalk__title {
-  margin-top: 0;
-  line-height: 1.2;
-  a {
-    color: inherit;
-    &:hover, &:focus {
-      color:$primary-color;
-    }
-  }
-}
-
-
-
-.squarewalk__descr {
-  //background-color: red;
-  position: relative;
-  font-size: .875rem;
-  line-height: 1.4;
-  padding: 0rem;
-  margin-bottom: 0;
-}
-.squarewalk__footer {
-  @include clearfix();
-  margin:0 -1rem;
-}
-
-.squarewalk__iconlist {
-  float:left;
-  padding-left: 1rem;
-}
-
-.squarewalk__more {
-  float:right;
-  display: inline-block;
-  background-color: $primary-color;
-  color: $ghost;
-  font-size: 1.333rem;
-  line-height: 1;
-  padding:.5em .5em;
-  &:hover, &:focus {
-    color:$button-font-color;
-    background-color: scale-color($button-bg-color, $lightness: $button-function-factor);
-  }
-}
-
 
 .hirdetes {
   background-color: $black;
@@ -152,8 +42,8 @@
 }
 
 .hirdetes--full {
-  border-top: 1px soid $white;
-  border-bottom: 1px soid $white;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
   h2 {
     font-size: 2.5rem;
   }
