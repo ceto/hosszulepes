@@ -7431,7 +7431,9 @@ dl {
       background-color: #ffffff; }
 
 .pagesection {
-  position: relative; }
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .pagesection--with-pulledup-header {
   margin-top: 5rem; }
@@ -7587,10 +7589,10 @@ input[type="checkbox"]#navtoggle {
     .prinav {
       float: right;
       clear: none;
-      margin: .875rem 0 0; } }
+      margin: 1.25rem 0 0; } }
   @media only screen and (min-width: 80em) {
     .prinav {
-      margin: 1.125rem 0 0; } }
+      margin: 1.5rem 0 0; } }
 
 .prinav__menu {
   list-style-type: none;
@@ -7606,18 +7608,20 @@ input[type="checkbox"]#navtoggle {
     .prinav__menu {
       padding: 0;
       font-size: 1rem;
-      text-align: right; } }
+      text-align: right;
+      line-height: 1; } }
   .prinav__menu li {
     margin-bottom: .333em; }
     @media only screen and (min-width: 64em) {
       .prinav__menu li {
         display: inline-block;
         margin-bottom: 0;
-        padding-left: .5rem; } }
+        padding-left: 1.25em; } }
     @media only screen and (min-width: 80em) {
-      .prinav__menu li {
-        padding-left: .666rem; } }
+      .prinav__menu li a {
+        font-size: 0.9375rem; } }
     .prinav__menu li > a {
+      font-weight: normal;
       text-transform: uppercase;
       color: #333333; }
       .prinav__menu li > a:hover, .prinav__menu li > a:focus {
@@ -7698,16 +7702,8 @@ input[type="checkbox"]#navtoggle {
   position: relative;
   background-color: #000000;
   color: #fafafa;
-  background-size: cover;
-  background-image: url("http://placehold.it/2100x700/111111/1a1a1a?text=Aspect+ratio:+3:1");
-  background-repeat: no-repeat;
-  background-position: center;
   border-bottom: 1px solid #ffffff;
-  overflow: hidden;
-  max-height: 20rem; }
-  @media only screen and (min-width: 40em) {
-    .hero {
-      max-height: 25rem; } }
+  overflow: hidden; }
   @media only screen and (min-width: 48em) {
     .hero {
       max-height: 40rem; } }
@@ -7719,65 +7715,88 @@ input[type="checkbox"]#navtoggle {
       max-height: 35rem; } }
   .hero:after {
     content: '';
-    display: block;
-    padding-bottom: 75%; }
-    @media only screen and (min-width: 40em) {
-      .hero:after {
-        padding-bottom: 45%; } }
+    display: block; }
     @media only screen and (min-width: 48em) {
       .hero:after {
         padding-bottom: 40%; } }
     @media only screen and (min-width: 64em) {
       .hero:after {
         padding-bottom: 33.333%; } }
-
-.hero--narrow {
-  background-image: url("http://placehold.it/2100x210/111111/1a1a1a?text=Aspect+ratio:+10:1");
-  max-height: 12rem; }
-  @media only screen and (min-width: 40em) {
-    .hero--narrow {
-      max-height: 10rem; } }
+  .hero .owl-carousel .owl-controls {
+    margin: 0; }
+    .hero .owl-carousel .owl-controls .owl-pagination {
+      position: absolute;
+      bottom: 1%;
+      left: 0;
+      width: 100%; }
+      .hero .owl-carousel .owl-controls .owl-pagination .owl-page span {
+        border-radius: 0; }
   @media only screen and (min-width: 48em) {
-    .hero--narrow {
-      max-height: 10rem; } }
+    .hero .owl-carousel {
+      height: 100%; }
+      .hero .owl-carousel .owl-wrapper {
+        height: 100%; }
+        .hero .owl-carousel .owl-wrapper .owl-item {
+          height: 100%; } }
+
+@media only screen and (min-width: 48em) {
+  .hero--narrow {
+    max-height: 10rem; } }
+
+@media only screen and (min-width: 64em) {
+  .hero--narrow {
+    max-height: 10rem; } }
+
+@media only screen and (min-width: 100em) {
+  .hero--narrow {
+    max-height: 10rem; } }
+
+.hero--narrow:after {
+  content: '';
+  display: block; }
+  @media only screen and (min-width: 48em) {
+    .hero--narrow:after {
+      padding-bottom: 15%; } }
   @media only screen and (min-width: 64em) {
-    .hero--narrow {
-      max-height: 10rem; } }
-  @media only screen and (min-width: 100em) {
-    .hero--narrow {
-      max-height: 10rem; } }
-  .hero--narrow:after {
-    content: '';
-    display: block;
-    padding-bottom: 50%; }
-    @media only screen and (min-width: 40em) {
-      .hero--narrow:after {
-        padding-bottom: 20%; } }
-    @media only screen and (min-width: 48em) {
-      .hero--narrow:after {
-        padding-bottom: 15%; } }
-    @media only screen and (min-width: 64em) {
-      .hero--narrow:after {
-        padding-bottom: 12.5%; } }
+    .hero--narrow:after {
+      padding-bottom: 12.5%; } }
 
 .hero__content {
-  position: absolute;
-  height: 100%;
   width: 100%; }
+  @media only screen and (min-width: 48em) {
+    .hero__content {
+      position: absolute;
+      height: 100%;
+      width: 100%; } }
 
 .hero__block {
-  display: table;
-  height: 100%;
-  width: 100%; }
+  display: block;
+  width: 100%;
+  padding: 2rem 0;
+  background-size: cover;
+  background-image: url("http://placehold.it/2000x800/111111/1a1a1a?text=Aspect+ratio:+5:2");
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media only screen and (min-width: 48em) {
+    .hero__block {
+      display: table;
+      height: 100%;
+      padding: 0; } }
+  .hero--narrow .hero__block {
+    background-image: url("http://placehold.it/2100x210/111111/1a1a1a?text=Aspect+ratio:+10:1"); }
 
 .hero__text {
-  display: table-cell;
+  display: block;
   vertical-align: middle; }
+  @media only screen and (min-width: 48em) {
+    .hero__text {
+      display: table-cell; } }
 
 .hero__title {
   color: inherit;
   font-weight: 300;
-  margin-top: .875rem; }
+  margin-top: .875rem;
+  line-height: 1; }
   @media only screen and (min-width: 64em) {
     .hero__title {
       font-size: 3.75rem; } }
@@ -7792,8 +7811,14 @@ input[type="checkbox"]#navtoggle {
     font-size: 1.125rem; } }
 
 @media only screen and (min-width: 48em) {
-  .hero__details {
+  .hero__text:not(.text-center) .hero__details {
     width: 75%; } }
+
+@media only screen and (min-width: 48em) {
+  .text-center .hero__details {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .photostrip {
   position: relative;
@@ -8026,7 +8051,6 @@ a.ticketselect__buynow {
 
 .squarewalk__fig {
   margin: 0 -1rem 1rem;
-  height: 33.333%;
   padding: 0;
   background-color: #000000;
   overflow: hidden;
@@ -8070,7 +8094,8 @@ a.ticketselect__buynow {
   margin-bottom: 0; }
 
 .squarewalk__footer {
-  margin: 0 -1rem; }
+  margin: 0 -1rem;
+  background-color: #e4e3e3; }
   .squarewalk__footer:before,
   .squarewalk__footer:after {
     content: " ";
@@ -8131,12 +8156,11 @@ a.ticketselect__buynow {
 
 .squareevent__datetime {
   float: left;
-  padding: 1rem 0 1rem 1rem;
-  width: 20%; }
+  padding: 1rem 0 0;
+  width: 20%;
+  text-align: center; }
   @media only screen and (min-width: 40em) {
     .squareevent__datetime {
-      padding: 1rem;
-      display: block;
       float: left;
       width: 10%; } }
   @media only screen and (min-width: 48em) {
@@ -8144,10 +8168,10 @@ a.ticketselect__buynow {
       width: 8%; } }
 
 .squareevent__date {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.5rem;
   display: none;
   text-transform: uppercase;
-  font-size: .75rem;
+  font-size: .875rem;
   line-height: 1.4;
   font-weight: 700; }
   .squareevent__date span {
@@ -8159,9 +8183,12 @@ a.ticketselect__buynow {
     display: block; }
 
 .squareevent__time {
-  margin: 0;
-  font-weight: normal;
-  font-size: .875rem; }
+  margin: .125rem 0 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1; }
+  .date-is-visible .squareevent__time {
+    font-size: .875rem; }
 
 .squareevent__fig {
   position: absolute;
@@ -8213,13 +8240,13 @@ a.ticketselect__buynow {
     .squareevent__header {
       width: 60%;
       height: 10rem;
-      padding-right: 6.25rem; }
+      padding-right: 15%; }
       .squareevent__header:after {
         content: '';
         position: absolute;
         left: 0;
         bottom: 2.5rem;
-        height: 2rem;
+        height: 1.5rem;
         width: 100%;
         background-image: linear-gradient(to top, #ffffff 1rem, rgba(255, 255, 255, 0) 100%); } }
 
@@ -8231,6 +8258,16 @@ a.ticketselect__buynow {
     color: inherit; }
     .panel .squareevent__title a:hover, .panel .squareevent__title a:focus {
       color: #00b3bb; }
+    @media only screen and (min-width: 40em) {
+      .panel .squareevent__title a {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; } }
+  @media only screen and (min-width: 40em) {
+    .panel .squareevent__title {
+      font-size: 1.25rem;
+      margin-bottom: .5rem; } }
 
 .squareevent__descr {
   font-size: .875rem;
@@ -8240,7 +8277,7 @@ a.ticketselect__buynow {
 .squareevent__price {
   display: inline-block;
   margin-top: .75rem;
-  font-size: 1rem;
+  font-size: 1.333rem;
   font-weight: 300;
   line-height: 1; }
   @media only screen and (min-width: 48em) {
@@ -8250,7 +8287,6 @@ a.ticketselect__buynow {
       z-index: 1;
       margin-top: 0;
       top: .5rem;
-      width: 6.75rem;
       text-align: right;
       padding: 0.5rem 1rem; } }
 
@@ -8284,4 +8320,10 @@ a.ticketselect__buynow {
   font-style: italic;
   padding: 1rem 0.75rem 0;
   color: #00b3bb; }
+
+.homepage {
+  padding: 4rem 0; }
+
+.homepage__topwalks {
+  background-color: #ffffff; }
 /*# sourceMappingURL=app.css.map */

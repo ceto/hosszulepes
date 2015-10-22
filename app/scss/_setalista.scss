@@ -46,7 +46,6 @@
 
 .squarewalk__fig {
   margin: 0 -1rem 1rem;
-  height:33.333%;
   padding:0;
   background-color: $black;
   overflow: hidden;
@@ -109,7 +108,7 @@
 .squarewalk__footer {
   @include clearfix();
   margin:0 -1rem;
-  //background-color: $smoke;
+  background-color: $smoke;
 }
 
 

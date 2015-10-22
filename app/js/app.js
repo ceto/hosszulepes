@@ -56,4 +56,30 @@ $(document).ready(function() {
 
   });
 
+
+  $(document).ready(function() {
+
+  $("#owl-homeslider").owlCarousel({
+
+      //navigation : true, // Show next and prev buttons
+      pagination : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoHeight : true,
+      //transitionStyle: 'fade',
+      autoPlay : true,
+      stopOnHover : true,
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
+});
+
 });

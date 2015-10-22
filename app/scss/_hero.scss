@@ -2,15 +2,12 @@
   position: relative;
   background-color: $black;
   color:$ghost;
-  background-size: cover;
-  background-image: url('http://placehold.it/2100x700/111111/1a1a1a?text=Aspect+ratio:+3:1');
-  background-repeat: no-repeat;
-  background-position: center;
+
   border-bottom: 1px solid $white;
   overflow:hidden;
-  max-height:20rem;
+  //max-height:20rem;
   @media #{$medium} {
-    max-height:25rem;
+    //max-height:25rem;
   }
   @media #{$large} {
     max-height: 40rem;
@@ -24,9 +21,9 @@
   &:after {
     content:'';
     display: block;
-    padding-bottom: 75%;
+    //padding-bottom: 75%;
     @media #{$medium} {
-      padding-bottom:45%;
+      //padding-bottom:45%;
     }
     @media #{$large} {
       padding-bottom: 40%;
@@ -35,14 +32,46 @@
       padding-bottom: 33.333%;
     }
   }
+
+  .owl-carousel {
+    .owl-controls {
+      margin:0;
+
+     .owl-pagination {
+        position:absolute;
+        bottom:1%;
+        left:0;
+        width:100%;
+        .owl-page span {
+          border-radius:0;
+        }
+      }
+
+    }
+  }
+
+  @media #{$large} {
+    .owl-carousel {
+      height: 100%;
+      .owl-wrapper {
+        height:100%;
+        .owl-item {
+          height:100%;
+        }
+      }
+
+
+
+
+    }
+  }
 }
 
 
 .hero--narrow {
-  background-image: url('http://placehold.it/2100x210/111111/1a1a1a?text=Aspect+ratio:+10:1');
-  max-height:12rem;
+  //max-height:12rem;
   @media #{$medium} {
-    max-height:10rem;
+    //max-height:10rem;
   }
   @media #{$large} {
     max-height: 10rem;
@@ -56,9 +85,9 @@
   &:after {
     content:'';
     display: block;
-    padding-bottom: 50%;
+    //padding-bottom: 50%;
     @media #{$medium} {
-      padding-bottom:20%;
+      //padding-bottom:20%;
     }
     @media #{$large} {
       padding-bottom: 15%;
@@ -70,21 +99,44 @@
 }
 
 .hero__content {
-  position: absolute;
-  height:100%;
   width:100%;
   //background-color: rgba($primary-color,.125);
+  @media #{$large} {
+    position: absolute;
+    height:100%;
+    width:100%;
+  }
 }
 
 .hero__block {
-  display:table;
-  height: 100%;
+  display:block;
   width: 100%;
+  padding:2rem 0;
+  background-size: cover;
+  background-image: url('http://placehold.it/2000x800/111111/1a1a1a?text=Aspect+ratio:+5:2');
+  background-repeat: no-repeat;
+  background-position: center;
+  @media #{$large} {
+    display:table;
+    height: 100%;
+    padding:0;
+  }
+
+  .hero--narrow & {
+    background-image: url('http://placehold.it/2100x210/111111/1a1a1a?text=Aspect+ratio:+10:1');
+  }
+
+
 }
 
+
+
 .hero__text {
-  display: table-cell;
+  display: block;
   vertical-align: middle;
+  @media #{$large} {
+    display:table-cell;
+  }
 
 }
 
@@ -92,6 +144,7 @@
   color:inherit;
   font-weight: 300;
   margin-top:.875rem;
+  line-height:1;
 
   @media #{$xlarge} {
     font-size: 3.75rem;
@@ -108,7 +161,16 @@
   @media #{$medium} {
     font-size: 1.125rem;
   }
-  @media #{$large} {
-    width:75%;
+  .hero__text:not(.text-center) & {
+    @media #{$large} {
+      width:75%;
+    }
+  }
+  .text-center & {
+    @media #{$large} {
+      width:75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
