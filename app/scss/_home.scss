@@ -1,5 +1,4 @@
 .homepage {
-  padding:4rem 0;
 }
 
 .homepage__topevents {
@@ -8,4 +7,74 @@
 
 .homepage__topwalks {
   background-color: $white;
+}
+
+.homepage__news {
+  background-color: $white;
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+.squarepost {
+  @include clearfix();
+  position: relative;
+  margin-bottom: 2rem;
+}
+.squarepost__fig {
+  margin:0;
+  padding:0;
+  float:left;
+  width:33.333%;
+}
+
+.squarepost__header {
+  float:right;
+  width:66.666%;
+  padding-left:.75rem;
+  @media #{$large} {
+  //   max-height: 5.666rem;
+  //   overflow: hidden;
+  //   background-color: red;
+  }
+}
+
+.squarepost__time {
+  font-size: .666rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  display: block;
+
+}
+.squarepost__title {
+  margin-top: 0;
+  margin-bottom: .333em;
+  a {
+
+  }
+  @media #{$medium} {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+.squarepost__excerpt {
+  margin:0 0;
+  font-size: .75rem;
+  line-height: 1.4;
+}
+
+.squarepost__more {
+  font-size: .5rem;
+  line-height: 1;
+  background-color: $primary-color;
+  display: inline-block;
+  color:$white;
+  padding:.333em .5em;
+  position: absolute;
+  //bottom:0;
+  top:1rem;
+  right:0;
+  &:hover, &:focus {
+    color:$white;
+    background-color: $button-bg-hover;
+  }
 }

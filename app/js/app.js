@@ -59,7 +59,7 @@ $(document).ready(function() {
 
   $(document).ready(function() {
 
-  $("#owl-homeslider").owlCarousel({
+  $('#owl-homeslider').owlCarousel({
 
       //navigation : true, // Show next and prev buttons
       pagination : true,

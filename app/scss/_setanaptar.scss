@@ -250,7 +250,7 @@
 }
 
 .squareevent__iconlist {
-
+  max-width:33.333%;
 }
 
 .squareevent__more {
@@ -261,6 +261,6 @@
   font-size: .75rem;
   line-height: 1;
   font-style: italic;
-  padding:1rem .75rem 0;
+  padding:1rem .75rem 0 0;
   color:$primary-color;
 }

@@ -45,11 +45,12 @@ dl {
     position: absolute;
     .icon {
       color:$primary-color;
-      width:1.5rem;
       display: inline-block;
       text-align: center;
-      font-style: normal;
-      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: .125;
+      margin-right:.666em;
+      transform:translateY(.125em);
     }
 
   }

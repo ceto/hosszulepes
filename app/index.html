@@ -64,7 +64,7 @@
 
 
           <div class="hero__block" style="background-image:url(images/csatornafedel.jpg);">
-            <div class="hero__text text-center">
+            <div class="hero__text">
               <div class="row container">
                 <div class="columns">
                   <h1 class="hero__title">Cseh Tamás is gyalog kezdte</h1>
@@ -79,7 +79,7 @@
 
 
           <div class="hero__block" style="background-image:url(images/lepcsohaz.jpg);">
-            <div class="hero__text text-center">
+            <div class="hero__text">
               <div class="row container">
                 <div class="columns">
                   <h1 class="hero__title">Elfoglalt vagy? Válassz sétát dátum szerint.</h1>
@@ -93,7 +93,7 @@
           </div>
 
           <div class="hero__block">
-            <div class="hero__text text-center">
+            <div class="hero__text">
               <div class="row container">
                 <div class="columns">
                   <h1 class="hero__title">Annyi mindent szeretnék még elmondani</h1>
@@ -112,12 +112,47 @@
     </header>
     <main role="main" class="homepage">
 
-      <div class="row container">
-        <div class="columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sit porro voluptas, commodi eius architecto adipisci fuga excepturi ad! Similique quaerat ducimus accusamus consequatur tempore ab pariatur eum exercitationem quidem.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam odit ipsa, id repellat delectus, porro obcaecati? Inventore quia, magni, atque adipisci natus eligendi, beatae possimus voluptatum quae nam excepturi.</p>
+      <section class="homepage__news pagesection">
+      <header class="pagesection__header">
+        <div class="row container">
+          <div class="columns"><h2>Sétáló hírek</h2></div>
         </div>
-      </div>
+      </header>
+
+        <div class="row container">
+          <div class="columns large-6">
+            <article class="squarepost">
+              <figure class="squarepost__fig">
+                <a href="#">
+                 <img src="http://lorempixel.com/500/280" alt="Design túrák budapesten">
+                </a>
+              </figure>
+              <header class="squarepost__header">
+                <time class="squarepost__time">2015. április 12.</time>
+                <h3 class="squarepost__title"><a href="#">Design túrák Budapesten</a></h3>
+                <p class="squarepost__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem itaque ullam eum quisquam molestiae repudiandae.</p>
+                <a href="#" class="squarepost__more"><i class="icon icon--arrow-right"></i></a>
+              </header>
+            </article>
+          </div>
+          <div class="columns large-6">
+            <article class="squarepost">
+              <figure class="squarepost__fig">
+                <a href="#">
+                 <img src="http://lorempixel.com/500/280/city" alt="Legújabb Gasztrosétánk a croissant nyomában">
+                </a>
+              </figure>
+              <header class="squarepost__header">
+                <time class="squarepost__time">2015. április 12.</time>
+                <h3 class="squarepost__title"><a href="#">Legújabb Gasztrosétánk a croissant nyomában</a></h3>
+                <p class="squarepost__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quidem itaque ullam eum quisquam molestiae repudiandae.</p>
+                <a href="#" class="squarepost__more"><i class="icon icon--arrow-right"></i></a>
+              </header>
+            </article>
+          </div>
+          </div>
+        </div>
+      </section>
 
       <section class="homepage__topevents pagesection">
         <div class="row container">
@@ -125,32 +160,6 @@
             <header class="pagesection__header">
               <h2>Ezekre még odaérsz</h2>
             </header>
-            <article class="squareevent panel date-is-visible">
-              <div class="squareevent__datetime">
-                <p class="squareevent__date">Szep.29. <span class="daytext">Csütörtök</span></p>
-                <p class="squareevent__time">12:30</p>
-              </div>
-              <figure class="squareevent__fig">
-                <a href="setasingle.html" style="background-image: url('http://lorempixel.com/740/300/city');">
-                  <img src="http://lorempixel.com/600/200" alt="">
-                </a>
-              </figure>
-              <header class="squareevent__header">
-                <h3 class="squareevent__title"><a href="setasingle.html">Panamák Budapesten - politikai bűnesetek egykor és ma</a></h3>
-                <p class="squareevent__descr">Miben különböztek a Monarchia korának politikusai  a maiaktól, hogyan ügyeskedtek eleink.</p>
-                <span class="squareevent__price">2 700,-</span>
-              </header>
-              <footer class="squareevent__footer">
-                <ul class="iconlist squareevent__iconlist">
-                  <li><a href="#">a</a></li>
-                  <li><a href="#">b</a></li>
-                  <li><a href="#">c</a></li>
-                  <li><a href="#">d</a></li>
-                </ul>
-                <a class="squareevent__more" href="setasingle.html" class="">Jegyvásárlás</a>
-                <span class="squareevent__leftsomeplace">Már csak 1 hely van</span>
-              </footer>
-            </article>
 
             <article class="squareevent panel date-is-visible">
               <div class="squareevent__datetime">
@@ -169,10 +178,10 @@
               </header>
               <footer class="squareevent__footer">
                 <ul class="iconlist squareevent__iconlist">
-                  <li><a href="#">a</a></li>
-                  <li><a href="#">b</a></li>
-                  <li><a href="#">c</a></li>
-                  <li><a href="#">d</a></li>
+                  <li><a href="#" title="Kortárs"><i class="icon icon--kortars"></i></a></li>
+                  <li><a href="#" title="Történelmi"><i class="icon icon--tortenelmi"></i></a></li>
+                  <li><a href="#" title="Kutyabarát"><i class="icon icon--kutyabarat"></i></a></li>
+                  <li><a href="#" title="Zsidó"><i class="icon icon--zsido"></i></a></li>
                 </ul>
                 <a class="squareevent__more" href="setasingle.html" class="">Jegyvásárlás</a>
               </footer>
@@ -195,10 +204,8 @@
               </header>
               <footer class="squareevent__footer">
                 <ul class="iconlist squareevent__iconlist">
-                  <li><a href="#">a</a></li>
-                  <li><a href="#">b</a></li>
-                  <li><a href="#">c</a></li>
-                  <li><a href="#">d</a></li>
+                  <li><a href="#" title="Kutyabarát"><i class="icon icon--kutyabarat"></i></a></li>
+                  <li><a href="#" title="Zsidó"><i class="icon icon--zsido"></i></a></li>
                 </ul>
                 <a class="squareevent__more" href="setasingle.html" class="">Jegyvásárlás</a>
               </footer>
@@ -225,12 +232,12 @@
                   </header>
                   <footer class="squarewalk__footer">
                     <ul class="iconlist squarewalk__iconlist">
-                      <li><a href="#">a</a></li>
-                      <li><a href="#">b</a></li>
-                      <li><a href="#">c</a></li>
-                      <li><a href="#">d</a></li>
+                      <li><a href="#" title="Kortárs"><i class="icon icon--gasztro"></i></a></li>
+                      <li><a href="#" title="Történelmi"><i class="icon icon--tortenelmi"></i></a></li>
+                      <li><a href="#" title="Kutyabarát"><i class="icon icon--kutyabarat"></i></a></li>
+                      <li><a href="#" title="Zsidó"><i class="icon icon--zsido"></i></a></li>
                     </ul>
-                    <a class="squarewalk__more" href="setasingle.html" class="">go</a>
+                    <a class="squarewalk__more" href="setasingle.html"><i class="icon icon--arrow-right"></i></a>
                   </footer>
                 </article>
               </li>
@@ -245,11 +252,9 @@
                   </header>
                   <footer class="squarewalk__footer">
                     <ul class="iconlist squarewalk__iconlist">
-                      <li><a href="#">a</a></li>
-                      <li><a href="#">b</a></li>
-                      <li><a href="#">c</a></li>
+                      <li><a href="#" title="Zsidó"><i class="icon icon--zsido"></i></a></li>
                     </ul>
-                    <a class="squarewalk__more" href="setasingle.html" class="">go</a>
+                    <a class="squarewalk__more" href="setasingle.html"><i class="icon icon--arrow-right"></i></a>
                   </footer>
                 </article>
               </li>
@@ -264,10 +269,10 @@
                   </header>
                   <footer class="squarewalk__footer">
                     <ul class="iconlist squarewalk__iconlist">
-                      <li><a href="#">c</a></li>
-                      <li><a href="#">d</a></li>
+                      <li><a href="#" title="Kortárs"><i class="icon icon--kortars"></i></a></li>
+                      <li><a href="#" title="Zsidó"><i class="icon icon--zsido"></i></a></li>
                     </ul>
-                    <a class="squarewalk__more" href="setasingle.html" class="">go</a>
+                    <a class="squarewalk__more" href="setasingle.html"><i class="icon icon--arrow-right"></i></a>
                   </footer>
                 </article>
               </li>
@@ -281,6 +286,17 @@
 
     </main>
 
+    <aside class="hirdetes hirdetes--full" style="background-image:url(images/csatornafedel.jpg);">
+      <div class="row container">
+        <div class="columns medium-10 medium-centered">
+          <div class="hirdetes__content">
+            <h2>Végy egy sétajegyet!</h2>
+            <p>Tudtad, hogy a sétajeggyel bármikor és bárhová elmehetsz egy sétára? Na és a legjobb ajándék.</p>
+            <a href="#" class="button small">Sétajegy vásárlása</a>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <footer class="sitefooter" role="contentinfo">
       <div class="row row--fullwidth">
