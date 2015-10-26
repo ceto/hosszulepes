@@ -37,7 +37,8 @@ $(document).ready(function() {
     lazyLoad : true,
     navigation : false,
     navigationText:  ['<','>'],
-    pagination: false
+    pagination: false,
+    autoHeight : true
   });
 
   $('#owl-namecards').owlCarousel({
@@ -45,6 +46,13 @@ $(document).ready(function() {
       paginationSpeed : 400,
       singleItem:true,
       navigation:false,
+      pagination:true,
+      // responsive:{
+      //   0:{
+      //       items:1,
+      //       //nav:true
+      //   },
+      // }
       //transitionStyle : 'fade'
 
       // 'singleItem:true' is a shortcut for:
@@ -55,9 +63,6 @@ $(document).ready(function() {
       // itemsMobile : false
 
   });
-
-
-  $(document).ready(function() {
 
   $('#owl-homeslider').owlCarousel({
 
@@ -70,6 +75,12 @@ $(document).ready(function() {
       //transitionStyle: 'fade',
       autoPlay : true,
       stopOnHover : true,
+      // responsive:{
+      //   0:{
+      //       items:1,
+      //       //nav:true
+      //   },
+      // }
 
       // "singleItem:true" is a shortcut for:
       // items : 1,
@@ -80,6 +91,16 @@ $(document).ready(function() {
 
   });
 
-});
+  var $setagrid = $('.setagrid').isotope({
+    itemSelector: '.masonry__elem',
+    layoutMode: 'masonry'
+  });
+
+  $('.tagselect').on( 'change', function() {
+    var filterValue = this.value;
+    $setagrid.isotope({ filter: filterValue });
+  });
+
+
 
 });

@@ -81,22 +81,37 @@
           </nav>
         </div>
       </div>
-      <div class="row container">
+
+      <div class="row fullwidth listofwalk__filterrow">
         <div class="columns">
           <header class="listofwalk__header">
-            <div class="row">
-              <div class="columns medium-6"><h2>Válassz sétáink közül</h2></div>
-              <div class="columns medium-6">
-                <div class="listofwalk__header__filter">
-                  ikonok
+            <div class="row container">
+              <div class="columns medium-6 large-4 xxlarge-6"><h2>Válassz sétáink közül</h2></div>
+              <div class="columns medium-6 large-8 xxlarge-6">
+                <div class="row filters">
+                  <div class="columns medium-6 medium-push-6">
+                    <select class="tagselect" name="tagselect" id="tagselect">
+                      <option value="*">Összes séta</option>
+                      <option value=".gasztro"><i class="icon icon--gasztro"></i> Gasztronómia</option>
+                      <option value=".zsido"><i class="icon icon--zsido"></i> Zsidó</option>
+                      <option value=".felnott"><i class="icon icon--felnott"></i> Felnőtt</option>
+                      <option value=".kortars"><i class="icon icon--kortars"></i> Kortárs</option>
+                      <option value=".tortenelmi"><i class="icon icon--tortenelmi"></i> Történelmi</option>
+                      <option value=".kutyabarat"><i class="icon icon--kutyabarat"></i> Kutyabarát</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
           </header>
+        </div>
+      </div>
 
+      <div class="row container listofwalk__walklist">
+        <div class="columns">
           <ul class="setagrid block-grid-1 medium-block-grid-2 large-block-grid-3">
-            <li>
-              <article class="squarewalk panel">
+            <li class="masonry__elem kutyabarat tortenelmi zsido gasztro felnott">
+              <article class="zsido gasztro felnott kortars squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/750/300" alt=""></a>
                 </figure>
@@ -114,7 +129,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem zsido gasztro felnott">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200/business" alt=""></a>
@@ -131,7 +146,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kutyabarat tortenelmi zsido">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200/people" alt=""></a>
@@ -149,7 +164,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kutyabarat felnott">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200/city" alt=""></a>
@@ -166,7 +181,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kutyabarat">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200/nature" alt=""></a>
@@ -184,7 +199,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kortars">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200/food" alt=""></a>
@@ -201,7 +216,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kortars felnott">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/1000/400" alt=""></a>
@@ -219,7 +234,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kutyabarat tortenelmi zsido gasztro felnott">
               <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://lorempixel.com/500/200" alt=""></a>
@@ -237,7 +252,7 @@
                 </footer>
               </article>
             </li>
-            <li>
+            <li class="masonry__elem kutyabarat gasztro felnott">
                <article class="squarewalk panel">
                 <figure class="squarewalk__fig">
                   <a href="setasingle.html"><img src="http://placehold.it/1000x400/1a1a1a/?text=Aspect+ratio:+5x2" alt=""></a>
@@ -296,6 +311,7 @@
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
     <script src="bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

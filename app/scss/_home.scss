@@ -68,10 +68,10 @@
   background-color: $primary-color;
   display: inline-block;
   color:$white;
-  padding:.333em .5em;
+  padding:.333em .333em;
   position: absolute;
   //bottom:0;
-  top:1rem;
+  top:0;
   right:0;
   &:hover, &:focus {
     color:$white;

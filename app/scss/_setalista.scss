@@ -2,23 +2,66 @@
   margin-bottom: 2rem;
 }
 
-.listofwalk__header {
+.row.listofwalk__filterrow {
+  padding:2rem 0 0;
 
-  padding:2em 0;
+
+}
+
+.listofwalk__header {
   h2 {
-    margin:0;
+    margin:.5rem 0 .5rem .125rem;
     padding:0;
     font-size: rem-calc(16);
-    //line-height: 1.2;
     text-transform: uppercase;
+   }
+}
+
+.filters {
+  position: relative;
+  z-index: 1;
+  padding-bottom: .5rem;
+  //text-align: right;
+  @media #{$medium} {
+    text-align: right;
+  }
+
+  select {
+    display: inline-block;
+    margin: 0;
+    border:none;
+    width:8em;
+    padding:0 1.5rem 0 .5rem;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 700;
+    &:hover {
+      cursor:pointer;
+    }
+    &.dateselect {
+      width:10em;
+      margin-right: .5rem;
+      display: none;
+    }
+
+  }
+
+  input[type="date"] {
+    display: inline-block;
+    width:auto;
+    border:none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding:0 0 0 0;
+    margin: 0;
+    text-align: right;
   }
 }
 
-.listofwalk__header__filter {
-  @media #{$medium} {
-    float:right;
-    text-align: right;
-  }
+.row.listofwalk__walklist {
+  @include clearfix();
+
 }
 
 .squarewalk {
@@ -45,15 +88,26 @@
 }
 
 .squarewalk__fig {
+  position: relative;
   margin: 0 -1rem 1rem;
   padding:0;
-  background-color: $black;
   overflow: hidden;
   backface-visibility:hidden;
   a {
-
+    backface-visibility:hidden;
+    background-color: $black;
     display: block;
+    position: absolute;
+    left:0;
+    width:100%;
+    top:0;
+    height:100%;
+  }
 
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: 40%;
   }
 }
 

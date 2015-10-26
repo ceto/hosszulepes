@@ -53,10 +53,13 @@
   @media #{$large} {
     .owl-carousel {
       height: 100%;
-      .owl-wrapper {
+      .owl-wrapper-outer {
         height:100%;
-        .owl-item {
+        .owl-wrapper {
           height:100%;
+          .owl-item {
+            height:100%;
+          }
         }
       }
 

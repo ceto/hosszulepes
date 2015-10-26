@@ -146,7 +146,16 @@ module.exports = function(grunt) {
                 exclude: [
                     'modernizr',
                     'jquery-placeholder',
-                    'foundation'
+                    'foundation',
+                    'masonry',
+                    'get-size',
+                    'outlayer',
+                    'matches-selector',
+                    'fizzy-ui-utils',
+                    'get-style-property',
+                    'eventie',
+                    'doc-ready',
+                    'eventEmitter'
                 ]
             }
         }
