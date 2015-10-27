@@ -1,3 +1,99 @@
+.row.fixedheight {
+}
+.widget {
+  min-height: 50vh;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  @media #{$medium} {
+    min-height: rem-calc(380);
+  }
+}
+
+.widget__title {
+  text-align: left;
+  position: absolute;
+  bottom: 100%;
+  left:$column-gutter/2;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1;
+  //margin:0 0 .5rem;
+}
+
+.widget--withbg {
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: cover;
+  background-image: url('http://placehold.it/800x800/111111/1a1a1a?text=Aspect+ratio:+1:1');
+  background-repeat: no-repeat;
+  background-position: center center;
+  color:$white;
+  h2 {
+    color:inherit;
+    @media #{$medium} {
+      font-size:2.25rem;
+      line-height: 1.4
+    }
+
+  }
+  p {
+    color:inherit;
+  }
+}
+
+.widget__inner {
+
+  .fixedheight & {
+    padding:$column-gutter/2 $column-gutter;
+    position: absolute;
+    left:$column-gutter/2;
+    right:$column-gutter/2;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+  .fixedheight .widget--with-bg & {
+    left:0;
+    right:0;
+  }
+}
+
+.content {
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+.filterrow {
+  padding:2rem 0 .125rem;
+  &.is_sticked {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid $smoke;
+    z-index:2;
+    padding:.5rem 0 0;
+    background-color: $white;
+
+  }
+
+  .filterrow__title {
+    margin:.5rem 0 .5rem .125rem;
+    padding:0;
+    font-size: rem-calc(16);
+    text-transform: uppercase;
+  }
+
+  .inlinemenu {
+    @media #{$medium} {
+      text-align: right;
+    }
+  }
+}
+
 .iconlist {
   margin:0;
   padding:0;

@@ -323,3 +323,31 @@ input[type="checkbox"]#navtoggle {
 .innernav__menu {
 
 }
+
+
+.inlinemenu {
+  margin:0 0;
+  padding:0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: .875rem;
+    &:not(:first-child):before {
+      content:'|';
+      display: inline-block;
+      padding:0 .333em;
+    }
+
+    > a {
+      color:$body-font-color;
+      &:hover {
+        color: $black;
+      }
+      &.active {
+        color:$primary-color;
+      }
+    }
+  }
+}

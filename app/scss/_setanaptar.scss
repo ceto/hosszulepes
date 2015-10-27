@@ -1,11 +1,8 @@
 .walkcalendar__header {
-
-  h2 {
-    margin:0rem 0 .5rem .125rem;
-    padding:0;
-    font-size: rem-calc(16);
-    //line-height: 1.2;
-    text-transform: uppercase;
+  margin-bottom: 2rem;
+  background-color: $white;
+  .filterrow__title {
+    margin-top: 0;
 
     select {
       display: inline-block;
@@ -30,6 +27,11 @@
       }
 
       option {
+        text-transform: none;
+        background-color: $white;
+        padding:.5rem;
+        font-weight: $font-weight-normal;
+        color:$body-font-color;
       }
     }
 
@@ -37,12 +39,7 @@
   }
 }
 
-.row.walkcalendar__filterrow {
-  padding:2rem 0 .125rem;
-  margin-bottom: 2rem;
-  background-color: $white;
-  //border-bottom: 1px solid $smoke;
-}
+
 .event__list {
   margin:.5rem 0 2rem;
 

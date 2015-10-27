@@ -68,6 +68,21 @@ dl {
   }
 }
 
+.twocolumntext {
+
+  @media #{$medium} {
+    column-count: 2;
+    column-width: 50%;
+    column-gap: $column-gutter;
+    p {
+      margin:1rem 0;
+      break-inside: avoid-column;
+      -webkit-column-break-inside: avoid;
+      overflow:hidden;
+    }
+  }
+}
+
 .pagesection {
   position: relative;
   padding-top:2rem;

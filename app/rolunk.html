@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="no-js" lang="hu" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séta neked</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/owl-carousel/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="bower_components/owl-carousel/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="bower_components/owl-carousel/owl-carousel/owl.transitions.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Template Part: Navigation -->
+    <section class="pageheader">
+      <div class="pageheader__inverse">
+        <div class="row row--fullwidth">
+          <div class="columns">
+            <nav class="secnav">
+              <ul class="secnav__menu">
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="pageheader__main">
+        <div class="row container">
+          <div class="columns">
+            <a href="index.html" class="sitelogo">hoszúlépés - járunk?</a>
+            <label class="navtoggle-label" for="navtoggle">Menü</label>
+            <input type="checkbox" id="navtoggle">
+            <nav class="prinav">
+              <ul class="prinav__menu">
+                <li><a href="setalista.html">Séta neked</a></li>
+                <li><a href="setanaptar.html">Sétanaptár</a></li>
+                <li><a href="#">Séta cégednek</a></li>
+                <li><a href="#">Klubkártya</a></li>
+                <li><a href="#">Csapatépítők</a></li>
+                <li><a href="#">Sétajegy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Template Part: Navigation -->
+    <header class="hero hero--narrow">
+      <div class="hero__content">
+        <div class="hero__block" style="background-image:url(images/keskenyfejlec.jpg);">
+          <div class="hero__text">
+            <div class="row container">
+              <div class="columns">
+                <h1 class="hero__title">Rólunk</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="members">
+      <div class="row container">
+        <div class="columns">
+          <nav class="inner__nav">
+            <ul class="tabs">
+              <li class="tab-title active"><a href="rolunk.html">A csapat</a></li>
+              <li class="tab-title"><a href="#">Történetünk</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row container content members__content">
+        <div class="columns medium-6">
+          <p>Mert mindig új dolgokat keresünk, miközben a régit újra felfedezzük. Mert ráérősen sétálva minden új és izgalmas. Mert szeretünk kiszállni az autóból, leszállni a buszról, feljönni a metróból és látni a házakat, embereket, érezni az illatokat, koptatni a járdát. Mert kiszabadultunk a saját falaink közül, és másokkal is így szeretnénk találkozni. Mert egy városban élni közösséget jelent, akkor is, ha ezt néha elfelejtjük. Mert szeretünk itt élni, és szívesen elhagyjuk a járt utat a járatlanért.</p>
+        </div>
+        <div class="columns medium-6">
+          <p>A lábunk elé nézni megtanultunk, de a fejünket és a tekintetünket nem mindig emeljük a magasba. Pedig sok még a meglepetés, gyere velünk, és megmutatjuk mi mindent találtunk! Megszólalnak a házfalak, megelevenedik a történelem és kevésbé ismert városrészek is bemutatkoznak. Ne járj leszegett fejjel a városban! Nézz fel, fordulj körbe, fedezd fel! Járunk?</p>
+        </div>
+
+
+        </div>
+      </div>
+
+      <header id="filterrow" class="members__header filterrow">
+        <div class="row container">
+          <div class="columns medium-6 large-4 xxlarge-6">
+            <h2 class="filterrow__title">Hosszúlépés stáblista</h2>
+          </div>
+          <div class="columns medium-6 large-8 xxlarge-6">
+            <ul class="inlinemenu">
+              <li><a class="active" data-owl-target="0" href="#vezetoseg">Vezetőség</a></li>
+              <li><a href="#setavezetok" data-owl-target="1">Sétavezetők</a></li>
+              <li><a href="#setavezetok" data-owl-target="2">Sétasegédek</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+
+      <div id="owl-members">
+        <div class="row container members__memberlist">
+          <div class="columns">
+            <ul class="membersgrid block-grid-1 medium-block-grid-2 large-block-grid-3">
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="setasingle.html"><img src="http://lorempixel.com/800/600/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Merker Dávis</a></h3>
+                    <p class="squaremember__title">Ügyvezető</p>
+                    <p class="squaremember__descr">Gyerekkoromban állandóan a várost jártam valamelyik rokonommal és arról álmodoztam, hogy metróvezető leszek. Ez ugyan egyelőre nem sikerült, de a Budapest iránti rajongásom azóta sem változott.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/640/480/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/700/510/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/645/482/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/720/515/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/640/480/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/700/510/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="row container members__memberlist">
+          <div class="columns">
+            <ul class="membersgrid block-grid-1 medium-block-grid-2 large-block-grid-3">
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/640/480/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/645/482/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/720/515/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/640/480/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/700/510/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="row container members__memberlist">
+          <div class="columns">
+            <ul class="membersgrid block-grid-1 medium-block-grid-2 large-block-grid-3">
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/700/510/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/645/482/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/720/515/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/640/480/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Dudás Dóra</a></h3>
+                    <p class="squaremember__title">Értékesítési vezető</p>
+                    <p class="squaremember__descr">Pár éve járok a kutyámmal, mert a kutyával nincs mese, menni kell. Közben pedig előkerül a mese is: sorra fedezem fel a kincses doboz lépcsőházakat, az emlékekkel zsúfolt parkokat, a Római part színeit és illatait.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+              <li>
+                <article class="squaremember panel">
+                  <figure class="squaremember__fig">
+                    <a href="#"><img src="http://lorempixel.com/700/510/people" alt=""></a>
+                  </figure>
+                  <header class="squaremember__header">
+                    <h3 class="squaremember__name"><a href="#">Csobod Luca</a></h3>
+                    <p class="squaremember__title">Grafika/Kommunikáció</p>
+                    <p class="squaremember__descr">A Hosszúlépést azért hoztuk létre, hogy megmutassuk milyen izgalmas és sokszínű ez a város. Komoly kutatómunka előzi meg sétáink kidolgozását, ugyanakkor programjaink folyamatosan gazdagodnak.</p>
+                  </header>
+                  <footer class="squaremember__footer">
+                    <a class="squaremember__more" href="#"><i class="icon icon--arrow-right"></i></a>
+                  </footer>
+                </article>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="endofmain"></div>
+    </main>
+
+    <aside class="hirdetes hirdetes--full" style="background-image:url(images/csatornafedel.jpg);">
+      <div class="row container">
+        <div class="columns medium-10 medium-centered">
+          <div class="hirdetes__content">
+            <h2>Végy egy sétajegyet!</h2>
+            <p>Tudtad, hogy a sétajeggyel bármikor és bárhová elmehetsz egy sétára? Na és a legjobb ajándék.</p>
+            <a href="#" class="button small">Sétajegy vásárlása</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+    <footer class="sitefooter" role="contentinfo">
+      <div class="row row--fullwidth">
+        <div class="columns">
+          <nav class="footernav">
+            <ul class="footernav__menu">
+              <li><a href="#">Jogi nyilatkozat</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Kapcsolat</a></li>
+              <li><a href="#">Partnerek</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <a href="#" class="tothetop">|</a>
+    </footer>
+
+    <!-- build:js js/vendor/libraries.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.alert.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

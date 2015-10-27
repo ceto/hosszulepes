@@ -28,7 +28,7 @@
           <div class="columns">
             <nav class="secnav">
               <ul class="secnav__menu">
-                <li><a href="#">Rólunk</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
                 <li><a href="#">Kapcsolat</a></li>
                 <li><a href="#">English</a></li>
               </ul>
@@ -82,30 +82,29 @@
         </div>
       </div>
 
-      <div class="row fullwidth listofwalk__filterrow">
-        <div class="columns">
-          <header class="listofwalk__header">
-            <div class="row container">
-              <div class="columns medium-6 large-4 xxlarge-6"><h2>Válassz sétáink közül</h2></div>
-              <div class="columns medium-6 large-8 xxlarge-6">
-                <div class="row filters">
-                  <div class="columns medium-6 medium-push-6">
-                    <select class="tagselect" name="tagselect" id="tagselect">
-                      <option value="*">Összes séta</option>
-                      <option value=".gasztro"><i class="icon icon--gasztro"></i> Gasztronómia</option>
-                      <option value=".zsido"><i class="icon icon--zsido"></i> Zsidó</option>
-                      <option value=".felnott"><i class="icon icon--felnott"></i> Felnőtt</option>
-                      <option value=".kortars"><i class="icon icon--kortars"></i> Kortárs</option>
-                      <option value=".tortenelmi"><i class="icon icon--tortenelmi"></i> Történelmi</option>
-                      <option value=".kutyabarat"><i class="icon icon--kutyabarat"></i> Kutyabarát</option>
-                    </select>
-                  </div>
-                </div>
+      <header id="filterrow" class="listofwalk__header filterrow">
+        <div class="row container">
+          <div class="columns medium-6 large-4 xxlarge-6">
+            <h2 class="filterrow__title">Válassz sétáink közül</h2>
+          </div>
+          <div class="columns medium-6 large-8 xxlarge-6">
+            <div class="row filters">
+              <div class="columns medium-6 medium-push-6">
+                <select class="tagselect" name="tagselect" id="tagselect">
+                  <option value="*">Összes séta</option>
+                  <option value=".gasztro"><i class="icon icon--gasztro"></i> Gasztronómia</option>
+                  <option value=".zsido"><i class="icon icon--zsido"></i> Zsidó</option>
+                  <option value=".felnott"><i class="icon icon--felnott"></i> Felnőtt</option>
+                  <option value=".kortars"><i class="icon icon--kortars"></i> Kortárs</option>
+                  <option value=".tortenelmi"><i class="icon icon--tortenelmi"></i> Történelmi</option>
+                  <option value=".kutyabarat"><i class="icon icon--kutyabarat"></i> Kutyabarát</option>
+                </select>
               </div>
             </div>
-          </header>
+          </div>
         </div>
-      </div>
+      </header>
+
 
       <div class="row container listofwalk__walklist">
         <div class="columns">
@@ -274,6 +273,7 @@
 
         </div>
       </div>
+      <div id="endofmain"></div>
     </main>
 
     <aside class="hirdetes hirdetes--full" style="background-image:url(images/csatornafedel.jpg);">
@@ -312,6 +312,7 @@
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
     <script src="bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
     <script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

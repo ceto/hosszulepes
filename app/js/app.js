@@ -91,6 +91,30 @@ $(document).ready(function() {
 
   });
 
+
+ $('#owl-members').owlCarousel({
+
+      //navigation : true, // Show next and prev buttons
+      pagination : false,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoHeight : true,
+      //transitionStyle: 'fade',
+      autoPlay : false,
+      stopOnHover : true,
+  });
+
+  var owlmembers = $('#owl-members').data('owlCarousel');
+
+
+  $('[data-owl-target]').click(function(){
+    $('[data-owl-target]').removeClass('active');
+    $(this).addClass('active');
+    owlmembers.goTo($(this).attr('data-owl-target'));
+  });
+
+
   var $setagrid = $('.setagrid').isotope({
     itemSelector: '.masonry__elem',
     layoutMode: 'masonry'
@@ -100,6 +124,24 @@ $(document).ready(function() {
     var filterValue = this.value;
     $setagrid.isotope({ filter: filterValue });
   });
+
+  var filterrow_waypoint = new Waypoint({
+    element: document.getElementById('filterrow'),
+    handler: function() {
+      $('#filterrow').toggleClass('is_sticked');
+    }
+  });
+  var endofmain_waypoint = new Waypoint({
+    element: document.getElementById('endofmain'),
+    handler: function() {
+      $('#filterrow').toggleClass('is_sticked');
+    },
+    offset: '90%'
+  });
+
+
+
+
 
 
 

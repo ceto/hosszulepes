@@ -1,81 +1,36 @@
-.setagrid {
-  margin-bottom: 2rem;
-}
-
-.listofwalk__header {
-}
-
-.filters {
-  position: relative;
-  z-index: 1;
-  padding-bottom: .5rem;
-  //text-align: right;
-  @media #{$medium} {
-    text-align: right;
-  }
-
-  select {
-    display: inline-block;
-    margin: 0;
-    border:none;
-    width:8.5em;
-    padding:0 1.5rem 0 .5rem;
-    background-color: transparent;
-    box-shadow: none;
-    font-weight: 700;
-    &:hover {
-      cursor:pointer;
-    }
-    &.dateselect {
-      width:10em;
-      margin-right: .5rem;
-      display: none;
-    }
-
-  }
-
-  input[type="date"] {
-    display: inline-block;
-    width:auto;
-    border:none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding:0 0 0 0;
-    margin: 0;
-    text-align: right;
+.members__header {
+  .inlinemenu {
+    margin:.25rem 0;
   }
 }
 
-.row.listofwalk__walklist {
-  @include clearfix();
-
+.row.members__content {
+  padding-top:4rem;
+  padding-bottom: 0;
 }
-
-.squarewalk {
+.squaremember {
   position: relative;
   margin:0 0;
   padding-top: 0;
   padding-bottom: 0;
 
-  //border:none;
 
   a img {
     display: block;
     opacity:.666;
-    // filter:grayscale(1);
     transition: all .4s ease;
+    filter: grayscale(1);
   }
   &:hover, &:focus {
     a img {
       opacity: 1;
       transform:scale(1.125);
-      // filter:grayscale(0);
+      filter:grayscale(0);
     }
   }
 }
 
-.squarewalk__fig {
+.squaremember__fig {
   position: relative;
   margin: 0 -1rem 1rem;
   padding:0;
@@ -90,16 +45,17 @@
     width:100%;
     top:0;
     height:100%;
+
   }
 
   &:after {
     content: '';
     display: block;
-    padding-bottom: 40%;
+    padding-bottom: 66.666%;
   }
 }
 
-.squarewalk__header {
+.squaremember__header {
   position: relative;
   overflow:hidden;
   padding-bottom: 1rem;
@@ -119,27 +75,27 @@
   }
 
   @media #{$xxlarge} {
-    height:9rem;
+    height:12rem;
   }
 
 
 }
 
 
-.squarewalk__title {
-  margin-top: 0;
+.squaremember__name {
+  margin: 0 0 .25rem !important;
   line-height: 1.2;
-  a {
-    color: inherit;
-    &:hover, &:focus {
-      color:$primary-color;
-    }
-  }
+}
+
+.squaremember__title {
+  margin:0 0 1rem;
+  font-style: italic;
+  font-size: .875rem;
 }
 
 
 
-.squarewalk__descr {
+.squaremember__descr {
   //background-color: red;
   position: relative;
   font-size: .875rem;
@@ -147,20 +103,20 @@
   padding: 0rem;
   margin-bottom: 0;
 }
-.squarewalk__footer {
+.squaremember__footer {
   @include clearfix();
   margin:0 -1rem;
-  background-color: $smoke;
+  //background-color: $smoke;
 }
 
 
 
-.squarewalk__iconlist, .squareevent__iconlist {
+.squaremember__iconlist, .squareevent__iconlist {
   float:left;
   padding-left: 1rem;
 }
 
-.squarewalk__more, .squareevent__more {
+.squaremember__more, .squareevent__more {
   float:right;
   display: inline-block;
   background-color: $primary-color;
