@@ -490,7 +490,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -0.9375rem;
+    margin: 0 -1rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -510,8 +510,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
   float: left; }
 
@@ -623,8 +623,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .small-1 {
     width: 8.3333333333%; }
@@ -708,8 +708,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; } }
 
 @media only screen and (min-width: 40em) {
@@ -812,8 +812,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .medium-1 {
     width: 8.3333333333%; }
@@ -897,8 +897,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -1097,8 +1097,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .large-1 {
     width: 8.3333333333%; }
@@ -1182,8 +1182,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -1382,8 +1382,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .xlarge-1 {
     width: 8.3333333333%; }
@@ -1467,8 +1467,8 @@ select {
     margin-right: 0; }
   .row.xlarge-uncollapse > .column,
   .row.xlarge-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; } }
 
 @media only screen and (min-width: 80em) {
@@ -1571,8 +1571,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; }
   .xxlarge-1 {
     width: 8.3333333333%; }
@@ -1656,8 +1656,8 @@ select {
     margin-right: 0; }
   .row.xxlarge-uncollapse > .column,
   .row.xxlarge-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     float: left; } }
 
 .accordion {
@@ -1685,7 +1685,7 @@ select {
         background: #7c7c7c; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 0.9375rem; }
+      padding: 1rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: #ffffff;
         display: block; }
@@ -5342,17 +5342,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.9375rem 0;
+    padding: 1rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 0.9375rem; }
+      padding: 1rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.9375rem; }
+      padding: 0 1rem; }
 
 @media only screen and (min-width: 40em) {
   .tabs.vertical {
@@ -6199,16 +6199,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 1.875rem; }
 
 h2 {
-  font-size: 0.8125rem; }
+  font-size: 1rem; }
 
 h3 {
-  font-size: 0.8125rem; }
+  font-size: 0.875rem; }
 
 h4 {
-  font-size: 0.6875rem; }
+  font-size: 0.75rem; }
 
 h5 {
   font-size: 0.875rem; }
@@ -6376,13 +6376,13 @@ blockquote p {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
-    font-size: 2.75rem; }
+    font-size: 2.5rem; }
   h2 {
-    font-size: 1.4375rem; }
-  h3 {
-    font-size: 1.125rem; }
-  h4 {
     font-size: 1rem; }
+  h3 {
+    font-size: 1rem; }
+  h4 {
+    font-size: 0.875rem; }
   h5 {
     font-size: 0.875rem; }
   h6 {
@@ -8131,9 +8131,9 @@ dl {
     -webkit-column-width: 50%;
        -moz-column-width: 50%;
             column-width: 50%;
-    -webkit-column-gap: 1.875rem;
-       -moz-column-gap: 1.875rem;
-            column-gap: 1.875rem; }
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem; }
     .twocolumntext p {
       margin: 1rem 0;
       page-break-inside: avoid;
@@ -8158,123 +8158,6 @@ dl {
 .pagesection--with-pulledup-header .pagesection__header {
   position: absolute;
   top: -3rem; }
-
-.widget {
-  min-height: 50vh;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 2rem; }
-  @media only screen and (min-width: 40em) {
-    .widget {
-      min-height: 23.75rem; } }
-
-.widget__title {
-  text-align: left;
-  position: absolute;
-  bottom: 100%;
-  left: 0.9375rem;
-  text-transform: uppercase;
-  font-size: 1rem;
-  line-height: 1; }
-
-.widget--withbg {
-  background-origin: content-box;
-  background-clip: content-box;
-  background-size: cover;
-  background-image: url("http://placehold.it/800x800/111111/1a1a1a?text=Aspect+ratio:+1:1");
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #ffffff; }
-  .widget--withbg h2 {
-    color: inherit; }
-    @media only screen and (min-width: 40em) {
-      .widget--withbg h2 {
-        font-size: 2.25rem;
-        line-height: 1.4; } }
-  .widget--withbg p {
-    color: inherit; }
-
-.fixedheight .widget__inner {
-  padding: 0.9375rem 1.875rem;
-  position: absolute;
-  left: 0.9375rem;
-  right: 0.9375rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-
-.fixedheight .widget--with-bg .widget__inner {
-  left: 0;
-  right: 0; }
-
-.content h2 {
-  font-size: 1rem;
-  text-transform: uppercase; }
-
-.filterrow {
-  padding: 2rem 0 0.125rem; }
-  .filterrow.is_sticked {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: 0;
-    border-bottom: 1px solid #e4e3e3;
-    z-index: 2;
-    padding: .5rem 0 0;
-    background-color: #ffffff; }
-  .filterrow .filterrow__title {
-    margin: 0.5rem 0 0.5rem 0.125rem;
-    padding: 0;
-    font-size: 1rem;
-    text-transform: uppercase; }
-  @media only screen and (min-width: 40em) {
-    .filterrow .inlinemenu {
-      text-align: right; } }
-
-.iconlist {
-  margin: 0;
-  padding: 0; }
-  .iconlist li {
-    display: inline-block;
-    font-size: 1.25rem;
-    line-height: 2;
-    margin-right: .25em;
-    -webkit-transform: translateY(0.0333em);
-            transform: translateY(0.0333em); }
-  .iconlist a {
-    color: inherit; }
-    .iconlist a:hover, .iconlist a:focus {
-      color: #00b3bb; }
-    .iconlist a .icon {
-      line-height: inherit; }
-
-.hirdetes {
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #fafafa;
-  text-align: center; }
-  .hirdetes h2 {
-    color: inherit;
-    font-weight: 300;
-    line-height: 1.2; }
-  .hirdetes p {
-    color: inherit; }
-  .hirdetes .button {
-    margin-bottom: 0; }
-
-.hirdetes__content {
-  padding: 2em 0; }
-
-.hirdetes--full {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff; }
-  .hirdetes--full h2 {
-    font-size: 2.5rem; }
-  .hirdetes--full .hirdetes__content {
-    padding: 12% 0; }
 
 .pageheader {
   position: relative;
@@ -8717,12 +8600,6 @@ input[type="checkbox"]#navtoggle {
 
 .namecard {
   margin-bottom: 1.25rem; }
-  .namecard:before,
-  .namecard:after {
-    content: " ";
-    display: table; }
-  .namecard:after {
-    clear: both; }
 
 .namecard__photo {
   margin: 0 0.75rem 0 0;
@@ -8942,6 +8819,7 @@ a.ticketselect__buynow {
 
 .squarewalk__footer {
   margin: 0 -1rem;
+  padding-left: 1rem;
   background-color: #e4e3e3; }
   .squarewalk__footer:before,
   .squarewalk__footer:after {
@@ -8971,23 +8849,23 @@ a.ticketselect__buynow {
   background-color: #ffffff; }
   .walkcalendar__header .filterrow__title {
     margin-top: 0; }
-    .walkcalendar__header .filterrow__title select {
+    .walkcalendar__header .filterrow__title input[type="date"], .walkcalendar__header .filterrow__title select {
       display: inline-block;
       margin: 0;
       border: none;
-      width: auto;
-      padding: 0 1.5rem 0 0.5rem;
+      width: 12em;
+      box-shadow: none;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 1.6;
       color: #00b3bb; }
-      .walkcalendar__header .filterrow__title select:hover {
+      .walkcalendar__header .filterrow__title input[type="date"]:hover, .walkcalendar__header .filterrow__title select:hover {
         background-color: #e4e3e3;
         cursor: pointer; }
-      .walkcalendar__header .filterrow__title select:focus {
+      .walkcalendar__header .filterrow__title input[type="date"]:focus, .walkcalendar__header .filterrow__title select:focus {
         outline: none; }
-      .walkcalendar__header .filterrow__title select option {
+      .walkcalendar__header .filterrow__title input[type="date"] option, .walkcalendar__header .filterrow__title select option {
         text-transform: none;
         background-color: #ffffff;
         padding: .5rem;
@@ -9172,7 +9050,8 @@ a.ticketselect__buynow {
   position: relative;
   background-color: #e4e3e3;
   width: 100%;
-  clear: both; }
+  clear: both;
+  padding-left: 1rem; }
   .squareevent__footer:before,
   .squareevent__footer:after {
     content: " ";
@@ -9277,6 +9156,9 @@ ul.pagination__eventlist {
   padding-top: 4rem;
   padding-bottom: 0; }
 
+.membersgrid {
+  margin-bottom: 2rem; }
+
 .squaremember {
   position: relative;
   margin: 0 0;
@@ -9376,4 +9258,138 @@ ul.pagination__eventlist {
   .squaremember__more:hover, .squaremember__more:focus, .squareevent__more:hover, .squareevent__more:focus {
     color: #ffffff;
     background-color: #008f96; }
+
+.widget {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0; }
+  .widget h2 {
+    color: inherit;
+    font-size: 2rem;
+    margin: 0 0 0.333em;
+    font-weight: 300; }
+    @media only screen and (min-width: 40em) {
+      .widget h2 {
+        font-size: 2.125rem;
+        line-height: 1.2; } }
+  .widget p {
+    color: inherit;
+    line-height: 1.4; }
+  .widget .button {
+    margin-bottom: 0; }
+
+.widget--withnotitle {
+  margin-top: 0; }
+
+.widget--fixedheight {
+  position: relative; }
+  @media only screen and (min-width: 40em) {
+    .widget--fixedheight {
+      min-height: 23.75rem; } }
+
+.widget__title {
+  text-align: left;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1; }
+  .columns.widget .widget__title {
+    left: 1rem; }
+  .widget--withnotitle .widget__title {
+    display: none; }
+
+.widget--withbg {
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: cover;
+  background-image: url("http://placehold.it/800x800/111111/1a1a1a?text=Aspect+ratio:+1:1");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fafafa; }
+
+.widget__inner {
+  padding: 4rem 1rem; }
+  @media only screen and (min-width: 40em) {
+    .widget--fixedheight .widget__inner {
+      padding: 1rem 12%;
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .widget--fixedheight.widget--with-bg .widget__inner {
+      left: 0;
+      right: 0; } }
+
+.content h2 {
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+.filterrow {
+  padding: 2rem 0 0.125rem; }
+  .filterrow.is_sticked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e4e3e3;
+    z-index: 2;
+    padding: .5rem 0 0;
+    background-color: #ffffff; }
+  .filterrow .filterrow__title {
+    margin: 0.5rem 0 0.5rem 0.125rem;
+    padding: 0;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  @media only screen and (min-width: 40em) {
+    .filterrow .inlinemenu {
+      text-align: right; } }
+
+.iconlist {
+  margin: 0;
+  padding: 0; }
+  .iconlist li {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 2;
+    margin-right: .25em;
+    -webkit-transform: translateY(0.0333em);
+            transform: translateY(0.0333em); }
+  .iconlist a {
+    color: inherit; }
+    .iconlist a:hover, .iconlist a:focus {
+      color: #00b3bb; }
+    .iconlist a .icon {
+      line-height: inherit; }
+
+.hirdetes {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fafafa;
+  text-align: center; }
+  .hirdetes h2 {
+    color: inherit;
+    font-weight: 300;
+    line-height: 1.2; }
+  .hirdetes p {
+    color: inherit; }
+  .hirdetes .button {
+    margin-bottom: 0; }
+
+.hirdetes__content {
+  padding: 2em 0; }
+
+.hirdetes--full {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff; }
+  .hirdetes--full h2 {
+    font-size: 2.5rem; }
+  .hirdetes--full .hirdetes__content {
+    padding: 12% 0; }
 /*# sourceMappingURL=app.css.map */

@@ -1,24 +1,57 @@
-.row.fixedheight {
-}
 .widget {
-  min-height: 50vh;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom:0;
+
+  h2 {
+    color:inherit;
+    font-size:2rem;
+    margin:0 0 .333em;
+    font-weight: 300;
+    @media #{$medium} {
+      font-size:2.125rem;
+      line-height: 1.2
+    }
+
+  }
+  p {
+    color:inherit;
+    //font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+
+}
+.widget--withnotitle {
+  margin-top: 0;
+}
+
+.widget--fixedheight {
+  position: relative;
   @media #{$medium} {
     min-height: rem-calc(380);
   }
 }
-
 .widget__title {
   text-align: left;
   position: absolute;
   bottom: 100%;
-  left:$column-gutter/2;
+  left:0;
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1;
   //margin:0 0 .5rem;
+
+  .columns.widget &  {
+    left:$column-gutter/2;
+  }
+
+  .widget--withnotitle & {
+    display:none;
+  }
 }
 
 .widget--withbg {
@@ -28,34 +61,28 @@
   background-image: url('http://placehold.it/800x800/111111/1a1a1a?text=Aspect+ratio:+1:1');
   background-repeat: no-repeat;
   background-position: center center;
-  color:$white;
-  h2 {
-    color:inherit;
-    @media #{$medium} {
-      font-size:2.25rem;
-      line-height: 1.4
-    }
+  color:$ghost;
 
-  }
-  p {
-    color:inherit;
-  }
+
 }
 
 .widget__inner {
+  padding:$column-gutter*2 $column-gutter/2;
+  @media #{$medium} {
+    .widget--fixedheight & {
+      padding:$column-gutter/2 12%;
 
-  .fixedheight & {
-    padding:$column-gutter/2 $column-gutter;
-    position: absolute;
-    left:$column-gutter/2;
-    right:$column-gutter/2;
-    top:50%;
-    transform:translateY(-50%);
-  }
+      position: absolute;
+      left:$column-gutter/2;
+      right:$column-gutter/2;
+      top:50%;
+      transform:translateY(-50%);
+    }
 
-  .fixedheight .widget--with-bg & {
-    left:0;
-    right:0;
+    .widget--fixedheight.widget--with-bg & {
+      left:0;
+      right:0;
+    }
   }
 }
 
