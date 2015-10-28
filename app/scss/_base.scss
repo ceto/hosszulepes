@@ -68,6 +68,82 @@ dl {
   }
 }
 
+
+
+  p.lead {
+    font-size: $paragraph-font-size + rem-calc(1);
+    line-height: 1.6;
+    font-weight: $font-weight-bold;
+  }
+
+
+  blockquote {
+    margin:rem-calc(32 0);
+    border-left: none;
+    border-top: 1px solid $gainsboro;
+    border-bottom: 1px solid $gainsboro;
+    padding-left: 10%;
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    cite {
+      margin-top: .5em;
+      font-family:$body-font-family;
+      //font-style: normal;
+
+    }
+  }
+
+  blockquote, blockquote p {
+    font-size: 1.333rem;
+    font-family: serif;
+    font-style: italic;
+  }
+
+  figure {
+    margin:0 0 $paragraph-margin-bottom 0;
+    figcaption {
+      padding:.75em 0 0;
+      font-style: italic;
+      color:$blockquote-font-color;
+      font-size: .75rem;
+      line-height: 1.2;
+    }
+
+    &.left {
+      @media #{$medium} {
+        padding-right: $column-gutter/2;
+      }
+    }
+    &.right {
+      @media #{$medium} {
+        padding-left: $column-gutter/2;
+      }
+    }
+  }
+.content {
+  ul  {
+    margin-left: 7%;
+    li {
+      list-style-type: none;
+      position: relative;
+      margin-bottom: $paragraph-margin-bottom/2;
+      &:before {
+        position: absolute;
+        content:'';
+        display: block;
+        height:.333em;
+        width:.333em;
+        //color:$primary-color;
+        background-color: currentColor;
+        top:.666em;
+        left:-1.125rem;
+      }
+    }
+  }
+}
+
 .twocolumntext {
 
   @media #{$medium} {
