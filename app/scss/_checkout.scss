@@ -52,11 +52,28 @@
     }
   }
   p{
-    font-size: .75rem;
+    font-size: .875rem;
+  }
+  .back {
+    font-size: .875rem;
+    font-style: italic;
   }
 }
 
 
 label {
   text-transform: uppercase;
+}
+
+fieldset {
+  //padding:1.25rem 0;
+  border-left: none;
+  border-right:none;
+  border-bottom: none;
+  legend {
+    background-color: $white;
+    font-size: .875rem;
+    //color:$primary-color;
+    //padding-right: .333rem;
+  }
 }

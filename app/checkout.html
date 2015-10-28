@@ -61,8 +61,8 @@
       <div class="hero__content">
         <div class="hero__block" style="background-image:url(images/keskenyfejlec.jpg);">
           <div class="hero__text">
-            <div class="row">
-              <div class="columns medium-10 large-8 medium-centered medium-text-center">
+            <div class="row container">
+              <div class="columns medium-10 xlarge-8 medium-centered medium-text-center">
                 <h1 class="hero__title">Jegyvásárlás</h1>
               </div>
             </div>
@@ -71,8 +71,8 @@
       </div>
     </header>
     <main role="main" class="checkout">
-      <div class="row">
-        <div class="columns medium-10 large-8 medium-centered checkout__content">
+      <div class="row container">
+        <div class="columns medium-10 xlarge-8 medium-centered checkout__content">
 
 
         <ul class="accordion" data-accordion>
@@ -107,7 +107,7 @@
                         </select>
                     </div>
                   </div>
-                  <p>*Ha 10 -nél több jegyet szeretnél venni, írj az <a href="mailto:info@hosszulepes.org">info@hosszulepes.org</a> címre.</p>
+                  <p><em>*Ha 10 -nél több jegyet szeretnél venni, írj az <a href="mailto:info@hosszulepes.org">info@hosszulepes.org</a> címre.</em></p>
 
                   <a href="#" class="button small">Következő lépés: Adatok megadása</a>
 
@@ -118,26 +118,28 @@
           </li>
 
           <li class="accordion-navigation">
-            <a href="#panel2a"><span>2.</span> Kérjük add meg az adataidat!</a>
+            <a href="#panel2a"><span>2.</span> Vásárló adatai</a>
             <div id="panel2a" class="content panel">
-
+              <fieldset>
+                <legend>Személyes adatok</legend>
                 <div class="row">
-                  <div class="columns medium-6">
+                  <div class="columns">
                     <label for="name">Név*</label>
                     <input type="text" id="name" name="name">
                   </div>
+                </div>
+
+                <div class="row">
                   <div class="columns medium-6">
                     <label for="email">Email cím*</label>
                     <input type="email" id="email" name="email">
                   </div>
-                </div>
-                <div class="row">
-
                   <div class="columns medium-6">
                     <label for="telefon">Telefon*</label>
                     <input type="text" id="telefon" name="telefon">
                   </div>
                 </div>
+              </fieldset>
 
 
               <fieldset>
@@ -164,19 +166,37 @@
                     <input type="text" id="city" name="city">
                   </div>
                 </div>
-            </fieldset>
+              </fieldset>
 
-            <div class="row">
-              <div class="columns">
-                <label for="message">Megjegyzés</label>
-                <textarea id="message" name="message"></textarea>
-                <label for="holhal">hol hallottál rólunk</label>
-                <select name="holhal" id="holhal">
-                  <option value="1">A tévében</option>
-                  <option value="2">A rádióban</option>
-                  <option value="3">ujságban</option>
-                </select>
+              <fieldset>
+                <legend>Segítsd munkánkat</legend>
+                <div class="row">
+                  <div class="columns">
+                    <label for="message">Megjegyzés</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <label for="holhal">hol hallottál rólunk</label>
+                    <select name="holhal" id="holhal">
+                      <option value="1">A tévében</option>
+                      <option value="2">A rádióban</option>
+                      <option value="3">Újságban</option>
+                    </select>
+                    <input id="newsletter" type="checkbox"><label for="newsletter">Feliratkozom hírlevélre</label>
+                  </div>
+                </div>
+                <hr>
+                <p><em>A Vásárlás indítása gombra kattintva átirányítunk a bankkártyás fizetési felületünkre. A sikeres tranzakciót követően a rendszer visszairányít majd a Hosszúlépés weboldalára.</em></p>
 
+              </fieldset>
+
+
+              <div class="row">
+                <div class="columns small-4">
+                  <a href="#" class="back">&laquo; visszalépés</a>
+                </div>
+                <div class="columns small-8">
+                  <a href="#" class="button small right">Következő lépés: Fizetés</a>
+                </div>
+              </div>
             </div>
           </li>
 
@@ -187,9 +207,60 @@
             </div>
           </li>
           <li class="accordion-navigation">
-            <a href="#panel3a"><span>4.</span> Fizetés</a>
-            <div id="panel3a" class="content panel">
-              Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <a href="#panel4a"><span>4.</span> Fizetés bankártyával</a>
+            <div id="panel4a" class="content panel">
+              <div class="row">
+                <div class="columns medium-6">
+                  <label for="card_name">Számlatulajdonos neve*</label>
+                  <input type="text" id="card_name" name="card_name" placeholder="Kártyára írt név">
+                </div>
+                <div class="columns medium-6">
+                  <label for="card_no">Bankártya száma*</label>
+                  <input type="text" id="card_no" name="card_no" placeholder="16 jegyű bankkártya szám">
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns medium-6">
+                  <label for="card_month">Lejárat dátuma*</label>
+                  <div class="row">
+                    <div class="columns small-5">
+                      <select name="card_month" id="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">...</option>
+                        <option value="2">11</option>
+                        <option value="3">12</option>
+                      </select>
+                    </div>
+                    <div class="columns small-7">
+                      <select name="card_year" id="cardyear">
+                        <option value="1">2015</option>
+                        <option value="2">2017</option>
+                        <option value="3">...</option>
+                        <option value="2">2025</option>
+                        <option value="3">2026</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns medium-6">
+                  <label for="card_cvc">3 jegyű CVC szám*</label>
+                  <input type="text" id="card_cvc" name="card_cvc" placeholder="Kártya hátoldalán található">
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns small-8 medium-6 large-4">
+                  <img src="images/cards.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns small-4">
+                  <a href="#" class="back">&laquo; visszalépés</a>
+                </div>
+                <div class="columns small-8">
+                  <a href="#" class="button small right">Fizetés indítása</a>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
