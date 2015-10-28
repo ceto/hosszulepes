@@ -78,19 +78,117 @@
         <ul class="accordion" data-accordion>
           <li class="accordion-navigation">
             <a href="#panel1a"><span>1.</span> Választott sétád</a>
-            <div id="panel1a" class="content active">
-              Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div id="panel1a" class="content panel active">
+              <div class="row">
+                <div class="columns medium-3">
+                  <p class="thedate">2015.&nbsp;szept.&nbsp;19.<br><span>csütörtök</span><br>11:00</p>
+                </div>
+                <div class="columns medium-9">
+                  <h3>A pesti éjszaka sötét</h3>
+                  <p>
+                    Kevés népet határoz meg jobban az étkezés, mint a zsidóságot. Nem pusztán az alapanyagok használata, hanem több száz vallási előírás határozza meg, mi kerülhet egy vallásos zsidó család asztalára. Aki mindnek meg akar felelni, egész életmódját ennek kell alárendelnie, így vált a kóserság a zsidóság megmaradásának zálogává.
+                  </p>
+                  <div class="row">
+                    <div class="columns medium-4 xlarge-3">
+                      <label for="quantity">Mennyiség*</label>
+                        <select name="quantity" id="quantity">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="columns medium-8 xlarge-9">
+                      <label for="paymentmethod">Fizetési mód kiválasztása</label>
+                        <select name="paymentmethod" id="paymentmethod">
+                          <option value="1">Időponfoglalás sétajeggyel</option>
+                          <option value="2">Időponfoglalás klubtagként</option>
+                          <option value="3">Fizetés bankkártyával</option>
+                        </select>
+                    </div>
+                  </div>
+                  <p>*Ha 10 -nél több jegyet szeretnél venni, írj az <a href="mailto:info@hosszulepes.org">info@hosszulepes.org</a> címre.</p>
+
+                  <a href="#" class="button small">Következő lépés: Adatok megadása</a>
+
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion-navigation">
+            <a href="#panel2a"><span>2.</span> Kérjük add meg az adataidat!</a>
+            <div id="panel2a" class="content panel">
+
+                <div class="row">
+                  <div class="columns medium-6">
+                    <label for="name">Név*</label>
+                    <input type="text" id="name" name="name">
+                  </div>
+                  <div class="columns medium-6">
+                    <label for="email">Email cím*</label>
+                    <input type="email" id="email" name="email">
+                  </div>
+                </div>
+                <div class="row">
+
+                  <div class="columns medium-6">
+                    <label for="telefon">Telefon*</label>
+                    <input type="text" id="telefon" name="telefon">
+                  </div>
+                </div>
+
+
+              <fieldset>
+                <legend>Számlázási adatok</legend>
+                <div class="row">
+                  <div class="columns">
+                    <label for="coname">Név/cégnév</label>
+                    <input type="text" id="coname" name="coname">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns medium-9">
+                    <label for="city">Település*</label>
+                    <input type="text" id="city" name="city">
+                  </div>
+                  <div class="columns medium-3">
+                    <label for="zip">Irányítószám*</label>
+                    <input type="text" id="zip" name="zip">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="columns">
+                    <label for="city">Utca, házszám*</label>
+                    <input type="text" id="city" name="city">
+                  </div>
+                </div>
+            </fieldset>
+
+            <div class="row">
+              <div class="columns">
+                <label for="message">Megjegyzés</label>
+                <textarea id="message" name="message"></textarea>
+                <label for="holhal">hol hallottál rólunk</label>
+                <select name="holhal" id="holhal">
+                  <option value="1">A tévében</option>
+                  <option value="2">A rádióban</option>
+                  <option value="3">ujságban</option>
+                </select>
+
+            </div>
+          </li>
+
+          <li class="accordion-navigation">
+            <a href="#panel3a"><span>3.</span> Adatellenőrzés</a>
+            <div id="panel3a" class="content panel">
+              Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </li>
           <li class="accordion-navigation">
-            <a href="#panel2a"><span>2.</span> Igénybe veszel e kedvezményt?</a>
-            <div id="panel2a" class="content">
-              Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a"><span>3.</span> Adataid</a>
-            <div id="panel3a" class="content">
+            <a href="#panel3a"><span>4.</span> Fizetés</a>
+            <div id="panel3a" class="content panel">
               Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </li>

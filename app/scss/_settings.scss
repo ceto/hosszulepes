@@ -338,13 +338,13 @@ $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 40%);
 
 // $include-html-accordion-classes: $include-html-classes;
 
-$accordion-navigation-padding: rem-calc(20);
-$accordion-navigation-bg-color: $jumbo;
+$accordion-navigation-padding: rem-calc(18);
+$accordion-navigation-bg-color: $gainsboro;
 $accordion-navigation-active-bg-color: $primary-color;
-$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-active-bg-color, $lightness: -5%);
-$accordion-navigation-active-font-color: $ghost;
-$accordion-navigation-font-color: $white;
-$accordion-navigation-font-size: rem-calc(20);
+$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+$accordion-navigation-active-font-color: $white;
+$accordion-navigation-font-color: $body-font-color;
+$accordion-navigation-font-size: rem-calc(18);
 // $accordion-navigation-font-family: $body-font-family;
 
 $accordion-content-padding: ($column-gutter);
@@ -646,12 +646,12 @@ $button-font-weight: $font-weight-normal;
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
-// $form-label-font-size: rem-calc(14);
-// $form-label-font-weight: $font-weight-normal;
+$form-label-font-size: rem-calc(12);
+$form-label-font-weight: $font-weight-bold;
 // $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
-// $form-label-small-transform: capitalize;
-// $form-label-bottom-margin: 0;
+//$form-label-small-transform: capitalize;
+$form-label-bottom-margin: rem-calc(4);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
