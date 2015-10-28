@@ -15,7 +15,7 @@
     },
     "waypoints": {
       "main": [
-        "lib/jquery.waypoints.js"
+        "./lib/jquery.waypoints.js"
       ]
     },
     "owl-carousel": {

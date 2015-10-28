@@ -8706,39 +8706,6 @@ a.ticketselect__buynow {
 .setagrid {
   margin-bottom: 2rem; }
 
-.filters {
-  position: relative;
-  z-index: 1;
-  padding-bottom: .5rem; }
-  @media only screen and (min-width: 40em) {
-    .filters {
-      text-align: right; } }
-  .filters select {
-    display: inline-block;
-    margin: 0;
-    border: none;
-    width: 8.5em;
-    padding: 0 1.5rem 0 0.5rem;
-    background-color: transparent;
-    box-shadow: none;
-    font-weight: 700; }
-    .filters select:hover {
-      cursor: pointer; }
-    .filters select.dateselect {
-      width: 10em;
-      margin-right: .5rem;
-      display: none; }
-  .filters input[type="date"] {
-    display: inline-block;
-    width: auto;
-    border: none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 0 0 0;
-    margin: 0;
-    text-align: right; }
-
 .row.listofwalk__walklist:before,
 .row.listofwalk__walklist:after {
   content: " ";
@@ -9259,6 +9226,10 @@ ul.pagination__eventlist {
     color: #ffffff;
     background-color: #008f96; }
 
+@media only screen and (min-width: 40em) {
+  .bottomwidgets {
+    overflow: hidden; } }
+
 .widget {
   text-align: center;
   margin-top: 4rem;
@@ -9285,7 +9256,12 @@ ul.pagination__eventlist {
   position: relative; }
   @media only screen and (min-width: 40em) {
     .widget--fixedheight {
-      min-height: 23.75rem; } }
+      max-height: 420px; }
+      .widget--fixedheight:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+        max-height: 420px; } }
 
 .widget__title {
   text-align: left;
@@ -9341,13 +9317,43 @@ ul.pagination__eventlist {
     padding: .5rem 0 0;
     background-color: #ffffff; }
   .filterrow .filterrow__title {
-    margin: 0.5rem 0 0.5rem 0.125rem;
+    margin: 0 0 0.5rem 0.125rem;
     padding: 0;
     font-size: 1rem;
     text-transform: uppercase; }
   @media only screen and (min-width: 40em) {
     .filterrow .inlinemenu {
       text-align: right; } }
+
+.filters {
+  position: relative;
+  z-index: 1; }
+  @media only screen and (min-width: 40em) {
+    .filters {
+      text-align: right; } }
+  .filters select {
+    display: inline-block;
+    margin: 0;
+    border: none;
+    width: 9rem;
+    padding: 0 1.5rem 0 0.5rem;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 700;
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em); }
+    .filters select:hover {
+      cursor: pointer; }
+  .filters input[type="date"] {
+    display: inline-block;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0 0 0 0;
+    margin: 0;
+    text-align: right; }
 
 .iconlist {
   margin: 0;

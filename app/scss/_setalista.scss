@@ -5,47 +5,7 @@
 .listofwalk__header {
 }
 
-.filters {
-  position: relative;
-  z-index: 1;
-  padding-bottom: .5rem;
-  //text-align: right;
-  @media #{$medium} {
-    text-align: right;
-  }
 
-  select {
-    display: inline-block;
-    margin: 0;
-    border:none;
-    width:8.5em;
-    padding:0 1.5rem 0 .5rem;
-    background-color: transparent;
-    box-shadow: none;
-    font-weight: 700;
-    &:hover {
-      cursor:pointer;
-    }
-    &.dateselect {
-      width:10em;
-      margin-right: .5rem;
-      display: none;
-    }
-
-  }
-
-  input[type="date"] {
-    display: inline-block;
-    width:auto;
-    border:none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding:0 0 0 0;
-    margin: 0;
-    text-align: right;
-  }
-}
 
 .row.listofwalk__walklist {
   @include clearfix();

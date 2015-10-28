@@ -1,3 +1,12 @@
+.bottomwidgets {
+  //@include clearfix();
+  @media #{$medium} {
+    //max-height: 420px;
+    overflow:hidden;
+    //overflow: hidden;
+  }
+
+}
 .widget {
   text-align: center;
   margin-top: 4rem;
@@ -31,9 +40,19 @@
 
 .widget--fixedheight {
   position: relative;
+
+
   @media #{$medium} {
-    min-height: rem-calc(380);
+    max-height: 420px;
+    //overflow: hidden;
+    &:after {
+      content:'';
+      display: block;
+      padding-bottom: 100%;
+      max-height: 420px;
+    }
   }
+
 }
 .widget__title {
   text-align: left;
@@ -108,7 +127,7 @@
   }
 
   .filterrow__title {
-    margin:.5rem 0 .5rem .125rem;
+    margin:0 0 .5rem .125rem;
     padding:0;
     font-size: rem-calc(16);
     text-transform: uppercase;
@@ -118,6 +137,43 @@
     @media #{$medium} {
       text-align: right;
     }
+  }
+}
+
+.filters {
+  position: relative;
+  z-index: 1;
+  //padding-bottom: .5rem;
+  //text-align: right;
+  @media #{$medium} {
+    text-align: right;
+  }
+
+  select {
+    display: inline-block;
+    margin: 0;
+    border:none;
+    width:9rem;
+    padding:0 1.5rem 0 .5rem;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 700;
+    &:hover {
+      cursor:pointer;
+    }
+    transform:translateY(-.5em);
+  }
+
+  input[type="date"] {
+    display: inline-block;
+    width:auto;
+    border:none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding:0 0 0 0;
+    margin: 0;
+    text-align: right;
   }
 }
 
