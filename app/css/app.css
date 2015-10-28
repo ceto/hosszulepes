@@ -1672,20 +1672,20 @@ select {
     display: block;
     margin-bottom: 0 !important; }
     .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-      background: #7e7e7e;
+      background: #00b3bb;
       color: #fafafa; }
     .accordion .accordion-navigation > a, .accordion dd > a {
       background: #828282;
       color: #ffffff;
       display: block;
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-size: 1rem;
-      padding: 1rem; }
+      font-size: 1.25rem;
+      padding: 1.25rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-        background: #7c7c7c; }
+        background: #00aab2; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 1rem; }
+      padding: 2rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: #ffffff;
         display: block; }
@@ -9511,4 +9511,26 @@ ul.pagination__eventlist {
     font-size: 2.5rem; }
   .hirdetes--full .hirdetes__content {
     padding: 12% 0; }
+
+.checkout__content {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1; }
+  .accordion .accordion-navigation > a span, .accordion dd > a span {
+    position: absolute;
+    display: inline-block;
+    height: 2.5em;
+    width: 2.5em;
+    font-size: .25rem;
+    line-height: 2.75;
+    font-weight: 700;
+    text-align: center;
+    background-color: #fafafa;
+    color: #828282;
+    border-radius: 50%;
+    margin-right: 2em; }
 /*# sourceMappingURL=app.css.map */
