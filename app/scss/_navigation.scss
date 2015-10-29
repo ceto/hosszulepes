@@ -340,11 +340,15 @@ input[type="checkbox"]#navtoggle {
   margin:0 0;
   padding:0;
   list-style-type: none;
+  font-size: .875rem;
+  line-height:1rem;
   li {
+    margin:0;
+    padding:0;
     display: inline-block;
     text-transform: uppercase;
     font-weight: $font-weight-bold;
-    font-size: .875rem;
+
     &:not(:first-child):before {
       content:'|';
       display: inline-block;

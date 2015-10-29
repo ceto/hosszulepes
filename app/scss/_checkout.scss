@@ -1,3 +1,10 @@
+.checkout {
+  // background-size: cover;
+  // background-image: url('http://lorempixel.com/1280/1280');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-attachment: fixed;
+}
 .checkout__content {
   padding-top: 4rem;
   padding-bottom:4rem;
@@ -48,7 +55,7 @@
   }
   h4 {
     text-transform: uppercase;
-    margin-top: .5rem;
+    margin-top: 1rem;
     font-size: .75rem;
     padding-bottom: .5em;
     margin-bottom: .5em;
@@ -56,14 +63,14 @@
   }
 
 
-  .thedate {
+  .thedata {
     font-weight: 700;
     font-size: .875rem;
     text-transform: uppercase;
     span {
       font-weight: 300;
     }
-    margin-bottom: 0;
+    margin-bottom: .5rem;
   }
   fieldset {
     &:last-of-type {

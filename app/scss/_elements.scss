@@ -112,7 +112,7 @@
   }
 }
 .filterrow {
-  padding:2rem 0 .125rem;
+  padding:1.25rem 0;
   &.is_sticked {
     position: fixed;
     top:0;
@@ -121,24 +121,9 @@
     margin-bottom: 0;
     border-bottom: 1px solid $smoke;
     z-index:2;
-    padding:.875rem 0 .5rem 0;
+    padding:.875rem 0 .875rem 0;
     background-color: $white;
 
-  }
-
-  .filterrow__title {
-    margin:0 0 .5rem .125rem;
-    padding:0;
-    font-size: rem-calc(16);
-    text-transform: uppercase;
-    height:2.125rem;
-    line-height: 2.25;
-    input {
-      //position: absolute;
-      transform:translateY(-.0125rem);
-      height:auto;
-      margin-left: .125rem;
-    }
   }
 
   .inlinemenu {
@@ -148,6 +133,50 @@
   }
 }
 
+
+.filterrow__title {
+
+  margin:0 0 1rem;
+  padding:0;
+  font-size: rem-calc(16);
+  line-height: 1;
+  text-transform: uppercase;
+  color:$body-font-color;
+  @media #{$medium} {
+    margin-bottom: 0;
+  }
+
+  input[type="date"] {
+    position: absolute;
+    transform:translateY(-.45rem);
+    display: inline-block;
+    margin: 0 0 0 .25rem;
+    width:auto;
+    height:auto;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: rem-calc(16);
+    line-height: 1;
+    padding-bottom: .125rem;
+    padding-top: .125rem;
+    padding-left: .333rem;
+    //background-color: transparent;
+    //border-color: transparent;
+    background-color: $ghost;
+    border-color: $smoke;
+    color:$primary-color;
+    &:hover,&:focus {
+      background-color: $white;
+      border-color: currentColor;
+      color:$primary-color;
+      cursor: pointer;
+      outline:none;
+    }
+
+
+  }
+
+}
 .filters {
   position: relative;
   z-index: 1;
@@ -157,35 +186,27 @@
     text-align: right;
   }
 
-  // select {
-  //   display: inline-block;
-  //   margin: 0;
-  //   border:none;
-  //   width:9rem;
-  //   padding:0 1.5rem 0 .5rem;
-  //   background-color: transparent;
-  //   box-shadow: none;
-  //   font-weight: 700;
-  //   &:hover {
-  //     cursor:pointer;
-  //   }
-  //   transform:translateY(-.5em);
-  // }
 
   select {
+    //position: absolute;
     margin-bottom: 0;
     font-size: .75rem;
     padding:.25rem 1.5rem .25rem .5rem;
-    height:2.125rem;
+    height:auto;
 
-    float:right;
-    background-color: transparent;
-    border:none;
+    background-color: $ghost;
+    border-color: $smoke;
     @media #{$medium} {
       width:auto;
+      position: absolute;
+      right:1rem;
+      transform:translateY(-.333rem);
     }
     &:hover {
       cursor:pointer;
+    }
+    &:focus {
+      outline: none;
     }
   }
 

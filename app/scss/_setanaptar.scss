@@ -1,50 +1,14 @@
-.walkcalendar__header {
-  margin-bottom: 2rem;
+.walkcalendar__header.filterrow {
   background-color: $white;
   border-bottom:1px solid $smoke;
   .filterrow__title {
-    margin-top: 0;
-
-    input[type="date"], select {
-      display: inline-block;
-      margin: 0;
-      border:none;
-      width:12em;
-      //padding:0 .5rem 0 .5rem;
-      //background-color: transparent;
-      box-shadow: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      //font-weight: 300;
-      font-size: rem-calc(16);
-      line-height: 1;
-      padding-bottom: .333rem;
-      padding-top: .333rem;
-      color:$primary-color;
-      &:hover {
-        background-color: $smoke;
-        cursor: pointer;
-      }
-      &:focus {
-        outline: none;
-      }
-
-      option {
-        text-transform: none;
-        background-color: $white;
-        padding:.5rem;
-        font-weight: $font-weight-normal;
-        color:$body-font-color;
-      }
-    }
-
 
   }
 }
 
 
 .event__list {
-  margin:.5rem 0 2rem;
+  margin:2rem 0 4rem;
 
   @media #{$medium} {
     //margin:-2.125rem 0 4rem;

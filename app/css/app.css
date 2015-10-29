@@ -8114,14 +8114,19 @@ dl {
       -webkit-transform: translateY(0.125em);
               transform: translateY(0.125em); }
   dl dd {
-    line-height: 1;
-    padding: 1.25rem 0.75rem 1.25rem 10rem;
-    text-align: right;
+    line-height: 1.4;
+    padding: 3rem 1rem 1.25rem 3.333rem;
     margin: 0; }
     dl dd:not(:last-child) {
       border-bottom: 1px solid #d9d6d6; }
     dl dd:hover {
       background-color: #ffffff; }
+    @media only screen and (min-width: 48em) {
+      dl dd {
+        text-align: right;
+        padding: 1rem 0.75rem 1.25rem 10rem; } }
+    dl dd a {
+      color: inherit; }
 
 p.lead {
   font-size: 1.0625rem;
@@ -8467,12 +8472,15 @@ input[type="checkbox"]#navtoggle {
 .inlinemenu {
   margin: 0 0;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: .875rem;
+  line-height: 1rem; }
   .inlinemenu li {
+    margin: 0;
+    padding: 0;
     display: inline-block;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: .875rem; }
+    font-weight: bold; }
     .inlinemenu li:not(:first-child):before {
       content: '|';
       display: inline-block;
@@ -8768,6 +8776,10 @@ a.ticketselect__buynow {
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
+.singlepost__relatedevents {
+  border-top: 1px solid #e4e3e3;
+  margin-top: 3rem; }
+
 .smodul__title {
   font-size: 1rem;
   text-transform: uppercase; }
@@ -8776,8 +8788,6 @@ a.ticketselect__buynow {
   position: relative;
   border-top: 1px solid #e4e3e3;
   padding: .75rem 0; }
-  .recommends__item:last-child {
-    border-bottom: 1px solid #e4e3e3; }
 
 .recommends__title {
   font-size: 1rem;
@@ -8821,13 +8831,18 @@ a.ticketselect__buynow {
 .setagrid {
   margin-bottom: 2rem; }
 
-.row.listofwalk__walklist:before,
-.row.listofwalk__walklist:after {
-  content: " ";
-  display: table; }
+.listofwalk__header.filterrow {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e3e3; }
 
-.row.listofwalk__walklist:after {
-  clear: both; }
+.row.listofwalk__walklist {
+  padding-top: 2rem; }
+  .row.listofwalk__walklist:before,
+  .row.listofwalk__walklist:after {
+    content: " ";
+    display: table; }
+  .row.listofwalk__walklist:after {
+    clear: both; }
 
 .squarewalk {
   position: relative;
@@ -8926,39 +8941,12 @@ a.ticketselect__buynow {
     color: #ffffff;
     background-color: #008f96; }
 
-.walkcalendar__header {
-  margin-bottom: 2rem;
+.walkcalendar__header.filterrow {
   background-color: #ffffff;
   border-bottom: 1px solid #e4e3e3; }
-  .walkcalendar__header .filterrow__title {
-    margin-top: 0; }
-    .walkcalendar__header .filterrow__title input[type="date"], .walkcalendar__header .filterrow__title select {
-      display: inline-block;
-      margin: 0;
-      border: none;
-      width: 12em;
-      box-shadow: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 1rem;
-      line-height: 1;
-      padding-bottom: .333rem;
-      padding-top: .333rem;
-      color: #00b3bb; }
-      .walkcalendar__header .filterrow__title input[type="date"]:hover, .walkcalendar__header .filterrow__title select:hover {
-        background-color: #e4e3e3;
-        cursor: pointer; }
-      .walkcalendar__header .filterrow__title input[type="date"]:focus, .walkcalendar__header .filterrow__title select:focus {
-        outline: none; }
-      .walkcalendar__header .filterrow__title input[type="date"] option, .walkcalendar__header .filterrow__title select option {
-        text-transform: none;
-        background-color: #ffffff;
-        padding: .5rem;
-        font-weight: normal;
-        color: #333333; }
 
 .event__list {
-  margin: 0.5rem 0 2rem; }
+  margin: 2rem 0 4rem; }
 
 .event__list__datedivider {
   text-transform: uppercase;
@@ -9235,7 +9223,7 @@ ul.pagination__eventlist {
     background-color: #008f96; }
 
 .members__header .inlinemenu {
-  margin: .25rem 0; }
+  height: 1rem; }
 
 .row.members__content {
   padding-top: 4rem;
@@ -9423,7 +9411,7 @@ ul.pagination__eventlist {
   text-transform: uppercase; }
 
 .filterrow {
-  padding: 2rem 0 0.125rem; }
+  padding: 1.25rem 0; }
   .filterrow.is_sticked {
     position: fixed;
     top: 0;
@@ -9432,23 +9420,46 @@ ul.pagination__eventlist {
     margin-bottom: 0;
     border-bottom: 1px solid #e4e3e3;
     z-index: 2;
-    padding: 0.875rem 0 0.5rem 0;
+    padding: 0.875rem 0 0.875rem 0;
     background-color: #ffffff; }
-  .filterrow .filterrow__title {
-    margin: 0 0 0.5rem 0.125rem;
-    padding: 0;
-    font-size: 1rem;
-    text-transform: uppercase;
-    height: 2.125rem;
-    line-height: 2.25; }
-    .filterrow .filterrow__title input {
-      -webkit-transform: translateY(-0.0125rem);
-              transform: translateY(-0.0125rem);
-      height: auto;
-      margin-left: .125rem; }
   @media only screen and (min-width: 40em) {
     .filterrow .inlinemenu {
       text-align: right; } }
+
+.filterrow__title {
+  margin: 0 0 1rem;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #333333; }
+  @media only screen and (min-width: 40em) {
+    .filterrow__title {
+      margin-bottom: 0; } }
+  .filterrow__title input[type="date"] {
+    position: absolute;
+    -webkit-transform: translateY(-0.45rem);
+            transform: translateY(-0.45rem);
+    display: inline-block;
+    margin: 0 0 0 0.25rem;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    padding-bottom: .125rem;
+    padding-top: .125rem;
+    padding-left: .333rem;
+    background-color: #fafafa;
+    border-color: #e4e3e3;
+    color: #00b3bb; }
+    .filterrow__title input[type="date"]:hover, .filterrow__title input[type="date"]:focus {
+      background-color: #ffffff;
+      border-color: currentColor;
+      color: #00b3bb;
+      cursor: pointer;
+      outline: none; }
 
 .filters {
   position: relative;
@@ -9460,15 +9471,20 @@ ul.pagination__eventlist {
     margin-bottom: 0;
     font-size: .75rem;
     padding: 0.25rem 1.5rem 0.25rem 0.5rem;
-    height: 2.125rem;
-    float: right;
-    background-color: transparent;
-    border: none; }
+    height: auto;
+    background-color: #fafafa;
+    border-color: #e4e3e3; }
     @media only screen and (min-width: 40em) {
       .filters select {
-        width: auto; } }
+        width: auto;
+        position: absolute;
+        right: 1rem;
+        -webkit-transform: translateY(-0.333rem);
+                transform: translateY(-0.333rem); } }
     .filters select:hover {
       cursor: pointer; }
+    .filters select:focus {
+      outline: none; }
 
 .iconlist {
   margin: 0;
@@ -9552,18 +9568,18 @@ ul.pagination__eventlist {
 
 .panel h4 {
   text-transform: uppercase;
-  margin-top: .5rem;
+  margin-top: 1rem;
   font-size: .75rem;
   padding-bottom: .5em;
   margin-bottom: .5em;
   border-bottom: 1px solid #e4e3e3; }
 
-.panel .thedate {
+.panel .thedata {
   font-weight: 700;
   font-size: .875rem;
   text-transform: uppercase;
-  margin-bottom: 0; }
-  .panel .thedate span {
+  margin-bottom: .5rem; }
+  .panel .thedata span {
     font-weight: 300; }
 
 .panel fieldset:last-of-type {

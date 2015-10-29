@@ -43,6 +43,7 @@ dl {
     margin:0;
     padding: 1.25rem 0 1.25rem .75rem;
     position: absolute;
+
     .icon {
       color:$primary-color;
       display: inline-block;
@@ -53,17 +54,30 @@ dl {
       transform:translateY(.125em);
     }
 
+
+
+    @media #{$medium} {
+
+    }
+
   }
   dd {
-    line-height: 1;
-    padding: 1.25rem 0.75rem 1.25rem 10rem;
-    text-align: right;
+    line-height: 1.4;
+    padding: 3rem 1rem 1.25rem 3.333rem;
     margin:0;
     &:not(:last-child) {
       border-bottom: 1px solid $gainsboro;
     }
     &:hover {
       background-color: $white;
+    }
+    @media #{$large} {
+      text-align: right;
+      padding: 1rem 0.75rem 1.25rem 10rem;
+    }
+
+    a {
+      color:inherit;
     }
   }
 }

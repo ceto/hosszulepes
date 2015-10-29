@@ -2,13 +2,16 @@
   margin-bottom: 2rem;
 }
 
-.listofwalk__header {
+.listofwalk__header.filterrow {
+  background-color: $white;
+  border-bottom:1px solid $smoke;
 }
 
 
 
 .row.listofwalk__walklist {
   @include clearfix();
+  padding-top: 2rem;
 
 }
 

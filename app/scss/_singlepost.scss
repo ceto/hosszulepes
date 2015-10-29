@@ -4,6 +4,11 @@
 }
 
 
+.singlepost__relatedevents {
+  border-top: 1px solid $smoke;
+  margin-top: 3rem;
+}
+
 .smodul__title {
   font-size: 1rem;
   text-transform: uppercase;
@@ -14,9 +19,9 @@
   position: relative;
   border-top:1px solid $smoke;
   padding:.75rem 0;
-  &:last-child {
-   border-bottom:1px solid $smoke;
-  }
+  // &:last-child {
+  //  border-bottom:1px solid $smoke;
+  // }
 }
 
 .recommends__title {
