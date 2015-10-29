@@ -34,6 +34,9 @@
     &.active > a:hover {
       background-color: $primary-color;
     }
+
+    > .content {
+    }
   }
 }
 
@@ -43,6 +46,16 @@
     color:$primary-color;
     font-size: 1.25rem;
   }
+  h4 {
+    text-transform: uppercase;
+    margin-top: .5rem;
+    font-size: .75rem;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid $smoke;
+  }
+
+
   .thedate {
     font-weight: 700;
     font-size: .875rem;
@@ -50,19 +63,50 @@
     span {
       font-weight: 300;
     }
+    margin-bottom: 0;
+  }
+  fieldset {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   p{
     font-size: .875rem;
+    a {
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  .helper {
+    font-size: .666rem;
+    line-height: 1.3;
+    font-style: italic;
+    text-transform: none;
+    a {
+      color:$jumbo;
+      &:hover, &:focus {
+        color:$body-font-color;
+      }
+    }
   }
   .back {
     font-size: .875rem;
     font-style: italic;
+    padding-top: .666rem;
+    display: inline-block;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
   }
   .addmore {
     display: block;
     font-size: .875rem;
     font-style: italic;
     transform:translateY(-.875rem);
+    &:hover, &:focus {
+     text-decoration: underline;
+    }
 
   }
   .pagerrow{
@@ -86,7 +130,7 @@ fieldset {
   legend {
     background-color: $white;
     font-size: .875rem;
-    //color:$primary-color;
+    color:$primary-color;
     //padding-right: .333rem;
   }
 }
