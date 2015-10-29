@@ -8938,7 +8938,9 @@ a.ticketselect__buynow {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 1rem;
-      line-height: 1.6;
+      line-height: 1;
+      padding-bottom: .333rem;
+      padding-top: .333rem;
       color: #00b3bb; }
       .walkcalendar__header .filterrow__title input[type="date"]:hover, .walkcalendar__header .filterrow__title select:hover {
         background-color: #e4e3e3;
@@ -9427,13 +9429,20 @@ ul.pagination__eventlist {
     margin-bottom: 0;
     border-bottom: 1px solid #e4e3e3;
     z-index: 2;
-    padding: .5rem 0 0;
+    padding: 0.875rem 0 0.5rem 0;
     background-color: #ffffff; }
   .filterrow .filterrow__title {
     margin: 0 0 0.5rem 0.125rem;
     padding: 0;
     font-size: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    height: 2.125rem;
+    line-height: 2.25; }
+    .filterrow .filterrow__title input {
+      -webkit-transform: translateY(-0.0125rem);
+              transform: translateY(-0.0125rem);
+      height: auto;
+      margin-left: .125rem; }
   @media only screen and (min-width: 40em) {
     .filterrow .inlinemenu {
       text-align: right; } }
@@ -9445,28 +9454,18 @@ ul.pagination__eventlist {
     .filters {
       text-align: right; } }
   .filters select {
-    display: inline-block;
-    margin: 0;
-    border: none;
-    width: 9rem;
-    padding: 0 1.5rem 0 0.5rem;
+    margin-bottom: 0;
+    font-size: .75rem;
+    padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+    height: 2.125rem;
+    float: right;
     background-color: transparent;
-    box-shadow: none;
-    font-weight: 700;
-    -webkit-transform: translateY(-0.5em);
-            transform: translateY(-0.5em); }
+    border: none; }
+    @media only screen and (min-width: 40em) {
+      .filters select {
+        width: auto; } }
     .filters select:hover {
       cursor: pointer; }
-  .filters input[type="date"] {
-    display: inline-block;
-    width: auto;
-    border: none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 0 0 0;
-    margin: 0;
-    text-align: right; }
 
 .iconlist {
   margin: 0;

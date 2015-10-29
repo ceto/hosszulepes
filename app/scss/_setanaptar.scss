@@ -16,7 +16,9 @@
       text-transform: uppercase;
       //font-weight: 300;
       font-size: rem-calc(16);
-      line-height: 1.6;
+      line-height: 1;
+      padding-bottom: .333rem;
+      padding-top: .333rem;
       color:$primary-color;
       &:hover {
         background-color: $smoke;
