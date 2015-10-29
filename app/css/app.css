@@ -9561,6 +9561,18 @@ ul.pagination__eventlist {
   font-size: .875rem;
   font-style: italic; }
 
+.panel .addmore {
+  display: block;
+  font-size: .875rem;
+  font-style: italic;
+  -webkit-transform: translateY(-0.875rem);
+          transform: translateY(-0.875rem); }
+
+.panel .pagerrow {
+  margin-top: 2rem; }
+  .panel .pagerrow .button {
+    margin-bottom: 0; }
+
 label {
   text-transform: uppercase; }
 

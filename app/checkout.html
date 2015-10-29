@@ -108,9 +108,9 @@
                       </div>
                     </div>
                     <p><em>*Ha 10 -nél több jegyet szeretnél venni, írj az <a href="mailto:info@hosszulepes.org">info@hosszulepes.org</a> címre.</em></p>
-
+                    <div class="pagerrow">
                     <a href="#" class="button small">Következő lépés: Adatok megadása</a>
-
+                    </div>
 
                   </div>
                 </div>
@@ -189,9 +189,9 @@
                 </fieldset>
 
 
-                <div class="row">
+                <div class="row pagerrow">
                   <div class="columns small-4">
-                    <a href="#" class="back">&laquo; visszalépés</a>
+                    <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8">
                     <a href="#" class="button small right">Következő lépés: Fizetés</a>
@@ -201,9 +201,39 @@
             </li>
 
             <li class="accordion-navigation">
-              <a href="#panel3a"><span>3.</span> Adatellenőrzés</a>
-              <div id="panel3a" class="content panel">
-                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <a href="#panel3a"><span>3.</span> Kártyás/sétajegyes buhera</a>
+              <div id="panel3a" class="content panel active">
+
+                <div class="row">
+                  <div class="columns medium-3">
+                    <p class="thedate">Klubkártyás<br><span>fizetés</span></p>
+                  </div>
+                  <div class="columns medium-9">
+                    <h3>Add meg a klubkártyád számát</h3>
+                    <p>Gonolom itt le van írva, hogy mit csináljon a vásárló, és/vagy hogy a klubkártya végtelen ingyen sétára jogosít fel. Ha nincs ilyened <a href="#">itt igénylehetsz.</a></p>
+                    <div class="row collapse">
+                        <label for="walkcard_no[0]">Kártyaszám*</label>
+                        <div class="columns small-8 large-9">
+                          <input type="text" name="walkcard_no[0]" id="walkcard_no[0]" placeholder="10 jegyű azonnosító">
+                        </div>
+                      <div class="columns small-4 large-3">
+                        <a class="button postfix">Érvényesít</a>
+                      </div>
+                    </div>
+
+                    <a class="addmore" href="#">+ További kártyák hozzáadása</a>
+                   </div>
+                </div>
+
+                <div class="row pagerrow">
+                  <div class="columns small-4 medium-3">
+                    <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
+                  </div>
+                  <div class="columns small-8 medium-9">
+                    <a href="#" class="button small">Következő lépés: Nem tudom</a>
+                  </div>
+                </div>
+
               </div>
             </li>
             <li class="accordion-navigation">
@@ -253,9 +283,9 @@
                     <img src="images/cards.jpg" alt="">
                   </div>
                 </div>
-                <div class="row">
+                <div class="row pagerrow">
                   <div class="columns small-4">
-                    <a href="#" class="back">&laquo; visszalépés</a>
+                    <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8">
                     <a href="#" class="button small right">Fizetés indítása</a>
