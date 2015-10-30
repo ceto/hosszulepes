@@ -85,6 +85,56 @@ input[type="checkbox"]#navtoggle {
 
 
 /******* Secondary (Inverse) Menu *******/
+.iverseheadright {
+  display:none;
+  line-height:1.666rem;
+  position: relative;
+
+  @media #{$xlarge} {
+    display: block;
+    text-align: right;
+
+  }
+
+}
+
+.headsoci {
+
+  a {
+    font-size: 1.125rem;
+    color:$body-font-color;
+    margin-left: .125em;
+    &:hover, &:focus {
+      color:$ghost;
+    }
+  }
+}
+.gotocal {
+  position: absolute;
+  top:.125em;
+  right:0;
+  width:auto;
+  display:inline-block;
+  color:$ghost;
+  border:1px solid rgba($ghost,.5);
+
+
+  font-size: .75rem;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding:.333em .5em;
+  border-radius:2px;
+  i {
+    margin-left: .125em;
+  }
+  &:hover, &:focus {
+    border-color: rgba($body-font-color,.5);
+    //background-color: $white;
+    color:$body-font-color;
+  }
+}
+
 .pageheader__inverse {
   background-color: $primary-color;
   color:$ghost;

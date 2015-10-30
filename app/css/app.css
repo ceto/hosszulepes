@@ -8273,6 +8273,42 @@ input[type="checkbox"]#navtoggle {
     opacity: 1; }
 
 /******* Secondary (Inverse) Menu *******/
+.iverseheadright {
+  display: none;
+  line-height: 1.666rem;
+  position: relative; }
+  @media only screen and (min-width: 64em) {
+    .iverseheadright {
+      display: block;
+      text-align: right; } }
+
+.headsoci a {
+  font-size: 1.125rem;
+  color: #333333;
+  margin-left: .125em; }
+  .headsoci a:hover, .headsoci a:focus {
+    color: #fafafa; }
+
+.gotocal {
+  position: absolute;
+  top: .125em;
+  right: 0;
+  width: auto;
+  display: inline-block;
+  color: #fafafa;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  font-size: .75rem;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.333em 0.5em;
+  border-radius: 2px; }
+  .gotocal i {
+    margin-left: .125em; }
+  .gotocal:hover, .gotocal:focus {
+    border-color: rgba(51, 51, 51, 0.5);
+    color: #333333; }
+
 .pageheader__inverse {
   background-color: #00b3bb;
   color: #fafafa;
@@ -8462,6 +8498,9 @@ input[type="checkbox"]#navtoggle {
   color: #fafafa;
   border-bottom: 1px solid #ffffff;
   overflow: hidden; }
+  @media only screen and (min-width: 40em) {
+    .hero {
+      max-height: 25rem; } }
   @media only screen and (min-width: 48em) {
     .hero {
       max-height: 40rem; } }
@@ -8474,6 +8513,9 @@ input[type="checkbox"]#navtoggle {
   .hero:after {
     content: '';
     display: block; }
+    @media only screen and (min-width: 40em) {
+      .hero:after {
+        padding-bottom: 45%; } }
     @media only screen and (min-width: 48em) {
       .hero:after {
         padding-bottom: 40%; } }
@@ -8489,7 +8531,7 @@ input[type="checkbox"]#navtoggle {
       width: 100%; }
       .hero .owl-carousel .owl-controls .owl-pagination .owl-page span {
         border-radius: 0; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 40em) {
     .hero .owl-carousel {
       height: 100%; }
       .hero .owl-carousel .owl-wrapper-outer {
@@ -8498,6 +8540,10 @@ input[type="checkbox"]#navtoggle {
           height: 100%; }
           .hero .owl-carousel .owl-wrapper-outer .owl-wrapper .owl-item {
             height: 100%; } }
+
+@media only screen and (min-width: 40em) {
+  .hero--narrow {
+    max-height: 10rem; } }
 
 @media only screen and (min-width: 48em) {
   .hero--narrow {
@@ -8514,6 +8560,9 @@ input[type="checkbox"]#navtoggle {
 .hero--narrow:after {
   content: '';
   display: block; }
+  @media only screen and (min-width: 40em) {
+    .hero--narrow:after {
+      padding-bottom: 20%; } }
   @media only screen and (min-width: 48em) {
     .hero--narrow:after {
       padding-bottom: 15%; } }
@@ -8523,7 +8572,7 @@ input[type="checkbox"]#navtoggle {
 
 .hero__content {
   width: 100%; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 40em) {
     .hero__content {
       position: absolute;
       height: 100%;
@@ -8533,11 +8582,11 @@ input[type="checkbox"]#navtoggle {
   display: block;
   width: 100%;
   height: auto;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem;
   background-size: cover;
   background-image: url("http://placehold.it/2000x800/111111/1a1a1a?text=Aspect+ratio:+5:2");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   position: relative; }
   .hero__block:after {
     content: '';
@@ -8546,9 +8595,9 @@ input[type="checkbox"]#navtoggle {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.25) 20%, rgba(0, 0, 0, 0.333) 50%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.15) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0.333) 50%, rgba(0, 0, 0, 0.25) 85%, rgba(0, 0, 0, 0.15) 100%);
     z-index: 0; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 40em) {
     .hero__block {
       display: table;
       height: 100%;
@@ -8561,7 +8610,7 @@ input[type="checkbox"]#navtoggle {
   vertical-align: middle;
   position: relative;
   z-index: 1; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 40em) {
     .hero__text {
       display: table-cell; } }
 
@@ -8593,8 +8642,12 @@ input[type="checkbox"]#navtoggle {
     margin-left: auto;
     margin-right: auto; } }
 
-.photostrip {
-  position: relative;
+.pagesection--photostrip {
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.photostrip__content {
   background-color: #111;
   color: #fafafa;
   min-height: 33vh;
