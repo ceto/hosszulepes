@@ -1,7 +1,40 @@
 .sitefooter {
   @include clearfix();
-  background-color: $gainsboro;
   position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  //border-top: 1px solid $smoke;
+  text-align: left;
+  color:lighten($body-font-color,15);
+
+}
+
+.footernav__menu {
+  // @media #{$xlarge} {
+  //   float:left;
+  // }
+}
+.sitefooter__mutyurok {
+  font-size: .75rem;
+  line-height: 1.4;
+
+
+  // @media #{$xlarge} {
+  //   float:right;
+  //   margin-top: .25rem;
+  //   text-align: right;
+  // }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color:inherit;
+    font-size: .666rem;
+    //font-variant: small-caps;
+    &:hover, &:focus {
+      color:$body-font-color;
+    }
+  }
 }
 
 .tothetop {
@@ -29,6 +62,8 @@
   }
 
 }
+
+
 
 // .tothetop {
 //   display: block;

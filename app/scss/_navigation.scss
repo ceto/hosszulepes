@@ -257,16 +257,9 @@ input[type="checkbox"]#navtoggle {
 .footernav__menu {
   list-style-type: none;
   margin:0;
-  padding:.75rem 0;
-  text-align: center;
-  @media #{$medium} {
-    text-align:left;
-  }
-  @media #{$xlarge} {
-    text-align:left;
-  }
+  padding:0 0 .25rem;
   li {
-    display: inline-block;
+    display: inline;
     font-size: .75rem;
     line-height: 1;
     padding:0;
@@ -280,6 +273,8 @@ input[type="checkbox"]#navtoggle {
     }
     > a {
         color:inherit;
+        font-weight: 700;
+
 
         &:hover, &:focus {
           color:$primary-color;

@@ -8403,16 +8403,9 @@ input[type="checkbox"]#navtoggle {
 .footernav__menu {
   list-style-type: none;
   margin: 0;
-  padding: .75rem 0;
-  text-align: center; }
-  @media only screen and (min-width: 40em) {
-    .footernav__menu {
-      text-align: left; } }
-  @media only screen and (min-width: 64em) {
-    .footernav__menu {
-      text-align: left; } }
+  padding: 0 0 0.25rem; }
   .footernav__menu li {
-    display: inline-block;
+    display: inline;
     font-size: .75rem;
     line-height: 1;
     padding: 0;
@@ -8424,7 +8417,8 @@ input[type="checkbox"]#navtoggle {
       padding-right: .333em;
       padding-left: 0; }
     .footernav__menu li > a {
-      color: inherit; }
+      color: inherit;
+      font-weight: 700; }
       .footernav__menu li > a:hover, .footernav__menu li > a:focus {
         color: #00b3bb; }
 
@@ -8463,7 +8457,6 @@ input[type="checkbox"]#navtoggle {
 
 .hero {
   position: relative;
-  background-color: #000000;
   color: #fafafa;
   border-bottom: 1px solid #ffffff;
   overflow: hidden; }
@@ -8541,7 +8534,17 @@ input[type="checkbox"]#navtoggle {
   background-size: cover;
   background-image: url("http://placehold.it/2000x800/111111/1a1a1a?text=Aspect+ratio:+5:2");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+  .hero__block:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.333);
+    z-index: 0; }
   @media only screen and (min-width: 48em) {
     .hero__block {
       display: table;
@@ -8552,7 +8555,9 @@ input[type="checkbox"]#navtoggle {
 
 .hero__text {
   display: block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: relative;
+  z-index: 1; }
   @media only screen and (min-width: 48em) {
     .hero__text {
       display: table-cell; } }
@@ -8804,7 +8809,8 @@ a.ticketselect__buynow {
 .relatedposts {
   padding: 2rem 0;
   border-top: 1px solid #e4e3e3;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e3e3; }
 
 .setagrid {
   margin-bottom: 2rem; }
@@ -9319,7 +9325,8 @@ ul.pagination__eventlist {
   margin-top: 4rem;
   margin-bottom: 4rem; }
   .bottomwidgets .widget {
-    margin-top: 2rem; }
+    margin-top: 5rem;
+    margin-bottom: 0; }
   .widget h2 {
     color: inherit;
     font-size: 2rem;
@@ -9512,6 +9519,9 @@ ul.pagination__eventlist {
   .hirdetes--full .hirdetes__content {
     padding: 12% 0; }
 
+.checkout {
+  border-bottom: 1px solid #e4e3e3; }
+
 .checkout__content {
   padding-top: 4rem;
   padding-bottom: 4rem; }
@@ -9639,14 +9649,28 @@ fieldset {
     color: #00b3bb; }
 
 .sitefooter {
-  background-color: #d9d6d6;
-  position: relative; }
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  text-align: left;
+  color: #595959; }
   .sitefooter:before,
   .sitefooter:after {
     content: " ";
     display: table; }
   .sitefooter:after {
     clear: both; }
+
+.sitefooter__mutyurok {
+  font-size: .75rem;
+  line-height: 1.4; }
+  .sitefooter__mutyurok a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: inherit;
+    font-size: .666rem; }
+    .sitefooter__mutyurok a:hover, .sitefooter__mutyurok a:focus {
+      color: #333333; }
 
 .tothetop {
   position: fixed;
