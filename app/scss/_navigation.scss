@@ -289,6 +289,8 @@ input[type="checkbox"]#navtoggle {
 
 /***** Tabbed Navigation at the bottom of hero ***/
 .inner__nav {
+  position: relative;
+  z-index: 2;
   float:right;
   margin-top: rem-calc(-44);
   .tab-title {

@@ -8424,6 +8424,8 @@ input[type="checkbox"]#navtoggle {
 
 /***** Tabbed Navigation at the bottom of hero ***/
 .inner__nav {
+  position: relative;
+  z-index: 2;
   float: right;
   margin-top: -2.75rem; }
   .inner__nav .tab-title {
@@ -8530,6 +8532,7 @@ input[type="checkbox"]#navtoggle {
 .hero__block {
   display: block;
   width: 100%;
+  height: auto;
   padding: 2rem 0;
   background-size: cover;
   background-image: url("http://placehold.it/2000x800/111111/1a1a1a?text=Aspect+ratio:+5:2");
@@ -8540,10 +8543,10 @@ input[type="checkbox"]#navtoggle {
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.333);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.25) 20%, rgba(0, 0, 0, 0.333) 50%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.15) 100%);
     z-index: 0; }
   @media only screen and (min-width: 48em) {
     .hero__block {
