@@ -642,20 +642,20 @@ $button-font-weight: $font-weight-normal;
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-$form-spacing: rem-calc(20);
+$form-spacing: rem-calc(18);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
 $form-label-font-size: rem-calc(12);
 $form-label-font-weight: $font-weight-bold;
-// $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color($black, $lightness: 30%);
+$form-label-line-height: 2.5;
+//$form-label-font-color: scale-color($black, $lightness: 30%);
 //$form-label-small-transform: capitalize;
-$form-label-bottom-margin: rem-calc(4);
+$form-label-bottom-margin: $form-spacing;
 // $input-font-family: inherit;
-// $input-font-color: rgba(0,0,0,0.75);
+$input-font-color: rgba(0,0,0,1);
 // $input-font-size: rem-calc(14);
-$input-placeholder-font-color: #cccccc;
+$input-placeholder-font-color: #dddddd;
 $input-bg-color: $ghost;
 $input-focus-bg-color: scale-color($ghost, $lightness: -2%);
 $input-border-color: $primary-color;
@@ -672,13 +672,13 @@ $input-focus-border-color: scale-color($input-border-color, $lightness: -10%);
 // $fieldset-border-style: solid;
 // $fieldset-border-width: 1px;
 $fieldset-border-color: $gainsboro;
-$fieldset-padding: rem-calc(20 0 10);
-$fieldset-margin: rem-calc(24 0);
+$fieldset-padding: rem-calc(16 0 16);
+$fieldset-margin: rem-calc(20 0);
 
 // We use these to style the legends when you use them
 $legend-bg: $primary-color;
 // $legend-font-weight: $font-weight-bold;
- $legend-padding: rem-calc(0 12 0 0);
+$legend-padding: rem-calc(0 12 0 0);
 
 // We use these to style the prefix and postfix input elements
 // $input-prefix-bg: scale-color($white, $lightness: -5%);

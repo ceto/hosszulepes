@@ -125,21 +125,22 @@ $(document).ready(function() {
     $setagrid.isotope({ filter: filterValue });
   });
 
-  var filterrow_waypoint = new Waypoint({
-    element: document.getElementById('filterrow'),
+  $('.filterrow').waypoint({
     handler: function() {
-      $('#filterrow').toggleClass('is_sticked');
+        $('#filterrow').toggleClass('is_sticked');
     }
   });
-  var endofmain_waypoint = new Waypoint({
-    element: document.getElementById('endofmain'),
+
+  $('#endofmain').waypoint({
     handler: function() {
-      $('#filterrow').toggleClass('is_sticked');
+        $('#filterrow').toggleClass('is_sticked');
     },
-    offset: '90%'
+    offset: '500px'
   });
 
-
+  $('#checkout__info--toggler').click(function(){
+    $('#checkout__info').toggleClass('latszik');
+  });
 
 
 

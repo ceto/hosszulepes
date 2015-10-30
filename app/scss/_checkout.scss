@@ -6,10 +6,35 @@
   // background-attachment: fixed;
 }
 .checkout__content {
-  padding-top: 4rem;
-  padding-bottom:4rem;
+  padding-top:4rem;
+  padding-bottom: 4rem;
 }
 
+.checkout__info {
+  background-color: $white;
+  display: none;
+  padding: 0;
+  &.latszik {
+    display: block;
+    padding:2rem 0 4rem 0;
+    border-bottom: 1px solid $smoke;
+
+  }
+}
+
+.checkout__info--toggler {
+  position: absolute;
+  right:1.25rem;
+  top:2.25rem;
+  font-size:.875rem;
+  line-height: 1;
+  text-align: right;
+  //text-transform: uppercase;
+  //font-weight: 700;
+  font-style: italic;
+  //text-decoration: underline;
+
+}
 
 
 .accordion {
@@ -97,6 +122,10 @@
       }
     }
   }
+
+  .cards {
+    margin-top: -1.5rem;
+  }
   .back {
     font-size: .875rem;
     font-style: italic;
@@ -110,7 +139,8 @@
     display: block;
     font-size: .875rem;
     font-style: italic;
-    transform:translateY(-.875rem);
+    margin-top:-2rem;
+    //transform:translateY(-1.875rem);
     &:hover, &:focus {
      text-decoration: underline;
     }
@@ -127,6 +157,9 @@
 
 label {
   text-transform: uppercase;
+  input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, select {
+    font-weight: $font-weight-normal;
+  }
 }
 
 fieldset {

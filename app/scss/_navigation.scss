@@ -253,12 +253,7 @@ input[type="checkbox"]#navtoggle {
 
 
 /****** Footer Nav ****/
-.sitefooter {
-  margin-top: 3rem;
-  @include clearfix();
-  background-color: $gainsboro;
-  position: relative;
-}
+
 .footernav__menu {
   list-style-type: none;
   margin:0;
@@ -294,28 +289,7 @@ input[type="checkbox"]#navtoggle {
   }
 }
 
-.tothetop {
-  display: block;
-  width:3rem;
-  height:3rem;
-  line-height: 3rem;
-  text-align: center;
-  background-color: $primary-color;
-  color:$ghost;
-  margin:1rem auto 2rem;
-  &:hover, &:focus {
-    background-color:$button-bg-hover;
-    color:$white;
-  }
-  @media #{$medium} {
-    margin:0;
-    position: absolute;
-    right:0;
-    top:0;
-    bottom:0;
-    height:auto;
-  }
-}
+
 
 
 /***** Tabbed Navigation at the bottom of hero ***/

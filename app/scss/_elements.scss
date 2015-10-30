@@ -1,5 +1,6 @@
 .bottomwidgets {
   //@include clearfix();
+  //margin-bottom:2rem;
   @media #{$medium} {
     //max-height: 420px;
     overflow:hidden;
@@ -10,7 +11,11 @@
 .widget {
   text-align: center;
   margin-top: 4rem;
-  margin-bottom:0;
+  margin-bottom:4rem;
+
+  .bottomwidgets &{
+    margin-top: 2rem;
+  }
 
   h2 {
     color:inherit;
@@ -36,6 +41,9 @@
 }
 .widget--withnotitle {
   margin-top: 0;
+  .bottomwidgets &{
+    margin-top: 0;
+  }
 }
 
 .widget--fixedheight {

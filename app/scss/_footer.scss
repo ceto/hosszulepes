@@ -1,0 +1,54 @@
+.sitefooter {
+  @include clearfix();
+  background-color: $gainsboro;
+  position: relative;
+}
+
+.tothetop {
+  position: fixed;
+  bottom:1rem;
+  right:1rem;
+  display: block;
+  width:3rem;
+  height:3rem;
+  line-height: 3rem;
+  text-align: center;
+  background-color: $ghost;
+  border:1px solid $primary-color;
+  color:$primary-color;
+  opacity: .25;
+
+  &:hover, &:focus {
+    opacity:.875;
+    color:$primary-color;
+  }
+
+  @media #{$xlarge} {
+    bottom:2vw;
+    right:2vw;
+  }
+
+}
+
+// .tothetop {
+//   display: block;
+//   width:3rem;
+//   height:3rem;
+//   line-height: 3rem;
+//   text-align: center;
+//   background-color: $primary-color;
+//   color:$ghost;
+//   margin:1rem auto 2rem;
+//   &:hover, &:focus {
+//     background-color:$button-bg-hover;
+//     color:$white;
+//   }
+//   @media #{$medium} {
+//     margin:0;
+//     position: absolute;
+//     right:0;
+//     top:0;
+//     bottom:0;
+//     height:auto;
+//   }
+// }

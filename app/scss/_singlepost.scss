@@ -1,6 +1,6 @@
 .singlepost__maincontent {
   padding-top:2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 
@@ -9,7 +9,11 @@
   margin-top: 3rem;
 }
 
+.smodul {
+  margin:2rem 0 3rem;
+}
 .smodul__title {
+  margin: 0 0 .5rem;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -74,4 +78,11 @@
     text-decoration: underline;
   }
 
+}
+
+
+.relatedposts {
+  padding:2rem 0;
+  border-top:1px solid $smoke;
+  background-color: $white;
 }

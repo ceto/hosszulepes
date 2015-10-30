@@ -24,7 +24,7 @@
     <!-- Template Part: Navigation -->
     <section class="pageheader">
       <div class="pageheader__inverse">
-        <div class="row row--fullwidth">
+        <div class="row container">
           <div class="columns">
             <nav class="secnav">
               <ul class="secnav__menu">
@@ -70,11 +70,37 @@
         </div>
       </div>
     </header>
+
     <main role="main" class="checkout">
+      <section id="checkout__info" class="checkout__info content">
+
+        <div class="row container">
+          <div class="columns">
+            <h2>A vásárlás menete</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique pariatur, doloribus, vitae quidem ipsam error voluptatibus architecto facilis. Rem soluta eveniet facilis dignissimos consequatur, ut voluptates alias nostrum et.</p>
+          </div>
+        </div>
+
+        <div class="row container">
+          <div class="columns medium-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique pariatur, doloribus, vitae quidem ipsam error voluptatibus architecto facilis. Rem soluta eveniet facilis dignissimos consequatur, ut voluptates alias nostrum et.</p>
+            <p>Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="columns medium-6">
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique pariatur, doloribus, vitae quidem ipsam error voluptatibus architecto facilis. Rem soluta eveniet facilis dignissimos consequatur, ut voluptates alias nostrum et.</p>
+          </div>
+        </div>
+
+      </section>
+
       <div class="row container">
         <div class="columns medium-10 xlarge-8 medium-centered checkout__content">
+          <a href="#checkout__info" id="checkout__info--toggler" class="checkout__info--toggler">
+            Segítség a vásárláshoz&nbsp;&raquo;
+          </a>
 
-
+          <form data-abide>
           <ul class="accordion" data-accordion>
             <li class="accordion-navigation">
               <a href="#panel1a"><span>1.</span> Választott sétád</a>
@@ -90,27 +116,29 @@
                     </p>
                     <div class="row">
                       <div class="columns medium-4 xlarge-3">
-                        <label for="quantity">Mennyiség*</label>
-                          <select name="quantity" id="quantity">
+                        <label for="quantity">Mennyiség*
+                          <select required name="quantity" id="quantity">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                           </select>
+                        </label>
                       </div>
                       <div class="columns medium-8 xlarge-9">
-                        <label for="paymentmethod">Fizetési mód kiválasztása*</label>
-                          <select name="paymentmethod" id="paymentmethod">
+                        <label for="paymentmethod">Fizetési mód kiválasztása*
+                          <select required  name="paymentmethod" id="paymentmethod">
+                            <option value="">Bankártya sétajegy vagy klubkártya?</option>
                             <option value="3">Fizetés bankkártyával: 3 500 HUF</option>
                             <option value="1">Időponfoglalás sétajeggyel: INGYENES</option>
                             <option value="2">Időponfoglalás klubtagként: INGYENES</option>
-
                           </select>
+                        </label>
                       </div>
                     </div>
                     <p><em>*Ha 10 -nél több jegyet szeretnél venni, írj az <a href="mailto:info@hosszulepes.org">info@hosszulepes.org</a> címre.</em></p>
                     <div class="pagerrow">
-                    <a href="#" class="button small">Következő lépés: Adatok megadása</a>
+                    <button type="submit" href="#" class="button small">Következő lépés: Adatok megadása</button>
                     </div>
 
                   </div>
@@ -132,19 +160,22 @@
                       <legend>Személyes adatok</legend>
                       <div class="row">
                         <div class="columns">
-                          <label for="name">Név*</label>
-                          <input type="text" id="name" name="name">
+                          <label for="name">Név*
+                            <input type="text" required id="name" name="name">
+                          </label>
                         </div>
                       </div>
 
                       <div class="row">
                         <div class="columns medium-6">
-                          <label for="email">Email cím*</label>
-                          <input type="email" id="email" name="email">
+                          <label for="email">Email cím*
+                            <input type="email" required id="email" name="email">
+                          </label>
                         </div>
                         <div class="columns medium-6">
-                          <label for="telefon">Telefon*</label>
-                          <input type="text" id="telefon" name="telefon">
+                          <label for="telefon">Telefon*
+                            <input type="text" required id="telefon" name="telefon">
+                          </label>
                         </div>
                       </div>
                     </fieldset>
@@ -153,24 +184,28 @@
                       <legend>Számlázási adatok</legend>
                       <div class="row">
                         <div class="columns">
-                          <label for="coname">Név/cégnév</label>
-                          <input type="text" id="coname" name="coname">
+                          <label for="coname">Név / cégnév
+                            <input type="text" placeholder="Kitöltendő, ha nem egyezik a vásárló nevével" id="coname" name="coname">
+                          </label>
                         </div>
                       </div>
                       <div class="row">
                         <div class="columns medium-8">
-                          <label for="city">Település*</label>
-                          <input type="text" id="city" name="city">
+                          <label for="city">Település*
+                            <input type="text" required id="city" name="city">
+                          </label>
                         </div>
                         <div class="columns medium-4">
-                          <label for="zip">Irányítószám*</label>
-                          <input type="text" id="zip" name="zip">
+                          <label for="zip">Irányítószám*
+                            <input type="text" required id="zip" name="zip">
+                          </label>
                         </div>
                       </div>
                       <div class="row">
                         <div class="columns">
-                          <label for="city">Utca, házszám*</label>
-                          <input type="text" id="city" name="city">
+                          <label for="city">Utca, házszám*
+                            <input type="text" required id="city" name="city">
+                          </label>
                         </div>
                       </div>
                     </fieldset>
@@ -179,14 +214,16 @@
                       <legend>Segítsd munkánkat</legend>
                       <div class="row">
                         <div class="columns">
-                          <label for="message">Megjegyzés</label>
-                          <textarea id="message" name="message" rows="4"></textarea>
-                          <label for="holhal">hol hallottál rólunk</label>
-                          <select name="holhal" id="holhal">
-                            <option value="1">A tévében</option>
-                            <option value="2">A rádióban</option>
-                            <option value="3">Újságban</option>
-                          </select>
+                          <label for="message">Megjegyzés
+                            <textarea id="message" name="message" rows="4"></textarea>
+                          </label>
+                          <label for="holhal">hol hallottál rólunk
+                            <select required name="holhal" id="holhal">
+                              <option value="1">A tévében</option>
+                              <option value="2">A rádióban</option>
+                              <option value="3">Újságban</option>
+                            </select>
+                          </label>
                           <input id="newsletter" type="checkbox"><label for="newsletter">Feliratkozom hírlevélre</label>
                         </div>
                       </div>
@@ -199,7 +236,7 @@
                     <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8 medium-9">
-                    <a href="#" class="button small">Következő lépés: Ellenőrzés és jóváhagyása</a>
+                    <button type="submit" href="#" class="button small">Következő lépés: Ellenőrzés és jóváhagyása</button>
                   </div>
                 </div>
 
@@ -266,7 +303,7 @@
                     <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8 medium-9">
-                    <a href="#" class="button small">Utolsó lépés: Fizetés</a>
+                    <button type="submit" href="#" class="button small">Utolsó lépés: Fizetés</button>
                   </div>
                 </div>
 
@@ -285,15 +322,17 @@
                   <div class="columns medium-9">
                     <h3>Add meg a klubkártyád számát</h3>
                     <p>Gondolom itt le van írva, hogy mit csináljon a vásárló, és/vagy hogy a klubkártya végtelen ingyen sétára jogosít fel. Ha nincs ilyened <a href="#">itt igénylehetsz.</a></p>
-                    <div class="row collapse">
-                        <label for="walkcard_no[0]">Kártyaszám*</label>
+                    <label for="walkcard_no[0]">Kártyaszám*
+                      <div class="row collapse">
+
                         <div class="columns small-8 large-9">
-                          <input type="text" name="walkcard_no[0]" id="walkcard_no[0]" placeholder="10 jegyű azonnosító">
+                          <input type="text" required name="walkcard_no[0]" id="walkcard_no[0]" placeholder="10 jegyű azonosító">
                         </div>
-                      <div class="columns small-4 large-3">
-                        <a class="button postfix">Érvényesít</a>
+                        <div class="columns small-4 large-3">
+                          <a class="button postfix">Érvényesít</a>
+                        </div>
                       </div>
-                    </div>
+                    </label>
 
                     <a class="addmore" href="#">+ További kártyák hozzáadása</a>
                    </div>
@@ -304,12 +343,13 @@
                     <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8 medium-9">
-                    <a href="#" class="button small">Befejezés: Regisztráció elküldése</a>
+                    <button type="submit" href="#" class="button small">Befejezés: Regisztráció elküldése</button>
                   </div>
                 </div>
 
               </div>
             </li>
+
             <li class="accordion-navigation">
               <a href="#panel5a"><span>4.c</span> Fizetés (bankártyás minta)</a>
               <div id="panel5a" class="content panel">
@@ -321,46 +361,50 @@
                   <div class="columns medium-9">
                     <div class="row">
                       <div class="columns medium-6">
-                        <label for="card_name">Számlatulajdonos neve*</label>
-                        <input type="text" id="card_name" name="card_name" placeholder="Kártyára írt név">
+                        <label for="card_name">Számlatulajdonos neve*
+                          <input type="text" required id="card_name" name="card_name" placeholder="Kártyára írt név">
+                        </label>
                       </div>
                       <div class="columns medium-6">
-                        <label for="card_no">Bankártya száma*</label>
-                        <input type="text" id="card_no" name="card_no" placeholder="16 jegyű bankkártya szám">
+                        <label for="card_no">Bankártya száma*
+                          <input type="text" required id="card_no" name="card_no" placeholder="16 jegyű bankkártya szám">
+                        </label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="columns medium-6">
-                        <label for="card_month">Lejárat dátuma*</label>
-                        <div class="row">
-                          <div class="columns small-5">
-                            <select name="card_month" id="month">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">...</option>
-                              <option value="2">11</option>
-                              <option value="3">12</option>
-                            </select>
+                        <label for="card_month">Lejárat dátuma*
+                          <div class="row">
+                            <div class="columns small-5">
+                              <select required name="card_month" id="month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">...</option>
+                                <option value="2">11</option>
+                                <option value="3">12</option>
+                              </select>
+                            </div>
+                            <div class="columns small-7">
+                              <select required name="card_year" id="cardyear">
+                                <option value="1">2015</option>
+                                <option value="2">2017</option>
+                                <option value="3">...</option>
+                                <option value="2">2025</option>
+                                <option value="3">2026</option>
+                              </select>
+                            </div>
                           </div>
-                          <div class="columns small-7">
-                            <select name="card_year" id="cardyear">
-                              <option value="1">2015</option>
-                              <option value="2">2017</option>
-                              <option value="3">...</option>
-                              <option value="2">2025</option>
-                              <option value="3">2026</option>
-                            </select>
-                          </div>
-                        </div>
+                        </label>
                       </div>
                       <div class="columns medium-6">
-                        <label for="card_cvc">CVC szám*</label>
-                        <input type="text" id="card_cvc" name="card_cvc" placeholder="A 3 jegyű CVC a kártya hátoldalán található">
+                        <label for="card_cvc">CVC szám*
+                          <input type="text" required id="card_cvc" name="card_cvc" placeholder="A 3 jegyű CVC a kártya hátoldalán található">
+                        </label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="columns small-8 medium-6 large-4">
-                        <img src="images/cards.jpg" alt="">
+                        <img class="cards" src="images/cards.jpg" alt="">
                       </div>
                     </div>
                   </div>
@@ -371,12 +415,13 @@
                     <a href="#" class="back">&laquo;&nbsp;visszalépés</a>
                   </div>
                   <div class="columns small-8 medium-9">
-                    <a href="#" class="button small">Befejezés: Regisztráció elküldése</a>
+                    <button type="submit" href="#" class="button small">Befejezés: Regisztráció elküldése</button>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
+          </form>
 
         </div>
       </div>
@@ -388,55 +433,6 @@
       <div id="endofmain"></div>
     </main>
 
-
-
-    <aside class="bottomwidgets">
-      <div class="row row--fullwidth collapse">
-        <div class="columns widget widget--withbg widget--fixedheight widget--withnotitle" style="background-image: url(images/csatornafedel.jpg);">
-          <div class="widget__inner">
-            <h2>Végy egy sétajegyet!</h2>
-            <p>Tudtad, hogy a sétajeggyel bármikor és bárhová elmehetsz egy sétára? Na és a legjobb ajándék.</p>
-            <a href="#" class="button small">Sétajegy vásárlása</a>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-
-    <aside class="bottomwidgets">
-      <div class="row container">
-        <div class="columns medium-6 large-4 widget widget--withbg widget--fixedheight" style="background-image: url(images/graffiti.jpg);">
-          <h3 class="widget__title">Találj magadra</h3>
-          <div class="widget__inner">
-            <h2>Találd meg a hozzád illő sétát!</h2>
-            <a href="#" class="button small">Kvíz indítása</a>
-          </div>
-        </div>
-        <div class="columns medium-6 large-4 widget widget--withbg widget--fixedheight" style="background-image: url(images/moonwalk.jpg);">
-          <h3 class="widget__title">Légy naprakész</h3>
-          <div class="widget__inner">
-            <h2>Kérj értesítőt sétáinkról</h2>
-            <p>Iratkozz fel hírlevelünkre</p>
-            <div class="row collapse">
-              <div class="small-7 small-push-1 columns">
-                <input type="email" placeholder="E-mail címed">
-              </div>
-              <div class="small-3 small-pull-1 columns">
-                <a href="#" class="button postfix">Mehet</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns medium-6 large-4 widget widget--withbg widget--fixedheight" style="background-image: url(images/moonwalk.jpg);">
-          <h3 class="widget__title">Közösködj</h3>
-          <div class="widget__inner">
-            <h2>Facebook</h2>
-            <p>Kövess minket a facebookon</p>
-            <a href="#" class="button small">Facebook</a>
-          </div>
-        </div>
-      </div>
-    </aside>
 
 
 
