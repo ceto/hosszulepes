@@ -144,6 +144,13 @@ $(document).ready(function() {
 
 
 
+  $( '#dateselect' ).datepicker({
+    altField: '#dateselect',
+    dateFormat: 'yy.mm.dd.'
+  });
 
+  $( '#dateselect' ).change(function() {
+    $('#textdate').html( $('#dateselect').val());
+  });
 
 });

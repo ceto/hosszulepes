@@ -8872,6 +8872,8 @@ a.ticketselect__buynow {
   margin-bottom: 2rem; }
 
 .listofwalk__header.filterrow {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e4e3e3; }
 
@@ -8982,6 +8984,8 @@ a.ticketselect__buynow {
     background-color: #008f96; }
 
 .walkcalendar__header.filterrow {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #e4e3e3; }
 
@@ -9455,6 +9459,30 @@ ul.pagination__eventlist {
   font-size: 1rem;
   text-transform: uppercase; }
 
+.ui-widget {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.25); }
+
+.ui-datepicker-calendar {
+  margin-bottom: 0; }
+
+.ui-widget-header {
+  background-color: #ffffff;
+  text-align: center;
+  font-size: .75rem;
+  border: 1px solid #d9d6d6;
+  border-bottom: none;
+  padding: 0.75rem 0.5rem; }
+
+.ui-datepicker-title {
+  font-size: .875rem;
+  font-weight: 600; }
+
+.ui-datepicker-prev {
+  float: left; }
+
+.ui-datepicker-next {
+  float: right; }
+
 .filterrow {
   padding: 1.25rem 0; }
   .filterrow.is_sticked {
@@ -9481,7 +9509,22 @@ ul.pagination__eventlist {
   @media only screen and (min-width: 40em) {
     .filterrow__title {
       margin-bottom: 0; } }
-  .filterrow__title input[type="date"] {
+  .filterrow__title .textdate {
+    display: inline-block;
+    color: #00b3bb;
+    padding-right: 1.333rem;
+    margin-left: .25rem;
+    background-image: url("../images/icon_calendar.svg");
+    background-size: auto 118%;
+    background-position: right -0.125rem;
+    background-repeat: no-repeat;
+    position: absolute; }
+    .filterrow__title .textdate:hover {
+      background-color: #fafafa;
+      text-decoration: underline; }
+  .filterrow__title input[type="text"] {
+    opacity: 0;
+    color: transparent;
     position: absolute;
     -webkit-transform: translateY(-0.45rem);
             transform: translateY(-0.45rem);
@@ -9496,10 +9539,10 @@ ul.pagination__eventlist {
     padding-bottom: .125rem;
     padding-top: .125rem;
     padding-left: .333rem;
-    background-color: #fafafa;
-    border-color: #e4e3e3;
-    color: #00b3bb; }
-    .filterrow__title input[type="date"]:hover, .filterrow__title input[type="date"]:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent; }
+    .filterrow__title input[type="text"]:hover, .filterrow__title input[type="text"]:focus {
       background-color: #ffffff;
       border-color: currentColor;
       color: #00b3bb;
@@ -9516,9 +9559,7 @@ ul.pagination__eventlist {
     margin-bottom: 0;
     font-size: .75rem;
     padding: 0.25rem 1.5rem 0.25rem 0.5rem;
-    height: auto;
-    background-color: #fafafa;
-    border-color: #e4e3e3; }
+    height: auto; }
     @media only screen and (min-width: 40em) {
       .filters select {
         width: auto;
@@ -9530,6 +9571,10 @@ ul.pagination__eventlist {
       cursor: pointer; }
     .filters select:focus {
       outline: none; }
+    .filters select.tagselect {
+      background-image: url("../images/icon_category.svg");
+      background-size: auto 80%;
+      background-position: 95% 40%; }
 
 .iconlist {
   margin: 0;
