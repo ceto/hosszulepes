@@ -6,6 +6,9 @@
     overflow:hidden;
     //overflow: hidden;
   }
+  &:last-of-type {
+    margin-bottom:4rem;
+  }
 
 }
 .widget {
@@ -123,18 +126,20 @@
 
 .ui-widget {
   box-shadow: 0 3px 12px 0 rgba($black,.25);
+  padding:.5rem;
+  background-color: $white;
+  border:1px solid $gainsboro;
+  display: none;
 }
-.ui-datepicker-calendar {
-  margin-bottom: 0;
-}
+
 .ui-widget-header {
   background-color: $white;
-
+  color:$primary-color;
   text-align: center;
+  text-transform: uppercase;
   font-size: .75rem;
-  border:1px solid $gainsboro;
-  border-bottom: none;
-  padding:.75rem .5rem;
+  //border:1px solid $gainsboro;
+  padding:0.25rem 0 .5rem;
 }
 
 .ui-datepicker-title {
@@ -142,12 +147,81 @@
   font-weight: 600;
 }
 
+.ui-datepicker-prev, .ui-datepicker-next {
+  span {
+    display: none;
+  }
+
+  &:before {
+  content: "\e93a";
+  font-family: 'hosszulepes';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 .ui-datepicker-prev {
   float:left;
+
 }
 .ui-datepicker-next {
   float:right;
+  &:before {
+    content: "\e93c";
+  }
+
 }
+
+.ui-datepicker-calendar {
+  //border-spacing:.125rem;
+  //border-collapse: separate;
+  border:1px solid $gainsboro;
+  margin-bottom: 0;
+  //border:none;
+
+
+  tr {
+    th {
+      padding:.333rem;
+      padding:.5rem .4rem;
+      font-size: .875rem;
+      line-height: 1;
+      color:$jumbo;
+      background-color: $smoke;
+      border-bottom: 1px solid $gainsboro;
+      text-align: center;
+    }
+    td {
+      padding:0;
+      font-size: .75rem;
+      line-height: 1;
+      //border:1px solid $smoke;
+      text-align: center;
+      //font-weight: 700;
+      > a {
+        color:$jumbo;
+        display: block;
+        padding:.5rem .25rem .333rem;
+        min-width: 1.875rem;
+        &:hover {
+          color:$white;
+          background-color: $primary-color;
+        }
+        &.ui-state-highlight {
+          background-color: $jumbo;
+          color:$white;
+        }
+      }
+    }
+  }
+}
+
 .filterrow {
   padding:1.25rem 0;
   &.is_sticked {
@@ -172,7 +246,8 @@
 
 
 .filterrow__title {
-
+  overflow: hidden;
+  max-width: 100%;
   margin:0 0 1rem;
   padding:0;
   font-size: rem-calc(16);
@@ -182,25 +257,38 @@
   @media #{$medium} {
     margin-bottom: 0;
   }
+  &:hover {
+    .textdate {
+      opacity: .75;
+
+      //background-color: $smoke;
+    }
+  }
   .textdate {
+
+    z-index: 1;
+    max-width: 50%;
     display: inline-block;
-    color:$primary-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //color:$jumbo;
     padding-right: 1.333rem;
     margin-left: .25rem;
     background-image:url('../images/icon_calendar.svg');
-    background-size: auto 118%;
+    background-size: auto 1.125rem;
     background-position: right -.125rem;
     background-repeat: no-repeat;
     position: absolute;
+    color:$primary-color;
     &:hover {
-      //color:$secondary-color;
-      background-color: $ghost;
-      text-decoration: underline;
+      cursor: pointer;
     }
 
   }
 
   input[type="text"] {
+    z-index: 0;
     opacity: 0;
     color:transparent;
     position: absolute;
@@ -216,22 +304,10 @@
     padding-bottom: .125rem;
     padding-top: .125rem;
     padding-left: .333rem;
-    //background-color: transparent;
-    //border-color: transparent;
     background-color: transparent;
     border-color: transparent;
     color:transparent;
-    &:hover,&:focus {
-      background-color: $white;
-      border-color: currentColor;
-      color:$primary-color;
-      cursor: pointer;
-      outline:none;
-    }
-
-
   }
-
 }
 .filters {
   position: relative;

@@ -276,8 +276,8 @@ $paragraph-margin-bottom: rem-calc(20);
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -913,7 +913,7 @@ $legend-padding: rem-calc(0 12 0 0);
 // Transition Variables
 // $menu-slide: "transform 500ms ease";
 
-// 19. Orbit
+// 19. Orbita
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-orbit-classes: $include-html-classes;

@@ -6,6 +6,7 @@
   //border-top: 1px solid $smoke;
   text-align: left;
   color:lighten($body-font-color,15);
+  background-color: $white;
 
 }
 
@@ -46,14 +47,14 @@
   height:3rem;
   line-height: 3rem;
   text-align: center;
-  background-color: $ghost;
-  border:1px solid $primary-color;
-  color:$primary-color;
-  opacity: .25;
+  background-color: $jumbo;
+  border:1px solid $white;
+  color:$white;
+  opacity: .5;
 
   &:hover, &:focus {
     opacity:.875;
-    color:$primary-color;
+    color:$white;
   }
 
   @media #{$xlarge} {

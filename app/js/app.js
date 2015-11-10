@@ -143,10 +143,15 @@ $(document).ready(function() {
   });
 
 
-
+/****** itt kellene az input mezőnek olvasható datumformatumaot adni *********/
   $( '#dateselect' ).datepicker({
     altField: '#dateselect',
-    dateFormat: 'yy.mm.dd.'
+    dateFormat: 'yy-mm-dd',
+    altFormat: 'MM d. DD',
+    firstDay: 1,
+    dayNamesMin: [ 'V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo' ],
+    dayNames: [ 'Vasárnap', 'Hétfő', 'Kedd', 'Szerda', 'Csütörtök', 'Péntek', 'Szombat' ],
+    monthNames: [ 'Január', 'Február', 'Március', 'Április', 'Május', 'Június', 'Július', 'Augusztus', 'Szeptember', 'Október', 'November', 'December' ]
   });
 
   $( '#dateselect' ).change(function() {

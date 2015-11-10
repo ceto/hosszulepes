@@ -196,3 +196,31 @@
     }
   }
 }
+
+
+.hero--404 {
+
+  .hero__block {
+
+  }
+  img {
+    display: block;
+    max-width: 8rem;
+    margin:1rem 0;
+    @media #{$medium} {
+      max-width: 80%;
+      margin:0 auto;
+    }
+
+  }
+
+  .hero__title {
+    font-weight: 700;
+    color:$primary-color;
+  }
+  .hero__details {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+}
