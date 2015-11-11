@@ -125,18 +125,18 @@ $(document).ready(function() {
     $setagrid.isotope({ filter: filterValue });
   });
 
-  $('.filterrow').waypoint({
-    handler: function() {
-        $('#filterrow').toggleClass('is_sticked');
-    }
-  });
+  // $('.filterrow').waypoint({
+  //   handler: function() {
+  //       $('#filterrow').toggleClass('is_sticked');
+  //   }
+  // });
 
-  $('#endofmain').waypoint({
-    handler: function() {
-        $('#filterrow').toggleClass('is_sticked');
-    },
-    offset: '500px'
-  });
+  // $('#endofmain').waypoint({
+  //   handler: function() {
+  //       $('#filterrow').toggleClass('is_sticked');
+  //   },
+  //   offset: '500px'
+  // });
 
   $('#checkout__info--toggler').click(function(){
     $('#checkout__info').toggleClass('latszik');
